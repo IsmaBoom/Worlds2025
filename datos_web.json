@@ -1,0 +1,254 @@
+{
+    "top_picks": [
+        {
+            "campeon": "Akali",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Alistar",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Ambessa",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Annie",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Ashe",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Caitlyn",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Corki",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Galio",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Hwei",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Jarvan IV",
+            "cantidad": 1
+        }
+    ],
+    "top_bans": [
+        {
+            "campeon": "Azir",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Bard",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Kai'Sa",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Aurora",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Braum",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Lulu",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Poppy",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Rell",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Yunara",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Caitlyn",
+            "cantidad": 1
+        }
+    ],
+    "top_kills": [
+        {
+            "jugador": "Gumayusi",
+            "kills": 10
+        },
+        {
+            "jugador": "Oner",
+            "kills": 10
+        },
+        {
+            "jugador": "Faker",
+            "kills": 8
+        },
+        {
+            "jugador": "Rookie",
+            "kills": 8
+        },
+        {
+            "jugador": "GALA",
+            "kills": 7
+        },
+        {
+            "jugador": "Wei",
+            "kills": 6
+        },
+        {
+            "jugador": "Doran",
+            "kills": 4
+        },
+        {
+            "jugador": "TheShy",
+            "kills": 4
+        },
+        {
+            "jugador": "Keria",
+            "kills": 3
+        },
+        {
+            "jugador": "Meiko",
+            "kills": 1
+        }
+    ],
+    "top_victorias_cortas": [
+        {
+            "equipo": "T1",
+            "tiempo": "27:03"
+        },
+        {
+            "equipo": "Invictus Gaming",
+            "tiempo": "37:39"
+        },
+        {
+            "equipo": "100 Thieves",
+            "tiempo": "60:00"
+        },
+        {
+            "equipo": "Anyone's Legend",
+            "tiempo": "60:00"
+        },
+        {
+            "equipo": "Bilibili Gaming",
+            "tiempo": "60:00"
+        },
+        {
+            "equipo": "CBTC Flying Oyster",
+            "tiempo": "60:00"
+        },
+        {
+            "equipo": "FlyQuest",
+            "tiempo": "60:00"
+        },
+        {
+            "equipo": "Fnatic",
+            "tiempo": "60:00"
+        },
+        {
+            "equipo": "G2 Esports",
+            "tiempo": "60:00"
+        },
+        {
+            "equipo": "Gen.G Esports",
+            "tiempo": "60:00"
+        }
+    ],
+    "top_kda": [
+        {
+            "jugador": "Gumayusi",
+            "kda": 5.8
+        },
+        {
+            "jugador": "Faker",
+            "kda": 5.5
+        },
+        {
+            "jugador": "Oner",
+            "kda": 5.42
+        },
+        {
+            "jugador": "Keria",
+            "kda": 4.85
+        },
+        {
+            "jugador": "Rookie",
+            "kda": 4.36
+        },
+        {
+            "jugador": "Doran",
+            "kda": 4.15
+        },
+        {
+            "jugador": "GALA",
+            "kda": 2.92
+        },
+        {
+            "jugador": "Wei",
+            "kda": 2.28
+        },
+        {
+            "jugador": "Meiko",
+            "kda": 1.74
+        },
+        {
+            "jugador": "TheShy",
+            "kda": 1.1
+        }
+    ],
+    "top_winrate": [
+        {
+            "campeon": "Aatrox",
+            "winrate": 0
+        },
+        {
+            "campeon": "Ahri",
+            "winrate": 0
+        },
+        {
+            "campeon": "Akali",
+            "winrate": 0
+        },
+        {
+            "campeon": "Akshan",
+            "winrate": 0
+        },
+        {
+            "campeon": "Alistar",
+            "winrate": 0
+        },
+        {
+            "campeon": "Ambessa",
+            "winrate": 0
+        },
+        {
+            "campeon": "Amumu",
+            "winrate": 0
+        },
+        {
+            "campeon": "Anivia",
+            "winrate": 0
+        },
+        {
+            "campeon": "Annie",
+            "winrate": 0
+        },
+        {
+            "campeon": "Aphelios",
+            "winrate": 0
+        }
+    ]
+}
