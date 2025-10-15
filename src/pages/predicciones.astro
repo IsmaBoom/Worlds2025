@@ -1,0 +1,123 @@
+---
+import Layout from "../Layouts/Layout.astro";
+import predicciones from "../data/predicciones.json";
+
+interface Prediccion {
+  persona: string;
+  campeon: string;
+  subcampeon: string;
+  mvp: string;
+}
+---
+
+<Layout title="Worlds 2025 - Predicciones">
+  <div class="container">
+    <h1>🔮 Predicciones del Pick'em 🔮</h1>
+    <p class="subtitle">
+      Descubre qué equipo ganará según nuestros participantes.
+    </p>
+
+    <div class="predictions-grid">
+      {
+        predicciones.map((pred: Prediccion) => (
+          <div class="prediction-card">
+            <h2 class="person-name">{pred.persona}</h2>
+            <div class="prediction-item">
+              <span class="label">🏆 Campeón:</span>
+              <span class="value champion">{pred.campeon}</span>
+            </div>
+            <div class="prediction-item">
+              <span class="label">🥈 Subcampeón:</span>
+              <span class="value">{pred.subcampeon}</span>
+            </div>
+            <div class="prediction-item">
+              <span class="label">⭐ MVP del Torneo:</span>
+              <span class="value mvp">{pred.mvp}</span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #c89b3c;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #a0a0a0;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+
+    .predictions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .prediction-card {
+      background: rgba(26, 31, 58, 0.8);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      border: 1px solid rgba(200, 155, 60, 0.2);
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .prediction-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(200, 155, 60, 0.2);
+    }
+
+    .person-name {
+      color: #fff;
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 0 0 0.5rem 0;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid #c89b3c;
+    }
+
+    .prediction-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+    }
+
+    .label {
+      color: #a0a0a0;
+    }
+
+    .value {
+      color: #e0e0e0;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .value.champion {
+      color: #ffd700;
+      font-size: 1.2rem;
+    }
+
+    .value.mvp {
+      color: #ff8c00;
+    }
+  </style>
+</Layout>

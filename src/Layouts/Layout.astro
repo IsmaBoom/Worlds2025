@@ -75,14 +75,21 @@ const currentPath = Astro.url.pathname; // Detecta la ruta actual
       <div class="header-content">
         <h1>Worlds 2025</h1>
         <div class="game-mode-nav">
-          <a href="/" class={`nav-link ${currentPath === "/" ? "active" : ""}`}
-            >Clasificación</a
-          >
+          <a href="/" class={`nav-link ${currentPath === "/" ? "active" : ""}`}>
+            Clasificación
+          </a>
           <a
             href="/stats"
             class={`nav-link ${currentPath === "/stats" ? "active" : ""}`}
-            >Estadísticas</a
           >
+            Estadísticas
+          </a>
+          <a
+            href="/predicciones"
+            class={`nav-link ${currentPath === "/predicciones" ? "active" : ""}`}
+          >
+            Predicciones
+          </a>
         </div>
       </div>
     </div>
