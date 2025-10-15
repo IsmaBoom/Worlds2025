@@ -1,0 +1,94 @@
+---
+const { title } = Astro.props;
+const currentPath = Astro.url.pathname; // Detecta la ruta actual
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="icon" href="/favicon.svg" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #0a0e27;
+        color: #e0e0e0;
+      }
+
+      .main-header {
+        background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+
+      .header-content h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: #c89b3c;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #a0a0a0;
+        margin-bottom: 1rem;
+      }
+
+      .game-mode-nav {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: #c89b3c;
+        padding: 0.3rem 0.8rem;
+        border-radius: 6px;
+        transition: 0.3s;
+        border: 1px solid transparent;
+        font-weight: 600;
+      }
+
+      .nav-link:hover {
+        background: #c89b3c;
+        color: #0a0e27;
+      }
+
+      .nav-link.active {
+        background: #c89b3c;
+        color: #0a0e27;
+        border-color: #c89b3c;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-header">
+      <div class="header-content">
+        <h1>Worlds 2025</h1>
+        <div class="game-mode-nav">
+          <a href="/" class={`nav-link ${currentPath === "/" ? "active" : ""}`}
+            >Clasificación</a
+          >
+          <a
+            href="/stats"
+            class={`nav-link ${currentPath === "/stats" ? "active" : ""}`}
+            >Estadísticas</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

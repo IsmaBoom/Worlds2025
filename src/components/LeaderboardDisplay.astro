@@ -1,0 +1,61 @@
+---
+const players = [
+  { name: "Adrián", points: 120 },
+  { name: "Lucía", points: 95 },
+  { name: "Carlos", points: 80 },
+  { name: "Marta", points: 60 },
+];
+---
+
+<section class="leaderboard">
+  <h1>Clasificación Mundial</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Posición</th>
+        <th>Nombre</th>
+        <th>Puntos</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        players
+          .sort((a, b) => b.points - a.points)
+          .map((player, i) => (
+            <tr>
+              <td>{i + 1}</td>
+              <td>{player.name}</td>
+              <td>{player.points}</td>
+            </tr>
+          ))
+      }
+    </tbody>
+  </table>
+</section>
+
+<style>
+  .leaderboard {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 1rem;
+    background: #1e1e1e;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    padding: 0.5rem 1rem;
+    text-align: left;
+  }
+  th {
+    border-bottom: 2px solid #555;
+  }
+  tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+  }
+</style>

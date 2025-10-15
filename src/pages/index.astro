@@ -1,17 +1,10 @@
 ---
-import Stats from "C:/Users/ismae/OneDrive/Documentos/Entretenimiento/WorldsAstro/Aqui/src/pages/worldstats.astro";
+import Layout from "../Layouts/Layout.astro";
+import LeaderboardDisplay from "../components/LeaderboardDisplay.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<Stats>
-		<Stats />
-	</body>
-</html>
+<Layout title="SoloQChallenge">
+  <main>
+    <LeaderboardDisplay client:load />
+  </main>
+</Layout>
