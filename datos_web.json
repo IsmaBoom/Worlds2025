@@ -1,86 +1,86 @@
 {
     "top_picks": [
         {
-            "campeon": "Akali",
-            "cantidad": 1
-        },
-        {
             "campeon": "Alistar",
-            "cantidad": 1
+            "cantidad": 6
         },
         {
             "campeon": "Ambessa",
-            "cantidad": 1
-        },
-        {
-            "campeon": "Annie",
-            "cantidad": 1
-        },
-        {
-            "campeon": "Ashe",
-            "cantidad": 1
-        },
-        {
-            "campeon": "Caitlyn",
-            "cantidad": 1
+            "cantidad": 6
         },
         {
             "campeon": "Corki",
-            "cantidad": 1
+            "cantidad": 6
         },
         {
-            "campeon": "Galio",
-            "cantidad": 1
+            "campeon": "Neeko",
+            "cantidad": 6
         },
         {
-            "campeon": "Hwei",
-            "cantidad": 1
+            "campeon": "Qiyana",
+            "cantidad": 6
         },
         {
-            "campeon": "Jarvan IV",
-            "cantidad": 1
+            "campeon": "Rek'Sai",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Ryze",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Sivir",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Taliyah",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Trundle",
+            "cantidad": 6
         }
     ],
     "top_bans": [
         {
             "campeon": "Azir",
-            "cantidad": 4
+            "cantidad": 21
         },
         {
             "campeon": "Bard",
-            "cantidad": 4
+            "cantidad": 21
         },
         {
             "campeon": "Kai'Sa",
-            "cantidad": 4
+            "cantidad": 21
         },
         {
             "campeon": "Aurora",
-            "cantidad": 3
+            "cantidad": 15
         },
         {
             "campeon": "Braum",
-            "cantidad": 3
-        },
-        {
-            "campeon": "Lulu",
-            "cantidad": 2
-        },
-        {
-            "campeon": "Poppy",
-            "cantidad": 2
-        },
-        {
-            "campeon": "Rell",
-            "cantidad": 2
+            "cantidad": 15
         },
         {
             "campeon": "Yunara",
-            "cantidad": 2
+            "cantidad": 11
+        },
+        {
+            "campeon": "Lulu",
+            "cantidad": 10
+        },
+        {
+            "campeon": "Poppy",
+            "cantidad": 10
+        },
+        {
+            "campeon": "Rell",
+            "cantidad": 10
         },
         {
             "campeon": "Caitlyn",
-            "cantidad": 1
+            "cantidad": 6
         }
     ],
     "top_kills": [
@@ -170,85 +170,85 @@
     "top_kda": [
         {
             "jugador": "Gumayusi",
-            "kda": 5.8
+            "kda": 5.92
         },
         {
             "jugador": "Faker",
-            "kda": 5.5
+            "kda": 5.57
         },
         {
             "jugador": "Oner",
-            "kda": 5.42
+            "kda": 5.44
         },
         {
             "jugador": "Keria",
-            "kda": 4.85
+            "kda": 4.88
         },
         {
             "jugador": "Rookie",
-            "kda": 4.36
+            "kda": 4.33
         },
         {
             "jugador": "Doran",
-            "kda": 4.15
+            "kda": 4.1
         },
         {
             "jugador": "GALA",
-            "kda": 2.92
+            "kda": 2.95
         },
         {
             "jugador": "Wei",
-            "kda": 2.28
+            "kda": 2.29
         },
         {
             "jugador": "Meiko",
-            "kda": 1.74
+            "kda": 1.71
         },
         {
             "jugador": "TheShy",
-            "kda": 1.1
+            "kda": 1.06
         }
     ],
     "top_winrate": [
         {
-            "campeon": "Aatrox",
-            "winrate": 0
-        },
-        {
-            "campeon": "Ahri",
-            "winrate": 0
-        },
-        {
-            "campeon": "Akali",
-            "winrate": 0
-        },
-        {
-            "campeon": "Akshan",
-            "winrate": 0
-        },
-        {
             "campeon": "Alistar",
-            "winrate": 0
+            "winrate": 100.0
         },
         {
             "campeon": "Ambessa",
-            "winrate": 0
-        },
-        {
-            "campeon": "Amumu",
-            "winrate": 0
-        },
-        {
-            "campeon": "Anivia",
-            "winrate": 0
+            "winrate": 100.0
         },
         {
             "campeon": "Annie",
-            "winrate": 0
+            "winrate": 100.0
         },
         {
-            "campeon": "Aphelios",
-            "winrate": 0
+            "campeon": "Ashe",
+            "winrate": 100.0
+        },
+        {
+            "campeon": "Caitlyn",
+            "winrate": 100.0
+        },
+        {
+            "campeon": "Galio",
+            "winrate": 100.0
+        },
+        {
+            "campeon": "Karma",
+            "winrate": 100.0
+        },
+        {
+            "campeon": "LeBlanc",
+            "winrate": 100.0
+        },
+        {
+            "campeon": "Lulu",
+            "winrate": 100.0
+        },
+        {
+            "campeon": "Nocturne",
+            "winrate": 100.0
         }
     ]
 }

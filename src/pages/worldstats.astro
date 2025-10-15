@@ -2,13 +2,40 @@
 import fs from 'fs';
 import path from 'path';
 
+interface CampeonStat {
+  campeon: string;
+  cantidad: number;
+  winrate?: number;
+}
+
+interface JugadorStat {
+  jugador: string;
+  kills?: number;
+  kda?: number;
+}
+
+interface VictoriaStat {
+  equipo: string;
+  tiempo: string;
+}
+
+interface DatosWeb {
+  top_picks: CampeonStat[];
+  top_bans: CampeonStat[];
+  top_kills: JugadorStat[];
+  top_victorias_cortas: VictoriaStat[];
+  top_kda: JugadorStat[];
+  top_winrate: CampeonStat[];
+}
+
 // Leer el archivo JSON con los datos
 const datosPath = 'C:/Users/ismae/OneDrive/Documentos/Entretenimiento/WorldsAstro/Aqui/datos_web.json';
-let datos;
+
+let datos: DatosWeb;
 
 try {
   const fileContent = fs.readFileSync(datosPath, 'utf-8');
-  datos = JSON.parse(fileContent);
+  datos = JSON.parse(fileContent) as DatosWeb;
 } catch (error) {
   console.error('Error al leer los datos:', error);
   datos = {

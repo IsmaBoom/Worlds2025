@@ -214,7 +214,7 @@ def kda(t,jugadores_partida,campeones_partida):
                 if data:
                     kda = data.get_text(strip=True)
                     kdas.append(kda)
-    print(kdas)
+    #print(kdas)
     c = 0
     #print(kda_info)
     for info in kdas:
@@ -329,8 +329,10 @@ def winrate():
     clave: (victorias_L[clave] / picks_L[clave]) if picks_L[clave] > 4 else 0
     for clave in picks_L
 }
+    print(winrate)
+    print("******************************************************")
     return winrate
-
+    
 def exportar_datos_web():
     """Exporta todos los datos en formato JSON para la web"""
     
@@ -443,12 +445,12 @@ def main(links, link):
                     jugador = "WeiWei"  
                 jugadores_partida.append(jugador)
                 campeones_partida.append(personaje)
-                print(jugador, personaje)
-            print(ganador)
+                #print(jugador, personaje)
+            #print(ganador)
             picks_bans(t,equipos_partida,ganador)
             duracion_partida(ganador,duracion)
-            print(jugadores_partida)
-            print(campeones_partida)
+            #print(jugadores_partida)
+            #print(campeones_partida)
             kda(t,jugadores_partida,campeones_partida)
             #partida_mas_larga(duracion)
             jugadores_distintos_2(jugadores_partida,campeones_partida)
@@ -488,10 +490,10 @@ def main(links, link):
                 jugador = "WeiWei"
             jugadores_partida.append(jugador)
             campeones_partida.append(personaje)
-            print(jugador, personaje)
+            #print(jugador, personaje)
         picks_bans(soup,equipos_partida,ganador)
         duracion_partida(ganador,duracion)
-        print(jugadores_partida)
+        #print(jugadores_partida)
         kda(soup,jugadores_partida,campeones_partida)
         partida_mas_larga(duracion)
         jugadores_distintos_2(jugadores_partida,campeones_partida)
