@@ -16,55 +16,63 @@ const sortedPlayers = players.sort((a, b) => b.points - a.points);
   </div>
 
   <div class="podium-container">
-    {sortedPlayers.length > 1 && (
-      <div class="podium-item second-place">
-        <div class="rank-icon">🥈</div>
-        <div class="player-info">
-          <div class="position">2º</div>
-          <div class="player-name">{sortedPlayers[1].name}</div>
-          <div class="points">{sortedPlayers[1].points} pts</div>
+    {
+      sortedPlayers.length > 1 && (
+        <div class="podium-item second-place">
+          <div class="rank-icon">🥈</div>
+          <div class="player-info">
+            <div class="position">2º</div>
+            <div class="player-name">{sortedPlayers[1].name}</div>
+            <div class="points">{sortedPlayers[1].points} pts</div>
+          </div>
         </div>
-      </div>
-    )}
-    
-    {sortedPlayers.length > 0 && (
-      <div class="podium-item first-place">
-        <div class="crown">👑</div>
-        <div class="rank-icon">🥇</div>
-        <div class="player-info">
-          <div class="position">1º</div>
-          <div class="player-name champion">{sortedPlayers[0].name}</div>
-          <div class="points">{sortedPlayers[0].points} pts</div>
+      )
+    }
+
+    {
+      sortedPlayers.length > 0 && (
+        <div class="podium-item first-place">
+          <div class="crown">👑</div>
+          <div class="rank-icon">🥇</div>
+          <div class="player-info">
+            <div class="position">1º</div>
+            <div class="player-name champion">{sortedPlayers[0].name}</div>
+            <div class="points">{sortedPlayers[0].points} pts</div>
+          </div>
         </div>
-      </div>
-    )}
-    
-    {sortedPlayers.length > 2 && (
-      <div class="podium-item third-place">
-        <div class="rank-icon">🥉</div>
-        <div class="player-info">
-          <div class="position">3º</div>
-          <div class="player-name">{sortedPlayers[2].name}</div>
-          <div class="points">{sortedPlayers[2].points} pts</div>
+      )
+    }
+
+    {
+      sortedPlayers.length > 2 && (
+        <div class="podium-item third-place">
+          <div class="rank-icon">🥉</div>
+          <div class="player-info">
+            <div class="position">3º</div>
+            <div class="player-name">{sortedPlayers[2].name}</div>
+            <div class="points">{sortedPlayers[2].points} pts</div>
+          </div>
         </div>
-      </div>
-    )}
+      )
+    }
   </div>
 
-  {sortedPlayers.length > 3 && (
-    <div class="ranking-list">
-      <h2 class="list-title">📊 Clasificación Completa</h2>
-      {sortedPlayers.slice(3).map((player, i) => (
-        <div class="ranking-item">
-          <div class="rank-number">{i + 4}</div>
-          <div class="player-details">
-            <span class="name">{player.name}</span>
+  {
+    sortedPlayers.length > 3 && (
+      <div class="ranking-list">
+        <h2 class="list-title">📊 Clasificación Completa</h2>
+        {sortedPlayers.slice(3).map((player, i) => (
+          <div class="ranking-item">
+            <div class="rank-number">{i + 4}</div>
+            <div class="player-details">
+              <span class="name">{player.name}</span>
+            </div>
+            <div class="player-points">{player.points} pts</div>
           </div>
-          <div class="player-points">{player.points} pts</div>
-        </div>
-      ))}
-    </div>
-  )}
+        ))}
+      </div>
+    )
+  }
 </section>
 
 <style>
@@ -103,7 +111,11 @@ const sortedPlayers = players.sort((a, b) => b.points - a.points);
 
   .podium-item {
     position: relative;
-    background: linear-gradient(135deg, rgba(26, 31, 58, 0.9), rgba(40, 30, 70, 0.9));
+    background: linear-gradient(
+      135deg,
+      rgba(26, 31, 58, 0.9),
+      rgba(40, 30, 70, 0.9)
+    );
     border-radius: 16px;
     padding: 2rem 1.5rem;
     min-width: 200px;
@@ -149,7 +161,8 @@ const sortedPlayers = players.sort((a, b) => b.points - a.points);
   }
 
   @keyframes float {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateX(-50%) translateY(0);
     }
     50% {

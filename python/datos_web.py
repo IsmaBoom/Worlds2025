@@ -367,27 +367,27 @@ def exportar_datos_web():
     # Top Picks
     with open(os.path.join(BASE_PATH, "campeones_picks.txt"), "r", encoding="utf8") as f:
         picks = json.load(f)
-    top_picks = sorted(picks.items(), key=lambda x: x[1], reverse=True)[:10]
+    top_picks = sorted(picks.items(), key=lambda x: x[1], reverse=True)
     
     # Top Bans
     with open(os.path.join(BASE_PATH, "campeones_bans.txt"), "r", encoding="utf8") as f:
         bans = json.load(f)
-    top_bans = sorted(bans.items(), key=lambda x: x[1], reverse=True)[:10]
+    top_bans = sorted(bans.items(), key=lambda x: x[1], reverse=True)
     
      # Top Kills Campeones
     with open(os.path.join(BASE_PATH, "campeones_kills.txt"), "r", encoding="utf8") as f:
         kills = json.load(f)
-    top_kills_c = sorted(bans.items(), key=lambda x: x[1], reverse=True)[:10]
+    top_kills_c = sorted(kills.items(), key=lambda x: x[1], reverse=True)
 
     # Top Kills
     with open(os.path.join(BASE_PATH, "jugadores_asesinatos.txt"), "r", encoding="utf8") as f:
         kills_record = json.load(f)
-    top_kills_record = sorted(kills_record.items(), key=lambda x: x[1], reverse=True)[:10]
+    top_kills_record = sorted(kills_record.items(), key=lambda x: x[1], reverse=True)
     
     # Victorias más cortas
     with open(os.path.join(BASE_PATH, "equipos_corta.txt"), "r", encoding="utf8") as f:
         victorias_cortas = json.load(f)
-    top_victorias_cortas = sorted(victorias_cortas.items(), key=lambda x: x[1])[:10]
+    top_victorias_cortas = sorted(victorias_cortas.items(), key=lambda x: x[1])
     
     # KDA
     with open(os.path.join(BASE_PATH, "jugadores_kills.txt"), "r", encoding="utf8") as f:
@@ -403,15 +403,15 @@ def exportar_datos_web():
             kda[player] = (kills[player] + assists[player]) / deaths[player]
         else:
             kda[player] = kills[player] + assists[player]
-    top_kda = sorted(kda.items(), key=lambda x: x[1], reverse=True)[:10]
+    top_kda = sorted(kda.items(), key=lambda x: x[1], reverse=True)
     
     # Winrate
     with open(os.path.join(BASE_PATH, "campeones_picks.txt"), "r", encoding="utf8") as f:
         picks = json.load(f)
     win = winrate()
-    top_winrate = sorted(win.items(), key=lambda x: x[1], reverse=True)[:10]
+    top_winrate = sorted(win.items(), key=lambda x: x[1], reverse=True)
     win_filtrado = {c: w for c, w in win.items() if picks.get(c, 0) >= 5}
-    low_winrate = sorted(win_filtrado.items(), key=lambda x: x[1], reverse=True)[-10:]
+    low_winrate = sorted(win_filtrado.items(), key=lambda x: x[1], reverse=False)
     #low_winrate = sorted(win.items(), key=lambda x: x[1], reverse=True)[-10:]
 
     #Camepones distintos
@@ -434,11 +434,11 @@ def exportar_datos_web():
 
     with open(os.path.join(BASE_PATH, "primera_sangre.txt"), "r", encoding="utf8") as f:
         sangre = json.load(f)
-    top_sangre = sorted(sangre.items(), key=lambda x: x[1], reverse=True)[:10]
+    top_sangre = sorted(sangre.items(), key=lambda x: x[1], reverse=True)
 
     with open(os.path.join(BASE_PATH, "equipos_kills.txt"), "r", encoding="utf8") as f:
         e_kills = json.load(f)
-    top_kills_e = sorted(e_kills.items(), key=lambda x: x[1], reverse=True)[:10]
+    top_kills_e = sorted(e_kills.items(), key=lambda x: x[1], reverse=True)
  
     with open(os.path.join(BASE_PATH, "equipos_distintos.txt"), "r", encoding="utf8") as f:
         e_distintos = json.load(f)

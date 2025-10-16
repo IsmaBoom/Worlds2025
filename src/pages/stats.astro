@@ -91,18 +91,95 @@ try {
 <Layout title="Worlds 2025 - Estadísticas">
   <div class="container">
     <h1>⚔️ Worlds 2025 Statistics ⚔️</h1>
-    <p class="subtitle">Estadísticas en tiempo real del Campeonato Mundial</p>
+    <p class="subtitle">
+      Selecciona una categoría para ver las estadísticas completas
+    </p>
 
-    <div class="grid">
-      <div class="card">
-        <h2 class="card-title">🏆 Top 10 Picks</h2>
-        <table>
+    <!-- Selector de Estadísticas -->
+    <div id="selector-view" class="selector-container">
+      <button class="stat-card" onclick="mostrarEstadistica('picks')">
+        <span class="card-icon">🏆</span>
+        <span class="card-nombre">Top Picks</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('bans')">
+        <span class="card-icon">🚫</span>
+        <span class="card-nombre">Top Bans</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('kills-record')">
+        <span class="card-icon">💀</span>
+        <span class="card-nombre">Récord de Kills</span>
+      </button>
+      <button
+        class="stat-card"
+        onclick="mostrarEstadistica('victorias-cortas')"
+      >
+        <span class="card-icon">⚡</span>
+        <span class="card-nombre">Victorias Rápidas</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('kda')">
+        <span class="card-icon">📊</span>
+        <span class="card-nombre">Top KDA</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('winrate')">
+        <span class="card-icon">📈</span>
+        <span class="card-nombre">Mayor Winrate</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('low-winrate')">
+        <span class="card-icon">📉</span>
+        <span class="card-nombre">Menor Winrate</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('kills-campeon')">
+        <span class="card-icon">🗡️</span>
+        <span class="card-nombre">Kills por Campeón</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('primera-sangre')">
+        <span class="card-icon">🩸</span>
+        <span class="card-nombre">Primera Sangre</span>
+      </button>
+      <button
+        class="stat-card"
+        onclick="mostrarEstadistica('equipos-distintos')"
+      >
+        <span class="card-icon">🎭</span>
+        <span class="card-nombre">Campeones por Equipo</span>
+      </button>
+      <button
+        class="stat-card"
+        onclick="mostrarEstadistica('jugadores-distintos')"
+      >
+        <span class="card-icon">🎮</span>
+        <span class="card-nombre">Campeones por Jugador</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('kills-equipo')">
+        <span class="card-icon">⚔️</span>
+        <span class="card-nombre">Kills por Equipo</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('ancianos')">
+        <span class="card-icon">🐉</span>
+        <span class="card-nombre">Dragones Ancianos</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('barones')">
+        <span class="card-icon">👑</span>
+        <span class="card-nombre">Barones</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('pentakills')">
+        <span class="card-icon">🌟</span>
+        <span class="card-nombre">Pentakills</span>
+      </button>
+      <button class="stat-card" onclick="mostrarEstadistica('generales')">
+        <span class="card-icon">📊</span>
+        <span class="card-nombre">Estadísticas Generales</span>
+      </button>
+    </div>
+
+    <!-- Top Picks -->
+    <div id="stat-picks" class="stat-view" style="display: none;">
+      <button class="btn-volver" onclick="volverSelector()">← Volver</button>
+      <div class="stat-section">
+        <h2 class="stat-title">🏆 Top Picks Completo</h2>
+        <table class="full-table">
           <thead>
-            <tr>
-              <th>Posición</th>
-              <th>Campeón</th>
-              <th>Picks</th>
-            </tr>
+            <tr><th>Pos</th><th>Campeón</th><th>Picks</th></tr>
           </thead>
           <tbody>
             {
@@ -125,16 +202,16 @@ try {
           </tbody>
         </table>
       </div>
+    </div>
 
-      <div class="card">
-        <h2 class="card-title">🚫 Top 10 Bans</h2>
-        <table>
+    <!-- Top Bans -->
+    <div id="stat-bans" class="stat-view" style="display: none;">
+      <button class="btn-volver" onclick="volverSelector()">← Volver</button>
+      <div class="stat-section">
+        <h2 class="stat-title">🚫 Top Bans Completo</h2>
+        <table class="full-table">
           <thead>
-            <tr>
-              <th>Posición</th>
-              <th>Campeón</th>
-              <th>Bans</th>
-            </tr>
+            <tr><th>Pos</th><th>Campeón</th><th>Bans</th></tr>
           </thead>
           <tbody>
             {
@@ -157,16 +234,16 @@ try {
           </tbody>
         </table>
       </div>
+    </div>
 
-      <div class="card">
-        <h2 class="card-title">💀 Récord de Kills</h2>
-        <table>
+    <!-- Récord de Kills -->
+    <div id="stat-kills-record" class="stat-view" style="display: none;">
+      <button class="btn-volver" onclick="volverSelector()">← Volver</button>
+      <div class="stat-section">
+        <h2 class="stat-title">💀 Récord de Kills Completo</h2>
+        <table class="full-table">
           <thead>
-            <tr>
-              <th>Posición</th>
-              <th>Jugador</th>
-              <th>Kills</th>
-            </tr>
+            <tr><th>Pos</th><th>Jugador</th><th>Kills</th></tr>
           </thead>
           <tbody>
             {
@@ -189,16 +266,16 @@ try {
           </tbody>
         </table>
       </div>
+    </div>
 
-      <div class="card">
-        <h2 class="card-title">⚡ Victorias Más Rápidas</h2>
-        <table>
+    <!-- Victorias Rápidas -->
+    <div id="stat-victorias-cortas" class="stat-view" style="display: none;">
+      <button class="btn-volver" onclick="volverSelector()">← Volver</button>
+      <div class="stat-section">
+        <h2 class="stat-title">⚡ Victorias Más Rápidas</h2>
+        <table class="full-table">
           <thead>
-            <tr>
-              <th>Posición</th>
-              <th>Equipo</th>
-              <th>Tiempo</th>
-            </tr>
+            <tr><th>Pos</th><th>Equipo</th><th>Tiempo</th></tr>
           </thead>
           <tbody>
             {
@@ -221,16 +298,16 @@ try {
           </tbody>
         </table>
       </div>
+    </div>
 
-      <div class="card">
-        <h2 class="card-title">📊 Top 10 KDA</h2>
-        <table>
+    <!-- Top KDA -->
+    <div id="stat-kda" class="stat-view" style="display: none;">
+      <button class="btn-volver" onclick="volverSelector()">← Volver</button>
+      <div class="stat-section">
+        <h2 class="stat-title">📊 Top KDA Completo</h2>
+        <table class="full-table">
           <thead>
-            <tr>
-              <th>Posición</th>
-              <th>Jugador</th>
-              <th>KDA</th>
-            </tr>
+            <tr><th>Pos</th><th>Jugador</th><th>KDA</th></tr>
           </thead>
           <tbody>
             {
@@ -253,16 +330,16 @@ try {
           </tbody>
         </table>
       </div>
+    </div>
 
-      <div class="card">
-        <h2 class="card-title">📈 Top 10 Winrate</h2>
-        <table>
+    <!-- Mayor Winrate -->
+    <div id="stat-winrate" class="stat-view" style="display: none;">
+      <button class="btn-volver" onclick="volverSelector()">← Volver</button>
+      <div class="stat-section">
+        <h2 class="stat-title">📈 Mayor Winrate Completo</h2>
+        <table class="full-table">
           <thead>
-            <tr>
-              <th>Posición</th>
-              <th>Campeón</th>
-              <th>Winrate</th>
-            </tr>
+            <tr><th>Pos</th><th>Campeón</th><th>Winrate</th></tr>
           </thead>
           <tbody>
             {
@@ -285,17 +362,25 @@ try {
           </tbody>
         </table>
       </div>
+    </div>
 
-      {
-        datos.low_winrate && datos.low_winrate.length > 0 && (
-          <div class="card">
-            <h2 class="card-title">📉 Top 10 Peor Winrate</h2>
-            <table>
+    <!-- Menor Winrate -->
+    {
+      datos.low_winrate && datos.low_winrate.length > 0 && (
+        <div id="stat-low-winrate" class="stat-view" style="display: none;">
+          <button class="btn-volver" onclick="volverSelector()">
+            ← Volver
+          </button>
+          <div class="stat-section">
+            <h2 class="stat-title">📉 Menor Winrate Completo</h2>
+            <table class="full-table">
               <thead>
                 <tr>
-                  <th>Posición</th>
-                  <th>Campeón</th>
-                  <th>Winrate</th>
+                  <>
+                    <th>Pos</th>
+                    <th>Campeón</th>
+                    <th>Winrate</th>
+                  </>
                 </tr>
               </thead>
               <tbody>
@@ -313,19 +398,27 @@ try {
               </tbody>
             </table>
           </div>
-        )
-      }
+        </div>
+      )
+    }
 
-      {
-        datos.top_kills_c && datos.top_kills_c.length > 0 && (
-          <div class="card">
-            <h2 class="card-title">🗡️ Top 10 Kills por Campeón</h2>
-            <table>
+    <!-- Kills por Campeón -->
+    {
+      datos.top_kills_c && datos.top_kills_c.length > 0 && (
+        <div id="stat-kills-campeon" class="stat-view" style="display: none;">
+          <button class="btn-volver" onclick="volverSelector()">
+            ← Volver
+          </button>
+          <div class="stat-section">
+            <h2 class="stat-title">🗡️ Kills por Campeón Completo</h2>
+            <table class="full-table">
               <thead>
                 <tr>
-                  <th>Posición</th>
-                  <th>Campeón</th>
-                  <th>Kills</th>
+                  <>
+                    <th>Pos</th>
+                    <th>Campeón</th>
+                    <th>Kills</th>
+                  </>
                 </tr>
               </thead>
               <tbody>
@@ -347,19 +440,27 @@ try {
               </tbody>
             </table>
           </div>
-        )
-      }
+        </div>
+      )
+    }
 
-      {
-        datos.top_sangre && datos.top_sangre.length > 0 && (
-          <div class="card">
-            <h2 class="card-title">🩸 Top 10 Primera Sangre</h2>
-            <table>
+    <!-- Primera Sangre -->
+    {
+      datos.top_sangre && datos.top_sangre.length > 0 && (
+        <div id="stat-primera-sangre" class="stat-view" style="display: none;">
+          <button class="btn-volver" onclick="volverSelector()">
+            ← Volver
+          </button>
+          <div class="stat-section">
+            <h2 class="stat-title">🩸 Primera Sangre Completo</h2>
+            <table class="full-table">
               <thead>
                 <tr>
-                  <th>Posición</th>
-                  <th>Jugador</th>
-                  <th>Cantidad</th>
+                  <>
+                    <th>Pos</th>
+                    <th>Jugador</th>
+                    <th>Cantidad</th>
+                  </>
                 </tr>
               </thead>
               <tbody>
@@ -381,95 +482,120 @@ try {
               </tbody>
             </table>
           </div>
-        )
-      }
+        </div>
+      )
+    }
 
-      {
-        datos.top_equipos_distintos &&
-          datos.top_equipos_distintos.length > 0 && (
-            <div class="card">
-              <h2 class="card-title">🎭 Equipos con Más Campeones Distintos</h2>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Posición</th>
-                    <th>Equipo</th>
-                    <th>Campeones</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {datos.top_equipos_distintos
-                    .slice(0, 10)
-                    .map((item, index) => (
-                      <tr>
-                        <td>
-                          <span
-                            class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                          >
-                            {index + 1}
-                          </span>
-                        </td>
-                        <td>{item.equipo}</td>
-                        <td>
-                          <span class="value">{item.cantidad}</span>
-                        </td>
-                      </tr>
-                    ))}
-                </tbody>
-              </table>
-            </div>
-          )
-      }
-
-      {
-        datos.top_jugadores_distintos &&
-          datos.top_jugadores_distintos.length > 0 && (
-            <div class="card">
-              <h2 class="card-title">
-                🎮 Jugadores con Más Campeones Distintos
-              </h2>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Posición</th>
-                    <th>Jugador</th>
-                    <th>Campeones</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {datos.top_jugadores_distintos
-                    .slice(0, 10)
-                    .map((item, index) => (
-                      <tr>
-                        <td>
-                          <span
-                            class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                          >
-                            {index + 1}
-                          </span>
-                        </td>
-                        <td>{item.jugador}</td>
-                        <td>
-                          <span class="value">{item.cantidad}</span>
-                        </td>
-                      </tr>
-                    ))}
-                </tbody>
-              </table>
-            </div>
-          )
-      }
-
-      {
-        datos.top_kills_e && datos.top_kills_e.length > 0 && (
-          <div class="card">
-            <h2 class="card-title">⚔️ Top 10 Kills por Equipo</h2>
-            <table>
+    <!-- Equipos Distintos -->
+    {
+      datos.top_equipos_distintos && datos.top_equipos_distintos.length > 0 && (
+        <div
+          id="stat-equipos-distintos"
+          class="stat-view"
+          style="display: none;"
+        >
+          <button class="btn-volver" onclick="volverSelector()">
+            ← Volver
+          </button>
+          <div class="stat-section">
+            <h2 class="stat-title">🎭 Campeones Distintos por Equipo</h2>
+            <table class="full-table">
               <thead>
                 <tr>
-                  <th>Posición</th>
-                  <th>Equipo</th>
-                  <th>Kills</th>
+                  <>
+                    <th>Pos</th>
+                    <th>Equipo</th>
+                    <th>Campeones</th>
+                  </>
+                </tr>
+              </thead>
+              <tbody>
+                {datos.top_equipos_distintos.map((item, index) => (
+                  <tr>
+                    <td>
+                      <span
+                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
+                      >
+                        {index + 1}
+                      </span>
+                    </td>
+                    <td>{item.equipo}</td>
+                    <td>
+                      <span class="value">{item.cantidad}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )
+    }
+
+    <!-- Jugadores Distintos -->
+    {
+      datos.top_jugadores_distintos &&
+        datos.top_jugadores_distintos.length > 0 && (
+          <div
+            id="stat-jugadores-distintos"
+            class="stat-view"
+            style="display: none;"
+          >
+            <button class="btn-volver" onclick="volverSelector()">
+              ← Volver
+            </button>
+            <div class="stat-section">
+              <h2 class="stat-title">🎮 Campeones Distintos por Jugador</h2>
+              <table class="full-table">
+                <thead>
+                  <tr>
+                    <>
+                      <th>Pos</th>
+                      <th>Jugador</th>
+                      <th>Campeones</th>
+                    </>
+                  </tr>
+                </thead>
+                <tbody>
+                  {datos.top_jugadores_distintos.map((item, index) => (
+                    <tr>
+                      <td>
+                        <span
+                          class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
+                        >
+                          {index + 1}
+                        </span>
+                      </td>
+                      <td>{item.jugador}</td>
+                      <td>
+                        <span class="value">{item.cantidad}</span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )
+    }
+
+    <!-- Kills por Equipo -->
+    {
+      datos.top_kills_e && datos.top_kills_e.length > 0 && (
+        <div id="stat-kills-equipo" class="stat-view" style="display: none;">
+          <button class="btn-volver" onclick="volverSelector()">
+            ← Volver
+          </button>
+          <div class="stat-section">
+            <h2 class="stat-title">⚔️ Kills por Equipo Completo</h2>
+            <table class="full-table">
+              <thead>
+                <tr>
+                  <>
+                    <th>Pos</th>
+                    <th>Equipo</th>
+                    <th>Kills</th>
+                  </>
                 </tr>
               </thead>
               <tbody>
@@ -491,23 +617,31 @@ try {
               </tbody>
             </table>
           </div>
-        )
-      }
+        </div>
+      )
+    }
 
-      {
-        datos.ancianos_por_equipo && datos.ancianos_por_equipo.length > 0 && (
-          <div class="card">
-            <h2 class="card-title">🐉 Dragones Ancianos por Equipo</h2>
-            <table>
+    <!-- Ancianos -->
+    {
+      datos.ancianos_por_equipo && datos.ancianos_por_equipo.length > 0 && (
+        <div id="stat-ancianos" class="stat-view" style="display: none;">
+          <button class="btn-volver" onclick="volverSelector()">
+            ← Volver
+          </button>
+          <div class="stat-section">
+            <h2 class="stat-title">🐉 Dragones Ancianos por Equipo</h2>
+            <table class="full-table">
               <thead>
                 <tr>
-                  <th>Posición</th>
-                  <th>Equipo</th>
-                  <th>Ancianos</th>
+                  <>
+                    <th>Pos</th>
+                    <th>Equipo</th>
+                    <th>Ancianos</th>
+                  </>
                 </tr>
               </thead>
               <tbody>
-                {datos.ancianos_por_equipo.slice(0, 10).map((item, index) => (
+                {datos.ancianos_por_equipo.map((item, index) => (
                   <tr>
                     <td>
                       <span
@@ -525,23 +659,31 @@ try {
               </tbody>
             </table>
           </div>
-        )
-      }
+        </div>
+      )
+    }
 
-      {
-        datos.barones_por_equipo && datos.barones_por_equipo.length > 0 && (
-          <div class="card">
-            <h2 class="card-title">👑 Barones por Equipo</h2>
-            <table>
+    <!-- Barones -->
+    {
+      datos.barones_por_equipo && datos.barones_por_equipo.length > 0 && (
+        <div id="stat-barones" class="stat-view" style="display: none;">
+          <button class="btn-volver" onclick="volverSelector()">
+            ← Volver
+          </button>
+          <div class="stat-section">
+            <h2 class="stat-title">👑 Barones por Equipo</h2>
+            <table class="full-table">
               <thead>
                 <tr>
-                  <th>Posición</th>
-                  <th>Equipo</th>
-                  <th>Barones</th>
+                  <>
+                    <th>Pos</th>
+                    <th>Equipo</th>
+                    <th>Barones</th>
+                  </>
                 </tr>
               </thead>
               <tbody>
-                {datos.barones_por_equipo.slice(0, 10).map((item, index) => (
+                {datos.barones_por_equipo.map((item, index) => (
                   <tr>
                     <td>
                       <span
@@ -559,26 +701,38 @@ try {
               </tbody>
             </table>
           </div>
-        )
-      }
+        </div>
+      )
+    }
 
-      {
-        datos.pentakills_jugadores && datos.pentakills_jugadores.length > 0 && (
-          <div class="card special">
-            <h2 class="card-title">🌟 Pentakills Conseguidos</h2>
-            <div class="special-content">
+    <!-- Pentakills -->
+    {
+      datos.pentakills_jugadores && datos.pentakills_jugadores.length > 0 && (
+        <div id="stat-pentakills" class="stat-view" style="display: none;">
+          <button class="btn-volver" onclick="volverSelector()">
+            ← Volver
+          </button>
+          <div class="stat-section special">
+            <h2 class="stat-title">🌟 Pentakills Conseguidos</h2>
+            <div class="pentakills-grid">
               {datos.pentakills_jugadores.map((jugador) => (
                 <div class="pentakill-badge">{jugador}</div>
               ))}
             </div>
           </div>
-        )
-      }
+        </div>
+      )
+    }
 
-      {
-        datos.estadisticas_generales && (
-          <div class="card wide">
-            <h2 class="card-title">📊 Estadísticas Generales del Torneo</h2>
+    <!-- Estadísticas Generales -->
+    {
+      datos.estadisticas_generales && (
+        <div id="stat-generales" class="stat-view" style="display: none;">
+          <button class="btn-volver" onclick="volverSelector()">
+            ← Volver
+          </button>
+          <div class="stat-section wide">
+            <h2 class="stat-title">📊 Estadísticas Generales del Torneo</h2>
             <div class="stats-general">
               <div class="stat-item">
                 <div class="stat-icon">🌟</div>
@@ -629,25 +783,58 @@ try {
               </div>
             </div>
           </div>
-        )
-      }
-    </div>
+        </div>
+      )
+    }
   </div>
+
+  <script is:inline>
+    function mostrarEstadistica(id) {
+      // Ocultar selector
+      const selector = document.getElementById("selector-view");
+      if (selector) selector.style.display = "none";
+
+      // Ocultar todas las estadísticas
+      document.querySelectorAll(".stat-view").forEach((view) => {
+        view.style.display = "none";
+      });
+
+      // Mostrar la estadística seleccionada
+      const stat = document.getElementById(`stat-${id}`);
+      if (stat) stat.style.display = "block";
+
+      // Scroll al inicio
+      window.scrollTo(0, 0);
+    }
+
+    function volverSelector() {
+      // Ocultar todas las estadísticas
+      document.querySelectorAll(".stat-view").forEach((view) => {
+        view.style.display = "none";
+      });
+
+      // Mostrar selector
+      const selector = document.getElementById("selector-view");
+      if (selector) selector.style.display = "grid";
+
+      // Scroll al inicio
+      window.scrollTo(0, 0);
+    }
+  </script>
 
   <style>
     .container {
       max-width: 1400px;
       margin: 0 auto;
+      padding: 2rem;
     }
 
     h1 {
       text-align: center;
       color: #c89b3c;
       font-size: 3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       text-shadow: 0 0 20px rgba(200, 155, 60, 0.5);
-      font-weight: 700;
-      letter-spacing: 2px;
     }
 
     .subtitle {
@@ -657,84 +844,172 @@ try {
       margin-bottom: 3rem;
     }
 
-    .grid {
+    /* Selector */
+    .selector-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-      gap: 2rem;
-      margin-bottom: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem 0;
     }
 
-    .card {
-      background: rgba(26, 31, 58, 0.8);
+    .stat-card {
+      background: linear-gradient(
+        135deg,
+        rgba(26, 31, 58, 0.9),
+        rgba(40, 30, 70, 0.9)
+      );
+      border: 2px solid rgba(200, 155, 60, 0.3);
       border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(200, 155, 60, 0.2);
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 48px rgba(200, 155, 60, 0.3);
-    }
-
-    .card-title {
-      color: #c89b3c;
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid rgba(200, 155, 60, 0.3);
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: #fff;
+      font-size: 1.1rem;
       font-weight: 600;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    .stat-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(200, 155, 60, 0.6);
+      box-shadow: 0 12px 32px rgba(200, 155, 60, 0.3);
+      background: linear-gradient(
+        135deg,
+        rgba(40, 45, 70, 0.95),
+        rgba(50, 40, 80, 0.95)
+      );
     }
 
-    thead {
+    .card-icon {
+      font-size: 2.5rem;
+    }
+
+    .card-nombre {
+      text-align: center;
+      color: #ffd700;
+      font-size: 0.95rem;
+    }
+
+    /* Botón Volver */
+    .btn-volver {
+      background: rgba(200, 155, 60, 0.2);
+      border: 2px solid rgba(200, 155, 60, 0.5);
+      border-radius: 10px;
+      padding: 0.75rem 1.5rem;
+      color: #ffd700;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+
+    .btn-volver:hover {
+      background: rgba(200, 155, 60, 0.4);
+      border-color: rgba(200, 155, 60, 0.8);
+      transform: translateX(-5px);
+    }
+
+    /* Vista de Estadísticas */
+    .stat-view {
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .stat-section {
+      background: rgba(20, 25, 45, 0.6);
+      border-radius: 20px;
+      padding: 2rem;
+      border: 2px solid rgba(200, 155, 60, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .stat-section.special {
+      background: linear-gradient(
+        135deg,
+        rgba(26, 31, 58, 0.9),
+        rgba(50, 40, 80, 0.9)
+      );
+      border: 2px solid rgba(200, 155, 60, 0.4);
+    }
+
+    .stat-section.wide {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .stat-title {
+      text-align: center;
+      color: #ffd700;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+      padding-bottom: 1rem;
+      border-bottom: 2px solid rgba(200, 155, 60, 0.3);
+    }
+
+    /* Tablas */
+    .full-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .full-table thead {
       background: rgba(200, 155, 60, 0.1);
     }
 
-    th {
+    .full-table th {
       padding: 1rem;
       text-align: left;
       color: #c89b3c;
       font-weight: 600;
-      font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 1px;
+      font-size: 0.9rem;
     }
 
-    th:last-child,
-    td:last-child {
+    .full-table th:last-child,
+    .full-table td:last-child {
       text-align: right;
     }
 
-    tbody tr {
+    .full-table tbody tr {
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       transition: background 0.2s ease;
     }
 
-    tbody tr:hover {
+    .full-table tbody tr:hover {
       background: rgba(200, 155, 60, 0.05);
     }
 
-    tbody tr:nth-child(1) {
+    .full-table tbody tr:nth-child(1) {
       background: rgba(255, 215, 0, 0.1);
     }
 
-    tbody tr:nth-child(2) {
+    .full-table tbody tr:nth-child(2) {
       background: rgba(192, 192, 192, 0.1);
     }
 
-    tbody tr:nth-child(3) {
+    .full-table tbody tr:nth-child(3) {
       background: rgba(205, 127, 50, 0.1);
     }
 
-    td {
+    .full-table td {
       padding: 1rem;
       color: #d0d0d0;
     }
@@ -749,7 +1024,6 @@ try {
       background: rgba(200, 155, 60, 0.2);
       color: #c89b3c;
       font-weight: 700;
-      margin-right: 0.5rem;
     }
 
     .rank-1 {
@@ -777,25 +1051,13 @@ try {
       color: #ff6b6b;
     }
 
-    .card.wide {
-      grid-column: 1 / -1;
-    }
-
-    .card.special {
-      background: linear-gradient(
-        135deg,
-        rgba(26, 31, 58, 0.9),
-        rgba(50, 40, 80, 0.9)
-      );
-      border: 2px solid rgba(200, 155, 60, 0.4);
-    }
-
-    .special-content {
+    /* Pentakills */
+    .pentakills-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
-      padding: 1rem 0;
+      padding: 2rem 0;
     }
 
     .pentakill-badge {
@@ -810,9 +1072,10 @@ try {
       letter-spacing: 1px;
     }
 
+    /* Estadísticas Generales */
     .stats-general {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       padding: 1rem 0;
     }
@@ -868,21 +1131,44 @@ try {
       font-size: 1.2rem;
     }
 
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
+    @media (max-width: 1200px) {
+      .selector-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 1rem;
       }
+    }
 
+    @media (max-width: 768px) {
       h1 {
         font-size: 2rem;
       }
 
-      .card {
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .selector-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+      .stat-card {
+        padding: 1.5rem 1rem;
+      }
+
+      .card-icon {
+        font-size: 2rem;
+      }
+
+      .card-nombre {
+        font-size: 0.85rem;
+      }
+
+      .stat-section {
         padding: 1.5rem;
       }
 
-      th,
-      td {
+      .full-table th,
+      .full-table td {
         padding: 0.75rem 0.5rem;
         font-size: 0.9rem;
       }
@@ -891,21 +1177,9 @@ try {
         grid-template-columns: 1fr;
       }
 
-      .pentakill-badge {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-      }
-
       .stat-value {
         font-size: 1.5rem;
       }
-    }
-
-    .loading {
-      text-align: center;
-      color: #c89b3c;
-      font-size: 1.5rem;
-      padding: 3rem;
     }
   </style>
 </Layout>

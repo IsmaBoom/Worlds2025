@@ -2,35 +2,43 @@
     "top_picks": [
         {
             "campeon": "Caitlyn",
-            "cantidad": 15
+            "cantidad": 19
         },
         {
             "campeon": "Taliyah",
-            "cantidad": 14
+            "cantidad": 18
         },
         {
             "campeon": "Vi",
-            "cantidad": 14
+            "cantidad": 18
         },
         {
             "campeon": "Ambessa",
-            "cantidad": 10
+            "cantidad": 14
         },
         {
             "campeon": "Aurora",
-            "cantidad": 10
+            "cantidad": 14
         },
         {
             "campeon": "Bard",
-            "cantidad": 10
+            "cantidad": 14
         },
         {
             "campeon": "Ezreal",
-            "cantidad": 9
+            "cantidad": 13
         },
         {
             "campeon": "Karma",
-            "cantidad": 9
+            "cantidad": 13
+        },
+        {
+            "campeon": "Naafiri",
+            "cantidad": 12
+        },
+        {
+            "campeon": "Yorick",
+            "cantidad": 11
         },
         {
             "campeon": "Jarvan IV",
@@ -39,62 +47,1346 @@
         {
             "campeon": "K'Sante",
             "cantidad": 8
+        },
+        {
+            "campeon": "Ryze",
+            "cantidad": 8
+        },
+        {
+            "campeon": "Yunara",
+            "cantidad": 8
+        },
+        {
+            "campeon": "Sion",
+            "cantidad": 7
+        },
+        {
+            "campeon": "Xin Zhao",
+            "cantidad": 7
+        },
+        {
+            "campeon": "Alistar",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Kai'Sa",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Neeko",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Orianna",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Rakan",
+            "cantidad": 5
+        },
+        {
+            "campeon": "Rek'Sai",
+            "cantidad": 5
+        },
+        {
+            "campeon": "Wukong",
+            "cantidad": 5
+        },
+        {
+            "campeon": "Galio",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Qiyana",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Rumble",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Nautilus",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Rell",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Trundle",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Xayah",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Braum",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Cassiopeia",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Corki",
+            "cantidad": 2
+        },
+        {
+            "campeon": "LeBlanc",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Leona",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Lulu",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Mordekaiser",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Ornn",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Pantheon",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Poppy",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Renekton",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Sivir",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Ziggs",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Aatrox",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Akali",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Annie",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Ashe",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Azir",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Draven",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Elise",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Hwei",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Jax",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Lucian",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Miss Fortune",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Morgana",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Nocturne",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Renata Glasc",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Smolder",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Swain",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Sylas",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Varus",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Viktor",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Ahri",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Akshan",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Amumu",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Anivia",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Aphelios",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Aurelion Sol",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Bel'Veth",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Briar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Blitzcrank",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Brand",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Camille",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Cho'Gath",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Darius",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Diana",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Dr. Mundo",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Ekko",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Evelynn",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Fiddlesticks",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Fiora",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Fizz",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Gangplank",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Garen",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Gnar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Gragas",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Graves",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Gwen",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Hecarim",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Heimerdinger",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Illaoi",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Irelia",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Ivern",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Janna",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Jayce",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Jhin",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Jinx",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kalista",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Karthus",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kassadin",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Katarina",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kayle",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kayn",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kennen",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kha'Zix",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kindred",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kled",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kog'Maw",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lee Sin",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lillia",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lissandra",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lux",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Malphite",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Malzahar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Maokai",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Master Yi",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Mel",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Milio",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nami",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nasus",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nidalee",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nilah",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nunu & Willump",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Olaf",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Pyke",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Quinn",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Rammus",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Rengar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Riven",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Samira",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Sejuani",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Senna",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Seraphine",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Sett",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Shaco",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Shen",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Shyvana",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Singed",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Skarner",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Sona",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Soraka",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Syndra",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Tahm Kench",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Talon",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Taric",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Teemo",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Thresh",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Tristana",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Tryndamere",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Twisted Fate",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Twitch",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Udyr",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Urgot",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vayne",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Veigar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vel'Koz",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vex",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Viego",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vladimir",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Volibear",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Warwick",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Xerath",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Yasuo",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Yone",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Yuumi",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zac",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zed",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zeri",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zilean",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zoe",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zyra",
+            "cantidad": 0
         }
     ],
     "top_bans": [
         {
             "campeon": "Azir",
-            "cantidad": 22
+            "cantidad": 26
         },
         {
             "campeon": "Orianna",
-            "cantidad": 18
+            "cantidad": 22
         },
         {
             "campeon": "Poppy",
-            "cantidad": 18
+            "cantidad": 22
         },
         {
             "campeon": "Neeko",
-            "cantidad": 17
+            "cantidad": 21
         },
         {
             "campeon": "Yunara",
-            "cantidad": 17
+            "cantidad": 21
         },
         {
             "campeon": "Wukong",
-            "cantidad": 15
+            "cantidad": 19
         },
         {
             "campeon": "Alistar",
-            "cantidad": 12
+            "cantidad": 16
         },
         {
             "campeon": "Kai'Sa",
-            "cantidad": 12
+            "cantidad": 16
         },
         {
             "campeon": "Ryze",
-            "cantidad": 12
+            "cantidad": 16
         },
         {
             "campeon": "Leona",
-            "cantidad": 10
+            "cantidad": 14
+        },
+        {
+            "campeon": "Ambessa",
+            "cantidad": 9
+        },
+        {
+            "campeon": "Aurora",
+            "cantidad": 8
+        },
+        {
+            "campeon": "Bard",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Qiyana",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Rumble",
+            "cantidad": 5
+        },
+        {
+            "campeon": "Sion",
+            "cantidad": 5
+        },
+        {
+            "campeon": "Vi",
+            "cantidad": 5
+        },
+        {
+            "campeon": "Annie",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Braum",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Jarvan IV",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Lulu",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Rakan",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Xin Zhao",
+            "cantidad": 4
+        },
+        {
+            "campeon": "Renekton",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Akali",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Caitlyn",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Corki",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Galio",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Karma",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Lee Sin",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Renata Glasc",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Rell",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Sivir",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Taliyah",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Xayah",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Yorick",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Cassiopeia",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Gwen",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Jhin",
+            "cantidad": 1
+        },
+        {
+            "campeon": "LeBlanc",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Maokai",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Nautilus",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Nocturne",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Ornn",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Pantheon",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Rek'Sai",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Seraphine",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Ziggs",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Aatrox",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Ahri",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Akshan",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Amumu",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Anivia",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Aphelios",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Ashe",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Aurelion Sol",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Bel'Veth",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Briar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Blitzcrank",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Brand",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Camille",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Cho'Gath",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Darius",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Diana",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Dr. Mundo",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Draven",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Ekko",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Elise",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Evelynn",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Ezreal",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Fiddlesticks",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Fiora",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Fizz",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Gangplank",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Garen",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Gnar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Gragas",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Graves",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Hecarim",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Heimerdinger",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Hwei",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Illaoi",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Irelia",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Ivern",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Janna",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Jax",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Jayce",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Jinx",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kalista",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Karthus",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kassadin",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Katarina",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kayle",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kayn",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kennen",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kha'Zix",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kindred",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kled",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kog'Maw",
+            "cantidad": 0
+        },
+        {
+            "campeon": "K'Sante",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lillia",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lissandra",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lucian",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lux",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Malphite",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Malzahar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Master Yi",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Mel",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Milio",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Miss Fortune",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Mordekaiser",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Morgana",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Naafiri",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nami",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nasus",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nidalee",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nilah",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nunu & Willump",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Olaf",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Pyke",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Quinn",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Rammus",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Rengar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Riven",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Samira",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Sejuani",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Senna",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Sett",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Shaco",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Shen",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Shyvana",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Singed",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Skarner",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Sona",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Soraka",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Smolder",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Swain",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Sylas",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Syndra",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Tahm Kench",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Talon",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Taric",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Teemo",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Thresh",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Tristana",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Trundle",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Tryndamere",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Twisted Fate",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Twitch",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Udyr",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Urgot",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Varus",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vayne",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Veigar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vel'Koz",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vex",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Viego",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Viktor",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vladimir",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Volibear",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Warwick",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Xerath",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Yasuo",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Yone",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Yuumi",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zac",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zed",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zeri",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zilean",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zoe",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zyra",
+            "cantidad": 0
         }
     ],
     "top_winrate": [
         {
             "campeon": "Ambessa",
-            "winrate": 90.0
+            "winrate": 92.86
         },
         {
             "campeon": "Aurora",
-            "winrate": 90.0
+            "winrate": 92.86
         },
         {
             "campeon": "Bard",
-            "winrate": 90.0
+            "winrate": 92.86
+        },
+        {
+            "campeon": "Ezreal",
+            "winrate": 84.62
         },
         {
             "campeon": "Orianna",
@@ -103,10 +1395,6 @@
         {
             "campeon": "Wukong",
             "winrate": 80.0
-        },
-        {
-            "campeon": "Ezreal",
-            "winrate": 77.78
         },
         {
             "campeon": "Yunara",
@@ -122,29 +1410,31 @@
         },
         {
             "campeon": "Vi",
-            "winrate": 57.14
-        }
-    ],
-    "low_winrate": [
+            "winrate": 66.67
+        },
+        {
+            "campeon": "Alistar",
+            "winrate": 50.0
+        },
+        {
+            "campeon": "Neeko",
+            "winrate": 50.0
+        },
+        {
+            "campeon": "Rek'Sai",
+            "winrate": 40.0
+        },
         {
             "campeon": "Ryze",
             "winrate": 37.5
-        },
-        {
-            "campeon": "Caitlyn",
-            "winrate": 26.67
         },
         {
             "campeon": "K'Sante",
             "winrate": 25.0
         },
         {
-            "campeon": "Karma",
-            "winrate": 22.22
-        },
-        {
-            "campeon": "Taliyah",
-            "winrate": 21.43
+            "campeon": "Caitlyn",
+            "winrate": 21.05
         },
         {
             "campeon": "Rakan",
@@ -155,9 +1445,619 @@
             "winrate": 16.67
         },
         {
-            "campeon": "Naafiri",
-            "winrate": 12.5
+            "campeon": "Taliyah",
+            "winrate": 16.67
         },
+        {
+            "campeon": "Karma",
+            "winrate": 15.38
+        },
+        {
+            "campeon": "Naafiri",
+            "winrate": 8.33
+        },
+        {
+            "campeon": "Aatrox",
+            "winrate": 0
+        },
+        {
+            "campeon": "Ahri",
+            "winrate": 0
+        },
+        {
+            "campeon": "Akali",
+            "winrate": 0
+        },
+        {
+            "campeon": "Akshan",
+            "winrate": 0
+        },
+        {
+            "campeon": "Amumu",
+            "winrate": 0
+        },
+        {
+            "campeon": "Anivia",
+            "winrate": 0
+        },
+        {
+            "campeon": "Annie",
+            "winrate": 0
+        },
+        {
+            "campeon": "Aphelios",
+            "winrate": 0
+        },
+        {
+            "campeon": "Ashe",
+            "winrate": 0
+        },
+        {
+            "campeon": "Aurelion Sol",
+            "winrate": 0
+        },
+        {
+            "campeon": "Azir",
+            "winrate": 0
+        },
+        {
+            "campeon": "Bel'Veth",
+            "winrate": 0
+        },
+        {
+            "campeon": "Briar",
+            "winrate": 0
+        },
+        {
+            "campeon": "Blitzcrank",
+            "winrate": 0
+        },
+        {
+            "campeon": "Brand",
+            "winrate": 0
+        },
+        {
+            "campeon": "Braum",
+            "winrate": 0
+        },
+        {
+            "campeon": "Camille",
+            "winrate": 0
+        },
+        {
+            "campeon": "Cassiopeia",
+            "winrate": 0
+        },
+        {
+            "campeon": "Cho'Gath",
+            "winrate": 0
+        },
+        {
+            "campeon": "Corki",
+            "winrate": 0
+        },
+        {
+            "campeon": "Darius",
+            "winrate": 0
+        },
+        {
+            "campeon": "Diana",
+            "winrate": 0
+        },
+        {
+            "campeon": "Dr. Mundo",
+            "winrate": 0
+        },
+        {
+            "campeon": "Draven",
+            "winrate": 0
+        },
+        {
+            "campeon": "Ekko",
+            "winrate": 0
+        },
+        {
+            "campeon": "Elise",
+            "winrate": 0
+        },
+        {
+            "campeon": "Evelynn",
+            "winrate": 0
+        },
+        {
+            "campeon": "Fiddlesticks",
+            "winrate": 0
+        },
+        {
+            "campeon": "Fiora",
+            "winrate": 0
+        },
+        {
+            "campeon": "Fizz",
+            "winrate": 0
+        },
+        {
+            "campeon": "Galio",
+            "winrate": 0
+        },
+        {
+            "campeon": "Gangplank",
+            "winrate": 0
+        },
+        {
+            "campeon": "Garen",
+            "winrate": 0
+        },
+        {
+            "campeon": "Gnar",
+            "winrate": 0
+        },
+        {
+            "campeon": "Gragas",
+            "winrate": 0
+        },
+        {
+            "campeon": "Graves",
+            "winrate": 0
+        },
+        {
+            "campeon": "Gwen",
+            "winrate": 0
+        },
+        {
+            "campeon": "Hecarim",
+            "winrate": 0
+        },
+        {
+            "campeon": "Heimerdinger",
+            "winrate": 0
+        },
+        {
+            "campeon": "Hwei",
+            "winrate": 0
+        },
+        {
+            "campeon": "Illaoi",
+            "winrate": 0
+        },
+        {
+            "campeon": "Irelia",
+            "winrate": 0
+        },
+        {
+            "campeon": "Ivern",
+            "winrate": 0
+        },
+        {
+            "campeon": "Janna",
+            "winrate": 0
+        },
+        {
+            "campeon": "Jarvan IV",
+            "winrate": 0.0
+        },
+        {
+            "campeon": "Jax",
+            "winrate": 0
+        },
+        {
+            "campeon": "Jayce",
+            "winrate": 0
+        },
+        {
+            "campeon": "Jhin",
+            "winrate": 0
+        },
+        {
+            "campeon": "Jinx",
+            "winrate": 0
+        },
+        {
+            "campeon": "Kalista",
+            "winrate": 0
+        },
+        {
+            "campeon": "Karthus",
+            "winrate": 0
+        },
+        {
+            "campeon": "Kassadin",
+            "winrate": 0
+        },
+        {
+            "campeon": "Katarina",
+            "winrate": 0
+        },
+        {
+            "campeon": "Kayle",
+            "winrate": 0
+        },
+        {
+            "campeon": "Kayn",
+            "winrate": 0
+        },
+        {
+            "campeon": "Kennen",
+            "winrate": 0
+        },
+        {
+            "campeon": "Kha'Zix",
+            "winrate": 0
+        },
+        {
+            "campeon": "Kindred",
+            "winrate": 0
+        },
+        {
+            "campeon": "Kled",
+            "winrate": 0
+        },
+        {
+            "campeon": "Kog'Maw",
+            "winrate": 0
+        },
+        {
+            "campeon": "LeBlanc",
+            "winrate": 0
+        },
+        {
+            "campeon": "Lee Sin",
+            "winrate": 0
+        },
+        {
+            "campeon": "Leona",
+            "winrate": 0
+        },
+        {
+            "campeon": "Lillia",
+            "winrate": 0
+        },
+        {
+            "campeon": "Lissandra",
+            "winrate": 0
+        },
+        {
+            "campeon": "Lucian",
+            "winrate": 0
+        },
+        {
+            "campeon": "Lulu",
+            "winrate": 0
+        },
+        {
+            "campeon": "Lux",
+            "winrate": 0
+        },
+        {
+            "campeon": "Malphite",
+            "winrate": 0
+        },
+        {
+            "campeon": "Malzahar",
+            "winrate": 0
+        },
+        {
+            "campeon": "Maokai",
+            "winrate": 0
+        },
+        {
+            "campeon": "Master Yi",
+            "winrate": 0
+        },
+        {
+            "campeon": "Mel",
+            "winrate": 0
+        },
+        {
+            "campeon": "Milio",
+            "winrate": 0
+        },
+        {
+            "campeon": "Miss Fortune",
+            "winrate": 0
+        },
+        {
+            "campeon": "Mordekaiser",
+            "winrate": 0
+        },
+        {
+            "campeon": "Morgana",
+            "winrate": 0
+        },
+        {
+            "campeon": "Nami",
+            "winrate": 0
+        },
+        {
+            "campeon": "Nasus",
+            "winrate": 0
+        },
+        {
+            "campeon": "Nautilus",
+            "winrate": 0
+        },
+        {
+            "campeon": "Nidalee",
+            "winrate": 0
+        },
+        {
+            "campeon": "Nilah",
+            "winrate": 0
+        },
+        {
+            "campeon": "Nocturne",
+            "winrate": 0
+        },
+        {
+            "campeon": "Nunu & Willump",
+            "winrate": 0
+        },
+        {
+            "campeon": "Olaf",
+            "winrate": 0
+        },
+        {
+            "campeon": "Ornn",
+            "winrate": 0
+        },
+        {
+            "campeon": "Pantheon",
+            "winrate": 0
+        },
+        {
+            "campeon": "Poppy",
+            "winrate": 0
+        },
+        {
+            "campeon": "Pyke",
+            "winrate": 0
+        },
+        {
+            "campeon": "Qiyana",
+            "winrate": 0
+        },
+        {
+            "campeon": "Quinn",
+            "winrate": 0
+        },
+        {
+            "campeon": "Renata Glasc",
+            "winrate": 0
+        },
+        {
+            "campeon": "Rammus",
+            "winrate": 0
+        },
+        {
+            "campeon": "Rell",
+            "winrate": 0
+        },
+        {
+            "campeon": "Renekton",
+            "winrate": 0
+        },
+        {
+            "campeon": "Rengar",
+            "winrate": 0
+        },
+        {
+            "campeon": "Riven",
+            "winrate": 0
+        },
+        {
+            "campeon": "Rumble",
+            "winrate": 0
+        },
+        {
+            "campeon": "Samira",
+            "winrate": 0
+        },
+        {
+            "campeon": "Sejuani",
+            "winrate": 0
+        },
+        {
+            "campeon": "Senna",
+            "winrate": 0
+        },
+        {
+            "campeon": "Seraphine",
+            "winrate": 0
+        },
+        {
+            "campeon": "Sett",
+            "winrate": 0
+        },
+        {
+            "campeon": "Shaco",
+            "winrate": 0
+        },
+        {
+            "campeon": "Shen",
+            "winrate": 0
+        },
+        {
+            "campeon": "Shyvana",
+            "winrate": 0
+        },
+        {
+            "campeon": "Singed",
+            "winrate": 0
+        },
+        {
+            "campeon": "Sivir",
+            "winrate": 0
+        },
+        {
+            "campeon": "Skarner",
+            "winrate": 0
+        },
+        {
+            "campeon": "Sona",
+            "winrate": 0
+        },
+        {
+            "campeon": "Soraka",
+            "winrate": 0
+        },
+        {
+            "campeon": "Smolder",
+            "winrate": 0
+        },
+        {
+            "campeon": "Swain",
+            "winrate": 0
+        },
+        {
+            "campeon": "Sylas",
+            "winrate": 0
+        },
+        {
+            "campeon": "Syndra",
+            "winrate": 0
+        },
+        {
+            "campeon": "Tahm Kench",
+            "winrate": 0
+        },
+        {
+            "campeon": "Talon",
+            "winrate": 0
+        },
+        {
+            "campeon": "Taric",
+            "winrate": 0
+        },
+        {
+            "campeon": "Teemo",
+            "winrate": 0
+        },
+        {
+            "campeon": "Thresh",
+            "winrate": 0
+        },
+        {
+            "campeon": "Tristana",
+            "winrate": 0
+        },
+        {
+            "campeon": "Trundle",
+            "winrate": 0
+        },
+        {
+            "campeon": "Tryndamere",
+            "winrate": 0
+        },
+        {
+            "campeon": "Twisted Fate",
+            "winrate": 0
+        },
+        {
+            "campeon": "Twitch",
+            "winrate": 0
+        },
+        {
+            "campeon": "Udyr",
+            "winrate": 0
+        },
+        {
+            "campeon": "Urgot",
+            "winrate": 0
+        },
+        {
+            "campeon": "Varus",
+            "winrate": 0
+        },
+        {
+            "campeon": "Vayne",
+            "winrate": 0
+        },
+        {
+            "campeon": "Veigar",
+            "winrate": 0
+        },
+        {
+            "campeon": "Vel'Koz",
+            "winrate": 0
+        },
+        {
+            "campeon": "Vex",
+            "winrate": 0
+        },
+        {
+            "campeon": "Viego",
+            "winrate": 0
+        },
+        {
+            "campeon": "Viktor",
+            "winrate": 0
+        },
+        {
+            "campeon": "Vladimir",
+            "winrate": 0
+        },
+        {
+            "campeon": "Volibear",
+            "winrate": 0
+        },
+        {
+            "campeon": "Warwick",
+            "winrate": 0
+        },
+        {
+            "campeon": "Xayah",
+            "winrate": 0
+        },
+        {
+            "campeon": "Xerath",
+            "winrate": 0
+        },
+        {
+            "campeon": "Yasuo",
+            "winrate": 0
+        },
+        {
+            "campeon": "Yone",
+            "winrate": 0
+        },
+        {
+            "campeon": "Yorick",
+            "winrate": 0.0
+        },
+        {
+            "campeon": "Yuumi",
+            "winrate": 0
+        },
+        {
+            "campeon": "Zac",
+            "winrate": 0
+        },
+        {
+            "campeon": "Zed",
+            "winrate": 0
+        },
+        {
+            "campeon": "Zeri",
+            "winrate": 0
+        },
+        {
+            "campeon": "Ziggs",
+            "winrate": 0
+        },
+        {
+            "campeon": "Zilean",
+            "winrate": 0
+        },
+        {
+            "campeon": "Zoe",
+            "winrate": 0
+        },
+        {
+            "campeon": "Zyra",
+            "winrate": 0
+        }
+    ],
+    "low_winrate": [
         {
             "campeon": "Jarvan IV",
             "winrate": 0.0
@@ -165,48 +2065,776 @@
         {
             "campeon": "Yorick",
             "winrate": 0.0
+        },
+        {
+            "campeon": "Naafiri",
+            "winrate": 8.33
+        },
+        {
+            "campeon": "Karma",
+            "winrate": 15.38
+        },
+        {
+            "campeon": "Kai'Sa",
+            "winrate": 16.67
+        },
+        {
+            "campeon": "Taliyah",
+            "winrate": 16.67
+        },
+        {
+            "campeon": "Rakan",
+            "winrate": 20.0
+        },
+        {
+            "campeon": "Caitlyn",
+            "winrate": 21.05
+        },
+        {
+            "campeon": "K'Sante",
+            "winrate": 25.0
+        },
+        {
+            "campeon": "Ryze",
+            "winrate": 37.5
+        },
+        {
+            "campeon": "Rek'Sai",
+            "winrate": 40.0
+        },
+        {
+            "campeon": "Alistar",
+            "winrate": 50.0
+        },
+        {
+            "campeon": "Neeko",
+            "winrate": 50.0
+        },
+        {
+            "campeon": "Vi",
+            "winrate": 66.67
+        },
+        {
+            "campeon": "Sion",
+            "winrate": 71.43
+        },
+        {
+            "campeon": "Xin Zhao",
+            "winrate": 71.43
+        },
+        {
+            "campeon": "Yunara",
+            "winrate": 75.0
+        },
+        {
+            "campeon": "Wukong",
+            "winrate": 80.0
+        },
+        {
+            "campeon": "Orianna",
+            "winrate": 83.33
+        },
+        {
+            "campeon": "Ezreal",
+            "winrate": 84.62
+        },
+        {
+            "campeon": "Ambessa",
+            "winrate": 92.86
+        },
+        {
+            "campeon": "Aurora",
+            "winrate": 92.86
+        },
+        {
+            "campeon": "Bard",
+            "winrate": 92.86
         }
     ],
     "top_kills_c": [
         {
-            "campeon": "Azir",
+            "campeon": "Aurora",
+            "cantidad": 93
+        },
+        {
+            "campeon": "Caitlyn",
+            "cantidad": 63
+        },
+        {
+            "campeon": "Ambessa",
+            "cantidad": 49
+        },
+        {
+            "campeon": "Vi",
+            "cantidad": 49
+        },
+        {
+            "campeon": "Yunara",
+            "cantidad": 41
+        },
+        {
+            "campeon": "Ryze",
+            "cantidad": 32
+        },
+        {
+            "campeon": "Taliyah",
+            "cantidad": 31
+        },
+        {
+            "campeon": "Wukong",
+            "cantidad": 31
+        },
+        {
+            "campeon": "Kai'Sa",
+            "cantidad": 28
+        },
+        {
+            "campeon": "Naafiri",
+            "cantidad": 28
+        },
+        {
+            "campeon": "Xin Zhao",
+            "cantidad": 26
+        },
+        {
+            "campeon": "Ezreal",
+            "cantidad": 24
+        },
+        {
+            "campeon": "Qiyana",
             "cantidad": 22
         },
         {
             "campeon": "Orianna",
-            "cantidad": 18
+            "cantidad": 19
         },
         {
-            "campeon": "Poppy",
-            "cantidad": 18
+            "campeon": "Sion",
+            "cantidad": 16
+        },
+        {
+            "campeon": "Trundle",
+            "cantidad": 16
+        },
+        {
+            "campeon": "Galio",
+            "cantidad": 14
+        },
+        {
+            "campeon": "Cassiopeia",
+            "cantidad": 13
+        },
+        {
+            "campeon": "LeBlanc",
+            "cantidad": 13
+        },
+        {
+            "campeon": "Pantheon",
+            "cantidad": 13
+        },
+        {
+            "campeon": "K'Sante",
+            "cantidad": 12
+        },
+        {
+            "campeon": "Jarvan IV",
+            "cantidad": 11
+        },
+        {
+            "campeon": "Rek'Sai",
+            "cantidad": 11
+        },
+        {
+            "campeon": "Xayah",
+            "cantidad": 11
+        },
+        {
+            "campeon": "Yorick",
+            "cantidad": 11
+        },
+        {
+            "campeon": "Ziggs",
+            "cantidad": 11
+        },
+        {
+            "campeon": "Ashe",
+            "cantidad": 10
+        },
+        {
+            "campeon": "Mordekaiser",
+            "cantidad": 10
+        },
+        {
+            "campeon": "Viktor",
+            "cantidad": 9
+        },
+        {
+            "campeon": "Corki",
+            "cantidad": 8
+        },
+        {
+            "campeon": "Lucian",
+            "cantidad": 8
+        },
+        {
+            "campeon": "Renekton",
+            "cantidad": 8
+        },
+        {
+            "campeon": "Rumble",
+            "cantidad": 8
+        },
+        {
+            "campeon": "Akali",
+            "cantidad": 7
+        },
+        {
+            "campeon": "Bard",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Draven",
+            "cantidad": 6
         },
         {
             "campeon": "Neeko",
-            "cantidad": 17
+            "cantidad": 6
         },
         {
-            "campeon": "Yunara",
-            "cantidad": 17
+            "campeon": "Nocturne",
+            "cantidad": 6
         },
         {
-            "campeon": "Wukong",
-            "cantidad": 15
+            "campeon": "Hwei",
+            "cantidad": 5
+        },
+        {
+            "campeon": "Sivir",
+            "cantidad": 5
         },
         {
             "campeon": "Alistar",
-            "cantidad": 12
+            "cantidad": 4
         },
         {
-            "campeon": "Kai'Sa",
-            "cantidad": 12
+            "campeon": "Annie",
+            "cantidad": 4
         },
         {
-            "campeon": "Ryze",
-            "cantidad": 12
+            "campeon": "Lulu",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Ornn",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Smolder",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Swain",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Aatrox",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Miss Fortune",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Nautilus",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Rell",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Sylas",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Varus",
+            "cantidad": 2
+        },
+        {
+            "campeon": "Azir",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Karma",
+            "cantidad": 1
         },
         {
             "campeon": "Leona",
-            "cantidad": 10
+            "cantidad": 1
+        },
+        {
+            "campeon": "Poppy",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Rakan",
+            "cantidad": 1
+        },
+        {
+            "campeon": "Ahri",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Akshan",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Amumu",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Anivia",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Aphelios",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Aurelion Sol",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Bel'Veth",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Briar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Blitzcrank",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Brand",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Braum",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Camille",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Cho'Gath",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Darius",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Diana",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Dr. Mundo",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Ekko",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Elise",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Evelynn",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Fiddlesticks",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Fiora",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Fizz",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Gangplank",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Garen",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Gnar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Gragas",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Graves",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Gwen",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Hecarim",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Heimerdinger",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Illaoi",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Irelia",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Ivern",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Janna",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Jax",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Jayce",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Jhin",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Jinx",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kalista",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Karthus",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kassadin",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Katarina",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kayle",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kayn",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kennen",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kha'Zix",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kindred",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kled",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Kog'Maw",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lee Sin",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lillia",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lissandra",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Lux",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Malphite",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Malzahar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Maokai",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Master Yi",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Mel",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Milio",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Morgana",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nami",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nasus",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nidalee",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nilah",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Nunu & Willump",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Olaf",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Pyke",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Quinn",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Renata Glasc",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Rammus",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Rengar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Riven",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Samira",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Sejuani",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Senna",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Seraphine",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Sett",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Shaco",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Shen",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Shyvana",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Singed",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Skarner",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Sona",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Soraka",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Syndra",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Tahm Kench",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Talon",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Taric",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Teemo",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Thresh",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Tristana",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Tryndamere",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Twisted Fate",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Twitch",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Udyr",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Urgot",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vayne",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Veigar",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vel'Koz",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vex",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Viego",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Vladimir",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Volibear",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Warwick",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Xerath",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Yasuo",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Yone",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Yuumi",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zac",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zed",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zeri",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zilean",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zoe",
+            "cantidad": 0
+        },
+        {
+            "campeon": "Zyra",
+            "cantidad": 0
         }
     ],
     "top_kda": [
@@ -219,16 +2847,16 @@
             "kda": 32.0
         },
         {
+            "jugador": "Viper",
+            "kda": 30.25
+        },
+        {
             "jugador": "Kaiwing",
             "kda": 30
         },
         {
             "jugador": "Bdd",
             "kda": 23.0
-        },
-        {
-            "jugador": "Viper",
-            "kda": 20.25
         },
         {
             "jugador": "Kanavi",
@@ -249,6 +2877,310 @@
         {
             "jugador": "Shad0w",
             "kda": 12.0
+        },
+        {
+            "jugador": "Shanks",
+            "kda": 11.33
+        },
+        {
+            "jugador": "369",
+            "kda": 9.67
+        },
+        {
+            "jugador": "Tarzan",
+            "kda": 8.75
+        },
+        {
+            "jugador": "Peanut",
+            "kda": 8.38
+        },
+        {
+            "jugador": "Ruler",
+            "kda": 8.33
+        },
+        {
+            "jugador": "Zeka",
+            "kda": 8.0
+        },
+        {
+            "jugador": "JackeyLove",
+            "kda": 7.8
+        },
+        {
+            "jugador": "Massu",
+            "kda": 7.33
+        },
+        {
+            "jugador": "Delight",
+            "kda": 6.9
+        },
+        {
+            "jugador": "Chovy",
+            "kda": 6.25
+        },
+        {
+            "jugador": "Dire",
+            "kda": 6.25
+        },
+        {
+            "jugador": "deokdam",
+            "kda": 6.0
+        },
+        {
+            "jugador": "Driver",
+            "kda": 6.0
+        },
+        {
+            "jugador": "JunJia",
+            "kda": 6.0
+        },
+        {
+            "jugador": "Quid",
+            "kda": 6.0
+        },
+        {
+            "jugador": "Hang",
+            "kda": 5.8
+        },
+        {
+            "jugador": "Hope",
+            "kda": 5.33
+        },
+        {
+            "jugador": "Gumayusi",
+            "kda": 5.13
+        },
+        {
+            "jugador": "Hans Sama",
+            "kda": 5.0
+        },
+        {
+            "jugador": "Hizto",
+            "kda": 5.0
+        },
+        {
+            "jugador": "Keria",
+            "kda": 4.95
+        },
+        {
+            "jugador": "HongQ",
+            "kda": 4.83
+        },
+        {
+            "jugador": "Labrov",
+            "kda": 4.8
+        },
+        {
+            "jugador": "Quad",
+            "kda": 4.8
+        },
+        {
+            "jugador": "Oner",
+            "kda": 4.6
+        },
+        {
+            "jugador": "Rookie",
+            "kda": 4.36
+        },
+        {
+            "jugador": "Cuzz",
+            "kda": 4.2
+        },
+        {
+            "jugador": "Eddie",
+            "kda": 4.2
+        },
+        {
+            "jugador": "Faker",
+            "kda": 4.15
+        },
+        {
+            "jugador": "Busio",
+            "kda": 4.14
+        },
+        {
+            "jugador": "Zeus",
+            "kda": 3.78
+        },
+        {
+            "jugador": "FBI",
+            "kda": 3.6
+        },
+        {
+            "jugador": "Doran",
+            "kda": 3.38
+        },
+        {
+            "jugador": "Hiro02",
+            "kda": 3.17
+        },
+        {
+            "jugador": "Duro",
+            "kda": 3.14
+        },
+        {
+            "jugador": "Eyla",
+            "kda": 3.14
+        },
+        {
+            "jugador": "Inspired",
+            "kda": 3.11
+        },
+        {
+            "jugador": "Elk",
+            "kda": 3.0
+        },
+        {
+            "jugador": "Kiin",
+            "kda": 3.0
+        },
+        {
+            "jugador": "ON",
+            "kda": 3.0
+        },
+        {
+            "jugador": "Upset",
+            "kda": 3.0
+        },
+        {
+            "jugador": "GALA",
+            "kda": 2.92
+        },
+        {
+            "jugador": "Peter",
+            "kda": 2.86
+        },
+        {
+            "jugador": "SkewMond",
+            "kda": 2.83
+        },
+        {
+            "jugador": "knight",
+            "kda": 2.4
+        },
+        {
+            "jugador": "Flandre",
+            "kda": 2.38
+        },
+        {
+            "jugador": "Dhokla",
+            "kda": 2.33
+        },
+        {
+            "jugador": "Canyon",
+            "kda": 2.29
+        },
+        {
+            "jugador": "Wei",
+            "kda": 2.28
+        },
+        {
+            "jugador": "River",
+            "kda": 2.25
+        },
+        {
+            "jugador": "Bin",
+            "kda": 2.2
+        },
+        {
+            "jugador": "BrokenBlade",
+            "kda": 2.2
+        },
+        {
+            "jugador": "Bwipo",
+            "kda": 1.8
+        },
+        {
+            "jugador": "Caps",
+            "kda": 1.78
+        },
+        {
+            "jugador": "Meiko",
+            "kda": 1.74
+        },
+        {
+            "jugador": "Elyoya",
+            "kda": 1.67
+        },
+        {
+            "jugador": "Karsa",
+            "kda": 1.67
+        },
+        {
+            "jugador": "Mireu",
+            "kda": 1.67
+        },
+        {
+            "jugador": "Maple",
+            "kda": 1.66
+        },
+        {
+            "jugador": "Supa",
+            "kda": 1.6
+        },
+        {
+            "jugador": "Woody",
+            "kda": 1.37
+        },
+        {
+            "jugador": "Boal",
+            "kda": 1.33
+        },
+        {
+            "jugador": "Poby",
+            "kda": 1.25
+        },
+        {
+            "jugador": "Razork",
+            "kda": 1.25
+        },
+        {
+            "jugador": "Alvaro",
+            "kda": 1.17
+        },
+        {
+            "jugador": "Oscarinin",
+            "kda": 1.17
+        },
+        {
+            "jugador": "Jojopyun",
+            "kda": 1.14
+        },
+        {
+            "jugador": "TheShy",
+            "kda": 1.1
+        },
+        {
+            "jugador": "Azhi",
+            "kda": 1.02
+        },
+        {
+            "jugador": "Betty",
+            "kda": 1.0
+        },
+        {
+            "jugador": "Beichuan",
+            "kda": 0.83
+        },
+        {
+            "jugador": "Disamis",
+            "kda": 0.82
+        },
+        {
+            "jugador": "Trymbi",
+            "kda": 0.75
+        },
+        {
+            "jugador": "Mikyx",
+            "kda": 0.73
+        },
+        {
+            "jugador": "Myrwn",
+            "kda": 0.5
+        },
+        {
+            "jugador": "Morttheus",
+            "kda": 0.31
         }
     ],
     "top_kills": [
@@ -291,6 +3223,310 @@
         {
             "jugador": "Quid",
             "kills": 9
+        },
+        {
+            "jugador": "deokdam",
+            "kills": 8
+        },
+        {
+            "jugador": "Faker",
+            "kills": 8
+        },
+        {
+            "jugador": "Hans Sama",
+            "kills": 8
+        },
+        {
+            "jugador": "Rookie",
+            "kills": 8
+        },
+        {
+            "jugador": "Ruler",
+            "kills": 8
+        },
+        {
+            "jugador": "Shanks",
+            "kills": 8
+        },
+        {
+            "jugador": "Chovy",
+            "kills": 7
+        },
+        {
+            "jugador": "Doggo",
+            "kills": 7
+        },
+        {
+            "jugador": "GALA",
+            "kills": 7
+        },
+        {
+            "jugador": "Hope",
+            "kills": 7
+        },
+        {
+            "jugador": "JackeyLove",
+            "kills": 7
+        },
+        {
+            "jugador": "Tarzan",
+            "kills": 7
+        },
+        {
+            "jugador": "Zeka",
+            "kills": 7
+        },
+        {
+            "jugador": "Bwipo",
+            "kills": 6
+        },
+        {
+            "jugador": "Dire",
+            "kills": 6
+        },
+        {
+            "jugador": "HongQ",
+            "kills": 6
+        },
+        {
+            "jugador": "Shad0w",
+            "kills": 6
+        },
+        {
+            "jugador": "Wei",
+            "kills": 6
+        },
+        {
+            "jugador": "Caps",
+            "kills": 5
+        },
+        {
+            "jugador": "Eddie",
+            "kills": 5
+        },
+        {
+            "jugador": "Flandre",
+            "kills": 5
+        },
+        {
+            "jugador": "Hizto",
+            "kills": 5
+        },
+        {
+            "jugador": "Upset",
+            "kills": 5
+        },
+        {
+            "jugador": "369",
+            "kills": 4
+        },
+        {
+            "jugador": "Bin",
+            "kills": 4
+        },
+        {
+            "jugador": "Canyon",
+            "kills": 4
+        },
+        {
+            "jugador": "Doran",
+            "kills": 4
+        },
+        {
+            "jugador": "Driver",
+            "kills": 4
+        },
+        {
+            "jugador": "Elk",
+            "kills": 4
+        },
+        {
+            "jugador": "Elyoya",
+            "kills": 4
+        },
+        {
+            "jugador": "Hiro02",
+            "kills": 4
+        },
+        {
+            "jugador": "Kael",
+            "kills": 4
+        },
+        {
+            "jugador": "Karsa",
+            "kills": 4
+        },
+        {
+            "jugador": "Keria",
+            "kills": 4
+        },
+        {
+            "jugador": "Mireu",
+            "kills": 4
+        },
+        {
+            "jugador": "SkewMond",
+            "kills": 4
+        },
+        {
+            "jugador": "TheShy",
+            "kills": 4
+        },
+        {
+            "jugador": "Zeus",
+            "kills": 4
+        },
+        {
+            "jugador": "Azhi",
+            "kills": 3
+        },
+        {
+            "jugador": "Bdd",
+            "kills": 3
+        },
+        {
+            "jugador": "Cuzz",
+            "kills": 3
+        },
+        {
+            "jugador": "Disamis",
+            "kills": 3
+        },
+        {
+            "jugador": "Maple",
+            "kills": 3
+        },
+        {
+            "jugador": "Massu",
+            "kills": 3
+        },
+        {
+            "jugador": "Peanut",
+            "kills": 3
+        },
+        {
+            "jugador": "River",
+            "kills": 3
+        },
+        {
+            "jugador": "Supa",
+            "kills": 3
+        },
+        {
+            "jugador": "Betty",
+            "kills": 2
+        },
+        {
+            "jugador": "BrokenBlade",
+            "kills": 2
+        },
+        {
+            "jugador": "Dhokla",
+            "kills": 2
+        },
+        {
+            "jugador": "Jojopyun",
+            "kills": 2
+        },
+        {
+            "jugador": "Kaiwing",
+            "kills": 2
+        },
+        {
+            "jugador": "Kiin",
+            "kills": 2
+        },
+        {
+            "jugador": "knight",
+            "kills": 2
+        },
+        {
+            "jugador": "Morttheus",
+            "kills": 2
+        },
+        {
+            "jugador": "Poby",
+            "kills": 2
+        },
+        {
+            "jugador": "Taki",
+            "kills": 2
+        },
+        {
+            "jugador": "Boal",
+            "kills": 1
+        },
+        {
+            "jugador": "Busio",
+            "kills": 1
+        },
+        {
+            "jugador": "Hang",
+            "kills": 1
+        },
+        {
+            "jugador": "Labrov",
+            "kills": 1
+        },
+        {
+            "jugador": "Meiko",
+            "kills": 1
+        },
+        {
+            "jugador": "Mikyx",
+            "kills": 1
+        },
+        {
+            "jugador": "Oscarinin",
+            "kills": 1
+        },
+        {
+            "jugador": "PerfecT",
+            "kills": 1
+        },
+        {
+            "jugador": "Peter",
+            "kills": 1
+        },
+        {
+            "jugador": "Razork",
+            "kills": 1
+        },
+        {
+            "jugador": "Alvaro",
+            "kills": 0
+        },
+        {
+            "jugador": "Beichuan",
+            "kills": 0
+        },
+        {
+            "jugador": "Delight",
+            "kills": 0
+        },
+        {
+            "jugador": "Duro",
+            "kills": 0
+        },
+        {
+            "jugador": "Eyla",
+            "kills": 0
+        },
+        {
+            "jugador": "Myrwn",
+            "kills": 0
+        },
+        {
+            "jugador": "ON",
+            "kills": 0
+        },
+        {
+            "jugador": "Trymbi",
+            "kills": 0
+        },
+        {
+            "jugador": "Woody",
+            "kills": 0
         }
     ],
     "top_sangre": [
@@ -332,6 +3568,310 @@
         },
         {
             "jugador": "BrokenBlade",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Busio",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Bwipo",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Canyon",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Caps",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Chovy",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Creme",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Cuzz",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Delight",
+            "cantidad": 0
+        },
+        {
+            "jugador": "deokdam",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Dhokla",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Dire",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Doggo",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Doran",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Driver",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Duro",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Eddie",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Elk",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Elyoya",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Eyla",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Faker",
+            "cantidad": 0
+        },
+        {
+            "jugador": "FBI",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Flandre",
+            "cantidad": 0
+        },
+        {
+            "jugador": "GALA",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Gumayusi",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Hang",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Hans Sama",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Hiro02",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Hizto",
+            "cantidad": 0
+        },
+        {
+            "jugador": "HongQ",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Hope",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Inspired",
+            "cantidad": 0
+        },
+        {
+            "jugador": "JackeyLove",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Jojopyun",
+            "cantidad": 0
+        },
+        {
+            "jugador": "JunJia",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Kael",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Kaiwing",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Kanavi",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Karsa",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Keria",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Kiin",
+            "cantidad": 0
+        },
+        {
+            "jugador": "knight",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Labrov",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Maple",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Massu",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Meiko",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Mikyx",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Mireu",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Morttheus",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Myrwn",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Oner",
+            "cantidad": 0
+        },
+        {
+            "jugador": "ON",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Oscarinin",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Peanut",
+            "cantidad": 0
+        },
+        {
+            "jugador": "PerfecT",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Peter",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Poby",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Quad",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Quid",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Razork",
+            "cantidad": 0
+        },
+        {
+            "jugador": "River",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Rookie",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Ruler",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Shad0w",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Shanks",
+            "cantidad": 0
+        },
+        {
+            "jugador": "SkewMond",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Supa",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Taki",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Tarzan",
+            "cantidad": 0
+        },
+        {
+            "jugador": "TheShy",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Trymbi",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Upset",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Viper",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Wei",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Woody",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Zeka",
+            "cantidad": 0
+        },
+        {
+            "jugador": "Zeus",
             "cantidad": 0
         }
     ],
@@ -375,6 +3915,34 @@
         {
             "equipo": "CTBC Flying Oyster",
             "tiempo": "32:01"
+        },
+        {
+            "equipo": "Anyone's Legend",
+            "tiempo": "32:15"
+        },
+        {
+            "equipo": "Secret Whales",
+            "tiempo": "33:29"
+        },
+        {
+            "equipo": "Invictus Gaming",
+            "tiempo": "37:39"
+        },
+        {
+            "equipo": "Fnatic",
+            "tiempo": "60:00"
+        },
+        {
+            "equipo": "Keyd Stars",
+            "tiempo": "60:00"
+        },
+        {
+            "equipo": "KOI",
+            "tiempo": "60:00"
+        },
+        {
+            "equipo": "PSG Talon",
+            "tiempo": "60:00"
         }
     ],
     "top_equipos_distintos": [
@@ -796,19 +4364,19 @@
     "top_kills_e": [
         {
             "equipo": "Hanwha Life Esports",
-            "cantidad": 126
+            "cantidad": 190
         },
         {
             "equipo": "T1",
             "cantidad": 125
         },
         {
-            "equipo": "Invictus Gaming",
-            "cantidad": 58
+            "equipo": "PSG Talon",
+            "cantidad": 76
         },
         {
-            "equipo": "PSG Talon",
-            "cantidad": 52
+            "equipo": "Invictus Gaming",
+            "cantidad": 58
         },
         {
             "equipo": "Top Esports",
@@ -833,10 +4401,38 @@
         {
             "equipo": "100 Thieves",
             "cantidad": 31
+        },
+        {
+            "equipo": "Gen.G Esports",
+            "cantidad": 31
+        },
+        {
+            "equipo": "G2 Esports",
+            "cantidad": 27
+        },
+        {
+            "equipo": "KT Rolster",
+            "cantidad": 26
+        },
+        {
+            "equipo": "Bilibili Gaming",
+            "cantidad": 20
+        },
+        {
+            "equipo": "KOI",
+            "cantidad": 14
+        },
+        {
+            "equipo": "Keyd Stars",
+            "cantidad": 13
+        },
+        {
+            "equipo": "Fnatic",
+            "cantidad": 11
         }
     ],
     "pentakills_jugadores": [
-        "Supa"
+        "Nadie"
     ],
     "estadisticas_generales": {
         "cantidad_pentakills": 0,
@@ -849,13 +4445,13 @@
     "ancianos_por_equipo": [
         {
             "equipo": "Anyone's Legend",
-            "cantidad": 2
+            "cantidad": 1
         }
     ],
     "barones_por_equipo": [
         {
-            "equipo": "KOI",
-            "cantidad": 1
+            "equipo": "Nadie",
+            "cantidad": 0
         }
     ]
 }

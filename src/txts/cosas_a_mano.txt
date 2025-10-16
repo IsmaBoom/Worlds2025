@@ -1,1 +1,1 @@
-{"Pentakills":0,"Pentakills_J":["Supa"],"Ancianos":{"Anyone's Legend": 2},"Barones_robados":0,"Remontadas":0,"Equipo_baron":{"KOI": 1}}
+{"Pentakills":0,"Pentakills_J":["Nadie"],"Ancianos":{"Anyone's Legend": 1},"Barones_robados":0,"Remontadas":0,"Equipo_baron":{"Nadie": 0}}
