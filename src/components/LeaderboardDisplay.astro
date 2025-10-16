@@ -5,57 +5,299 @@ const players = [
   { name: "Carlos", points: 80 },
   { name: "Marta", points: 60 },
 ];
+
+const sortedPlayers = players.sort((a, b) => b.points - a.points);
 ---
 
 <section class="leaderboard">
-  <h1>Clasificación Mundial</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Posición</th>
-        <th>Nombre</th>
-        <th>Puntos</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        players
-          .sort((a, b) => b.points - a.points)
-          .map((player, i) => (
-            <tr>
-              <td>{i + 1}</td>
-              <td>{player.name}</td>
-              <td>{player.points}</td>
-            </tr>
-          ))
-      }
-    </tbody>
-  </table>
+  <div class="header-section">
+    <h1>🏆 Clasificación Mundial</h1>
+    <p class="subtitle">Resultados del Pick'em de Worlds 2025</p>
+  </div>
+
+  <div class="podium-container">
+    {sortedPlayers.length > 1 && (
+      <div class="podium-item second-place">
+        <div class="rank-icon">🥈</div>
+        <div class="player-info">
+          <div class="position">2º</div>
+          <div class="player-name">{sortedPlayers[1].name}</div>
+          <div class="points">{sortedPlayers[1].points} pts</div>
+        </div>
+      </div>
+    )}
+    
+    {sortedPlayers.length > 0 && (
+      <div class="podium-item first-place">
+        <div class="crown">👑</div>
+        <div class="rank-icon">🥇</div>
+        <div class="player-info">
+          <div class="position">1º</div>
+          <div class="player-name champion">{sortedPlayers[0].name}</div>
+          <div class="points">{sortedPlayers[0].points} pts</div>
+        </div>
+      </div>
+    )}
+    
+    {sortedPlayers.length > 2 && (
+      <div class="podium-item third-place">
+        <div class="rank-icon">🥉</div>
+        <div class="player-info">
+          <div class="position">3º</div>
+          <div class="player-name">{sortedPlayers[2].name}</div>
+          <div class="points">{sortedPlayers[2].points} pts</div>
+        </div>
+      </div>
+    )}
+  </div>
+
+  {sortedPlayers.length > 3 && (
+    <div class="ranking-list">
+      <h2 class="list-title">📊 Clasificación Completa</h2>
+      {sortedPlayers.slice(3).map((player, i) => (
+        <div class="ranking-item">
+          <div class="rank-number">{i + 4}</div>
+          <div class="player-details">
+            <span class="name">{player.name}</span>
+          </div>
+          <div class="player-points">{player.points} pts</div>
+        </div>
+      ))}
+    </div>
+  )}
 </section>
 
 <style>
   .leaderboard {
-    max-width: 600px;
-    margin: 4rem auto;
-    padding: 1rem;
-    background: #1e1e1e;
-    color: white;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+
+  .header-section {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .header-section h1 {
+    font-size: 3rem;
+    color: #c89b3c;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 20px rgba(200, 155, 60, 0.5);
+  }
+
+  .subtitle {
+    color: #a0a0a0;
+    font-size: 1.2rem;
+  }
+
+  /* Podio */
+  .podium-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .podium-item {
+    position: relative;
+    background: linear-gradient(135deg, rgba(26, 31, 58, 0.9), rgba(40, 30, 70, 0.9));
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    min-width: 200px;
+    text-align: center;
+    border: 2px solid rgba(200, 155, 60, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .podium-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 48px rgba(200, 155, 60, 0.4);
+  }
+
+  .first-place {
+    order: 2;
+    border-color: #ffd700;
+    box-shadow: 0 8px 32px rgba(255, 215, 0, 0.4);
+    transform: scale(1.1);
+  }
+
+  .first-place:hover {
+    transform: scale(1.15) translateY(-10px);
+  }
+
+  .second-place {
+    order: 1;
+    border-color: #c0c0c0;
+  }
+
+  .third-place {
+    order: 3;
+    border-color: #cd7f32;
+  }
+
+  .crown {
+    font-size: 2rem;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+  }
+
+  .rank-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .position {
+    color: #c89b3c;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .player-name {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .player-name.champion {
+    color: #ffd700;
+    font-size: 1.8rem;
+  }
+
+  .points {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  /* Lista de clasificación */
+  .ranking-list {
+    margin-top: 3rem;
+  }
+
+  .list-title {
+    color: #c89b3c;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(200, 155, 60, 0.3);
+  }
+
+  .ranking-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(26, 31, 58, 0.6);
+    border: 1px solid rgba(200, 155, 60, 0.2);
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
   }
-  table {
-    width: 100%;
-    border-collapse: collapse;
+
+  .ranking-item:hover {
+    background: rgba(40, 45, 70, 0.8);
+    border-color: rgba(200, 155, 60, 0.5);
+    transform: translateX(10px);
   }
-  th,
-  td {
-    padding: 0.5rem 1rem;
-    text-align: left;
+
+  .rank-number {
+    background: rgba(200, 155, 60, 0.2);
+    border: 2px solid rgba(200, 155, 60, 0.5);
+    color: #ffd700;
+    font-size: 1.5rem;
+    font-weight: 700;
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
   }
-  th {
-    border-bottom: 2px solid #555;
+
+  .player-details {
+    flex: 1;
   }
-  tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.05);
+
+  .player-details .name {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .player-points {
+    color: #c89b3c;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    .leaderboard {
+      padding: 1rem;
+    }
+
+    .header-section h1 {
+      font-size: 2rem;
+    }
+
+    .podium-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .podium-item {
+      min-width: 250px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .first-place {
+      order: 1;
+      transform: scale(1);
+    }
+
+    .second-place {
+      order: 2;
+    }
+
+    .third-place {
+      order: 3;
+    }
+
+    .ranking-item {
+      padding: 1rem;
+    }
+
+    .rank-number {
+      min-width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+
+    .player-details .name {
+      font-size: 1.1rem;
+    }
+
+    .player-points {
+      font-size: 1.1rem;
+    }
   }
 </style>
