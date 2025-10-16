@@ -8,9 +8,9 @@ import os
 # Ruta base para los archivos de texto
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.join(SCRIPT_DIR, "..", "src", "txts")
-
+ALTERNATIVE_PATH = os.path.join(SCRIPT_DIR, "..", "src", "bolas")
 # def dragones():
-#     dragones_totales = open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\%s.txt" % "dragones","r+",encoding="utf8")
+#     dragones_totales = open(os.path.join(BASE_PATH, "dragones.txt"),"r+",encoding="utf8")
 #     dragones_L = dragones_totales.read()
 #     dragones_totales.close()
 #     #Dragones en cada partida a mano:
@@ -22,7 +22,7 @@ BASE_PATH = os.path.join(SCRIPT_DIR, "..", "src", "txts")
 #     Oceano = 0
 #     #Añadir los dragones a los totales:
 #     mi_diccionario = json.loads(dragones_L)
-#     dragones_totales = open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\%s.txt" % "dragones","w",encoding="utf8")
+#     dragones_totales = open(os.path.join(BASE_PATH, "dragones","w",encoding="utf8")
 #     mi_diccionario['Tecnoquimica'] += Tecnoquimica
 #     mi_diccionario['Nube'] += Nube
 #     mi_diccionario['Hextech'] += Hextech
@@ -360,34 +360,275 @@ def winrate():
     for clave in picks_L
 }
     return winrate
+
+def bola_ideal():
+    picks = open(os.path.join(BASE_PATH, "campeones_picks.txt"),"r+",encoding="utf8")
+    picks_L = json.loads(picks.read())
+    picks.close()
+    picks_L_dict = dict(picks_L)
     
+    picks_L = sorted(picks_L.items(), key=lambda x:x[1], reverse=True)[:10]
+    bans = open(os.path.join(BASE_PATH, "campeones_bans.txt"),"r+",encoding="utf8")
+    bans_L = json.loads(bans.read())
+    bans.close()
+    bans_L = sorted(bans_L.items(), key=lambda x:x[1], reverse=True)[:10]
+    victorias = open(os.path.join(BASE_PATH, "campeones_victorias.txt"),"r+",encoding="utf8")
+    victorias_L = json.loads(victorias.read())
+    victorias.close()
+    winrate_L = winrate()
+    #winrate = sorted(winrate.items(), key=lambda x:x[1], reverse=True)[:10]
+    top_winrate = sorted(winrate_L.items(), key=lambda x: x[1], reverse=True)[:10]
+    low_winrate = sorted(winrate_L.items(), key=lambda x: x[1], reverse=False)[:10]
+    kills_c = open(os.path.join(BASE_PATH, "campeones_kills.txt"),"r+",encoding="utf8")
+    kills_c_L = json.loads(kills_c.read())
+    kills_c.close()
+    kills_c_L = sorted(kills_c_L.items(), key=lambda x:x[1], reverse=True)[:10]
+
+    kills = open(os.path.join(BASE_PATH, "jugadores_kills.txt"),"r+",encoding="utf8")
+    kills_L = json.loads(kills.read())
+    kills.close()
+    deaths = open(os.path.join(BASE_PATH, "jugadores_muertes.txt"),"r+",encoding="utf8")
+    deaths_L = json.loads(deaths.read())
+    deaths.close()
+    assists = open(os.path.join(BASE_PATH, "jugadores_asistencias.txt"),"r+",encoding="utf8")
+    assists_L = json.loads(assists.read())
+    assists.close()
+    kda = {}
+    for player in kills_L:
+        if player in deaths_L and deaths_L[player] != 0: 
+            kda[player] = (kills_L[player] + assists_L[player]) / deaths_L[player]
+        else:
+            kda[player] = (kills_L[player] + assists_L[player]) 
+    kda = sorted(kda.items(), key=lambda x:x[1], reverse=True)[:10]
+    j_diferentes = open(os.path.join(BASE_PATH, "jugadores_distintos.txt"),"r+",encoding="utf8")
+    j_diferentes_L = json.loads(j_diferentes.read())
+    j_diferentes.close()
+    ranking_jugadores_diferentes = sorted([(jugador, len(campeones)) for jugador, campeones in j_diferentes_L.items()],key=lambda x: x[1],reverse=True)
+    #longitudes = {key: len(value) for key, value in j_diferentes_L.items()}
+    #j_diferentes_L = sorted(longitudes.items(), key=lambda x:x[1], reverse=True)[:10]
+    sangre = open(os.path.join(BASE_PATH, "primera_sangre.txt"),"r+",encoding="utf8")
+    sangre_L = json.loads(sangre.read())
+    sangre.close()
+    sangre_L = sorted(sangre_L.items(), key=lambda x:x[1], reverse=True)[:10]
+    record = open(os.path.join(BASE_PATH, "jugadores_asesinatos.txt"),"r+",encoding="utf8")
+    record_L = json.loads(record.read())
+    record.close()
+    record_L = sorted(record_L.items(), key=lambda x:x[1], reverse=True)[:10]
+
+    corta = open(os.path.join(BASE_PATH, "equipos_corta.txt"),"r+",encoding="utf8")
+    corta_L = json.loads(corta.read())
+    corta.close()
+    corta_L = sorted(corta_L.items(), key=lambda x:x[1], reverse=False)[:10]
+    kills_e = open(os.path.join(BASE_PATH, "equipos_corta.txt"),"r+",encoding="utf8")
+    kills_e_L = json.loads(kills_e.read())
+    kills_e.close()
+    kills_e_L = sorted(kills_e_L.items(), key=lambda x:x[1], reverse=False)[:10]
+    e_diferentes = open(os.path.join(BASE_PATH, "equipos_distintos.txt"),"r+",encoding="utf8")
+    e_diferentes_L = json.loads(e_diferentes.read())
+    e_diferentes.close()
+    longitudes = {key: len(value) for key, value in e_diferentes_L.items()}
+    e_diferentes_L = sorted(longitudes.items(), key=lambda x:x[1], reverse=True)[:10]
+
+    campeones_distintos = len([c for c, n in picks_L if n > 0])
+    print(campeones_distintos)
+
+    mano = open(os.path.join(BASE_PATH, "cosas_a_mano.txt"),"r+",encoding="utf8")
+    mano_L = json.loads(mano.read())
+
+    ancianos = mano_L["Ancianos"]
+    ranking_ancianos = sorted([(equipo, cantidad) for equipo, cantidad in ancianos.items()],key=lambda x: x[1],reverse=True)
+    equipo_barones = mano_L["Equipo_baron"]
+    ranking_equipo_barones = sorted([(equipo, cantidad) for equipo, cantidad in equipo_barones.items()],key=lambda x: x[1],reverse=True)
+    if mano_L["Barones_robados"] < 3:
+        baron_f = "0-2"
+    elif mano_L["Barones_robados"] < 6:
+        baron_f = "3-5"
+    elif mano_L["Barones_robados"] < 9:
+        baron_f = "6-8"
+
+    if campeones_distintos < 100:
+        c_distintos = "Menos de 100"
+    elif campeones_distintos < 105:
+        c_distintos = "100-104"
+    elif campeones_distintos < 110:
+        c_distintos = "105-109"
+    elif campeones_distintos < 115:
+        c_distintos = "110-114"
+    elif campeones_distintos < 120:
+        c_distintos = "115-119"
+    else:
+        c_distintos = "Más de 119"
+
+    if mano_L["Pentakills"] > 2:
+        mano_L["Pentakills"] = "Más de 3"
+    esta_teemo = picks_L_dict["Teemo"]
+
+    if esta_teemo > 0:
+        teemo = "Se ha jugado Teemo"
+    else:
+        teemo = "No se ha jugado Teemo"
+
+    print(ranking_jugadores_diferentes[0][0])
+    bola = {"Picks":(picks_L[0][0],picks_L[1][0],picks_L[2][0]),
+            "Bans":(bans_L[0][0],bans_L[1][0],bans_L[2][0]),
+            "Mayor winrate":(top_winrate[0][0],top_winrate[1][0],top_winrate[2][0]),
+            "Menor winrate":(low_winrate[0][0],low_winrate[1][0],low_winrate[2][0]),
+            "Más kills":(kills_c_L[0][0],kills_c_L[1][0],kills_c_L[2][0]),
+            "KDA":(kda[0][0],kda[1][0],kda[2][0]),
+            "Campeones distintos":(ranking_jugadores_diferentes[0][0],ranking_jugadores_diferentes[1][0],ranking_jugadores_diferentes[2][0]),
+            "Pentakill":mano_L["Pentakills_J"],
+            "Primera Sangre":(sangre_L[0][0],sangre_L[1][0],sangre_L[2][0]),
+            "Récord kills":(record_L[0][0],record_L[1][0],record_L[2][0]),
+            "Ancianos": tuple(equipo for equipo, _ in ranking_ancianos[:3]),
+            "Robar barones": tuple(equipo for equipo, _ in ranking_equipo_barones[:3]),
+            "Victoria más corta":corta_L[0][0],
+            "Más asesinatos":(kills_e_L[0][0],kills_e_L[1][0],kills_e_L[2][0]),
+            "Equipos_distintos":(e_diferentes_L[0][0],e_diferentes_L[1][0],e_diferentes_L[2][0]),
+            "Pentakills":mano_L["Pentakills"],
+            "Barones robados":baron_f,
+            "Remontadas":mano_L["Remontadas"],
+            "Campeones distintos":c_distintos,
+            "Teemo":teemo
+            }
+    return(bola)
+
+def puntuacion():
+    participantes = ("20raul20","alvaro_mkoi","atomix","claudiaway18","elbartomoreno","faraway18","ismaboom","iuar","pumba_dislexico","taeko","terrorizan","ubahh")
+    puntos = {}
+    bolas = {}
+    bola_general = bola_ideal()
+    for i in participantes:
+        x = open(os.path.join(ALTERNATIVE_PATH, f"bola_{i}.txt"),"r+",encoding="utf8")
+        bolas[i] = json.loads(x.read())
+        x.close()
+    for nombre in participantes:
+        puntos[nombre] = 0
+        if bolas[nombre]["Picks"] == bola_general["Picks"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["Picks"] == bola_general["Picks"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["Picks"] == bola_general["Picks"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Bans"] == bola_general["Bans"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["Bans"] == bola_general["Bans"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["Bans"] == bola_general["Bans"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Más kills"] == bola_general["Más kills"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["Más kills"] == bola_general["Más kills"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["Más kills"] == bola_general["Más kills"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["KDA"] == bola_general["KDA"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["KDA"] == bola_general["KDA"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["KDA"] == bola_general["KDA"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Pentakill"] in bola_general["Pentakill"]:
+            puntos[nombre] += 100
+        if bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Récord kills"] == bola_general["Récord kills"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["Récord kills"] == bola_general["Récord kills"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["Récord kills"] == bola_general["Récord kills"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Ancianos"] == bola_general["Ancianos"][0]:
+            puntos[nombre] += 50
+        elif len(bola_general["Ancianos"]) > 1 and bolas[nombre]["Ancianos"] == bola_general["Ancianos"][1]:
+            puntos[nombre] += 20
+        elif len(bola_general["Ancianos"]) > 2 and bolas[nombre]["Ancianos"] == bola_general["Ancianos"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Robar barones"] == bola_general["Robar barones"][0]:
+            puntos[nombre] += 50
+        elif len(bola_general["Robar barones"]) > 1 and bolas[nombre]["Robar barones"] == bola_general["Robar barones"][1]:
+            puntos[nombre] += 20
+        elif len(bola_general["Robar barones"]) > 2 and bolas[nombre]["Robar barones"] == bola_general["Robar barones"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][0]:
+            puntos[nombre] += 50
+        elif bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][1]:
+            puntos[nombre] += 20
+        elif bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][2]:
+            puntos[nombre] += 10
+        if bolas[nombre]["Pentakills"] == bola_general["Pentakills"]:
+            puntos[nombre] += 50
+        if bolas[nombre]["Barones robados"] == bola_general["Barones robados"]:
+            puntos[nombre] += 50
+        if bolas[nombre]["Remontadas"] == bola_general["Remontadas"]:
+            puntos[nombre] += 50
+        if bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"]:
+            puntos[nombre] += 50
+        if bolas[nombre]["Teemo"] == bola_general["Teemo"]:
+            puntos[nombre] += 50
+        
+    return puntos
+
 def exportar_datos_web():
     """Exporta todos los datos en formato JSON para la web"""
     
     # Top Picks
     with open(os.path.join(BASE_PATH, "campeones_picks.txt"), "r", encoding="utf8") as f:
         picks = json.load(f)
-    top_picks = sorted(picks.items(), key=lambda x: x[1], reverse=True)
+    top_picks = sorted(picks.items(), key=lambda x: x[1], reverse=True)[:10]
     
     # Top Bans
     with open(os.path.join(BASE_PATH, "campeones_bans.txt"), "r", encoding="utf8") as f:
         bans = json.load(f)
-    top_bans = sorted(bans.items(), key=lambda x: x[1], reverse=True)
+    top_bans = sorted(bans.items(), key=lambda x: x[1], reverse=True)[:10]
     
      # Top Kills Campeones
     with open(os.path.join(BASE_PATH, "campeones_kills.txt"), "r", encoding="utf8") as f:
         kills = json.load(f)
-    top_kills_c = sorted(kills.items(), key=lambda x: x[1], reverse=True)
+    top_kills_c = sorted(kills.items(), key=lambda x: x[1], reverse=True)[:10]
 
     # Top Kills
     with open(os.path.join(BASE_PATH, "jugadores_asesinatos.txt"), "r", encoding="utf8") as f:
         kills_record = json.load(f)
-    top_kills_record = sorted(kills_record.items(), key=lambda x: x[1], reverse=True)
+    top_kills_record = sorted(kills_record.items(), key=lambda x: x[1], reverse=True)[:10]
     
     # Victorias más cortas
     with open(os.path.join(BASE_PATH, "equipos_corta.txt"), "r", encoding="utf8") as f:
         victorias_cortas = json.load(f)
-    top_victorias_cortas = sorted(victorias_cortas.items(), key=lambda x: x[1])
+    top_victorias_cortas = sorted(victorias_cortas.items(), key=lambda x: x[1])[:10]
     
     # KDA
     with open(os.path.join(BASE_PATH, "jugadores_kills.txt"), "r", encoding="utf8") as f:
@@ -403,16 +644,15 @@ def exportar_datos_web():
             kda[player] = (kills[player] + assists[player]) / deaths[player]
         else:
             kda[player] = kills[player] + assists[player]
-    top_kda = sorted(kda.items(), key=lambda x: x[1], reverse=True)
+    top_kda = sorted(kda.items(), key=lambda x: x[1], reverse=True)[:10]
     
     # Winrate
     with open(os.path.join(BASE_PATH, "campeones_picks.txt"), "r", encoding="utf8") as f:
         picks = json.load(f)
     win = winrate()
-    top_winrate = sorted(win.items(), key=lambda x: x[1], reverse=True)
-    win_filtrado = {c: w for c, w in win.items() if picks.get(c, 0) >= 5}
-    low_winrate = sorted(win_filtrado.items(), key=lambda x: x[1], reverse=False)
-    #low_winrate = sorted(win.items(), key=lambda x: x[1], reverse=True)[-10:]
+    #win_filtrado = {c: w for c, w in win.items() if picks.get(c, 0) >= 5}
+    top_winrate = sorted(win.items(), key=lambda x: x[1], reverse=True)[:10]
+    low_winrate = sorted(win.items(), key=lambda x: x[1], reverse=False)[:10]
 
     #Camepones distintos
     campeones_distintos = len([c for c, n in picks.items() if n > 0])
@@ -434,11 +674,11 @@ def exportar_datos_web():
 
     with open(os.path.join(BASE_PATH, "primera_sangre.txt"), "r", encoding="utf8") as f:
         sangre = json.load(f)
-    top_sangre = sorted(sangre.items(), key=lambda x: x[1], reverse=True)
+    top_sangre = sorted(sangre.items(), key=lambda x: x[1], reverse=True)[:10]
 
     with open(os.path.join(BASE_PATH, "equipos_kills.txt"), "r", encoding="utf8") as f:
         e_kills = json.load(f)
-    top_kills_e = sorted(e_kills.items(), key=lambda x: x[1], reverse=True)
+    top_kills_e = sorted(e_kills.items(), key=lambda x: x[1], reverse=True)[:10]
  
     with open(os.path.join(BASE_PATH, "equipos_distintos.txt"), "r", encoding="utf8") as f:
         e_distintos = json.load(f)
@@ -508,7 +748,7 @@ def main(links, link):
             visto.add(nombre)
             equipos_partida.append(nombre.strip())
     
-    print(equipos_partida)
+    #print(equipos_partida)
     r = soup.find_all("li",class_=lambda class_name: class_name and class_name.startswith('tab'))
 
     if len(r) != 0:
@@ -517,15 +757,15 @@ def main(links, link):
             duracion = t.find("div",class_="match-bm-lol-game-summary-length").text
             gana = t.find("div",class_="match-bm-lol-game-summary-score").text[0]
             jugadores_info = t.find_all("div",class_="match-bm-players-player-name")
-            print(jugadores_info)
-            print("Nº Partida:",partida-1)
-            print("Duración:",duracion)
+            # print(jugadores_info)
+            # print("Nº Partida:",partida-1)
+            # print("Duración:",duracion)
             if gana == "W":
                 ganador = equipos_partida[0]
-                print("Gana",ganador)
+                # print("Gana",ganador)
             else:
                 ganador = equipos_partida[1]
-                print("Gana",ganador)
+                # print("Gana",ganador)
             jugadores_partida = []
             campeones_partida = []
             for info in jugadores_info:
@@ -554,6 +794,7 @@ def main(links, link):
             jugadores_distintos_2(jugadores_partida,campeones_partida)
             equipos_distintos_2(equipos_partida,campeones_partida)
             winrate()
+            puntuaciones = puntuacion()
             print("---------------------------------------------")
         ultimos_equipos = open(os.path.join(BASE_PATH, "ultimos_equipos.txt"),"w",encoding="utf8")
         json.dump(equipos_partida,ultimos_equipos,indent=4)
@@ -561,7 +802,7 @@ def main(links, link):
     else:
         duracion = soup.find("div",class_="match-bm-lol-game-summary-length").text
         jugadores_info = soup.find_all("div",class_="match-bm-players-player-name")
-        print("Duración:",duracion)
+        # print("Duración:",duracion)
         winner_div = soup.find('div', class_='result--winner')
 
         if winner_div:
@@ -570,10 +811,10 @@ def main(links, link):
                 gana = winner_team['title']
         if gana == equipos_partida[0]:
             ganador = equipos_partida[0]
-            print("Gana",ganador)
+            # print("Gana",ganador)
         else:
             ganador = equipos_partida[1]
-            print("Gana",ganador)
+            # print("Gana",ganador)
         jugadores_partida = []
         campeones_partida = []
         for info in jugadores_info:
@@ -600,6 +841,7 @@ def main(links, link):
         jugadores_distintos_2(jugadores_partida,campeones_partida)
         equipos_distintos_2(equipos_partida,campeones_partida)
         winrate()
+        puntuaciones = puntuacion()
         print("---------------------------------------------")
         ultimos_equipos = open(os.path.join(BASE_PATH, "ultimos_equipos.txt"),"w",encoding="utf8")
         json.dump(equipos_partida,ultimos_equipos,indent=4)
