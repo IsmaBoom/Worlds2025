@@ -199,7 +199,7 @@ def duracion_partida(ganador,duracion_nueva):
      json.dump(duraciones, equipos_corta,indent=4)
      equipos_corta.close()
 
-def kda(t,jugadores_partida,campeones_partida):
+def kda(t,jugadores_partida,campeones_partida,equipos_partida):
     player_stats = t.find_all("div", class_="match-bm-players-player-stats")
 
     kdas = []
@@ -223,9 +223,24 @@ def kda(t,jugadores_partida,campeones_partida):
          jugadores_muertes(int(deaths),jugadores_partida[c])
          jugadores_asistencias(int(assists),jugadores_partida[c])
          campeones_muertes(int(deaths),campeones_partida[c])
+         campeones_kills(int(kills),campeones_partida[c])
          top_kills(int(kills),jugadores_partida[c])
+         if c < 5:
+            equipos_kills(int(kills),equipos_partida[0])
+         else:
+            equipos_kills(int(kills),equipos_partida[1])
          c += 1
-            
+
+def equipos_kills(kills,equipo):
+     equipos_kills_ = open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\%s.txt" % "equipos_kills","r+",encoding="utf8")
+     equipos_kills_L = json.loads(equipos_kills_.read())
+     equipos_kills_.close()
+     equipos_kills_L[equipo] += kills
+     equipos_kills_ = open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\%s.txt" % "equipos_kills","w",encoding="utf8")
+     json.dump(equipos_kills_L,equipos_kills_,indent = 4)
+     equipos_kills_.close()    
+    
+
 def jugadores_kills(kills,jugador):
      jugadores_kills_ = open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\%s.txt" % "jugadores_kills","r+",encoding="utf8")
      kills_L = json.loads(jugadores_kills_.read())
@@ -252,6 +267,15 @@ def campeones_muertes(muertes,campeon):
      campeones_muertes_ = open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\%s.txt" % "campeones_muertes","w",encoding="utf8")
      json.dump(muertes_L,campeones_muertes_,indent = 4)
      campeones_muertes_.close()
+
+def campeones_kills(kills,campeon):
+     campeones_kills_ = open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\%s.txt" % "campeones_kills","r+",encoding="utf8")
+     kills_L = json.loads(campeones_kills_.read())
+     campeones_kills_.close()
+     kills_L[campeon] += kills
+     campeones_kills_ = open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\%s.txt" % "campeones_kills","w",encoding="utf8")
+     json.dump(kills_L,campeones_kills_,indent = 4)
+     campeones_kills_.close()
 
 def jugadores_asistencias(asistencias,jugador):
      jugadores_asistencias_ = open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\%s.txt" % "jugadores_asistencias","r+",encoding="utf8")
@@ -329,8 +353,6 @@ def winrate():
     clave: (victorias_L[clave] / picks_L[clave]) if picks_L[clave] > 4 else 0
     for clave in picks_L
 }
-    print(winrate)
-    print("******************************************************")
     return winrate
     
 def exportar_datos_web():
@@ -346,6 +368,11 @@ def exportar_datos_web():
         bans = json.load(f)
     top_bans = sorted(bans.items(), key=lambda x: x[1], reverse=True)[:10]
     
+     # Top Kills Campeones
+    with open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\campeones_kills.txt", "r", encoding="utf8") as f:
+        kills = json.load(f)
+    top_kills_c = sorted(bans.items(), key=lambda x: x[1], reverse=True)[:10]
+
     # Top Kills
     with open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\jugadores_asesinatos.txt", "r", encoding="utf8") as f:
         kills_record = json.load(f)
@@ -373,17 +400,65 @@ def exportar_datos_web():
     top_kda = sorted(kda.items(), key=lambda x: x[1], reverse=True)[:10]
     
     # Winrate
+    with open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\campeones_picks.txt", "r", encoding="utf8") as f:
+        picks = json.load(f)
     win = winrate()
     top_winrate = sorted(win.items(), key=lambda x: x[1], reverse=True)[:10]
-    
+    win_filtrado = {c: w for c, w in win.items() if picks.get(c, 0) >= 5}
+    low_winrate = sorted(win_filtrado.items(), key=lambda x: x[1], reverse=True)[-10:]
+    #low_winrate = sorted(win.items(), key=lambda x: x[1], reverse=True)[-10:]
+
+    #Camepones distintos
+    campeones_distintos = len([c for c, n in picks.items() if n > 0])
+
+    teemo = "No se ha jugado Teemo"
+    if picks["Teemo"] > 0:
+        teemo = "Se ha jugado a Teemo"
+
+    with open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\cosas_a_mano.txt", "r", encoding="utf8") as f:
+        mano = json.load(f)
+    cantidad_pentakills = mano["Pentakills"]
+    pentakills_jugadores = mano["Pentakills_J"]
+    ancianos = mano["Ancianos"]
+    Robos = mano["Barones_robados"]
+    Remontadas = mano["Remontadas"]
+    Barones = mano["Equipo_baron"]
+
+    with open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\primera_sangre.txt", "r", encoding="utf8") as f:
+        sangre = json.load(f)
+    top_sangre = sorted(sangre.items(), key=lambda x: x[1], reverse=True)[:10]
+
+    with open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\equipos_kills.txt", "r", encoding="utf8") as f:
+        e_kills = json.load(f)
+    top_kills_e = sorted(e_kills.items(), key=lambda x: x[1], reverse=True)[:10]
+ 
+    with open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\equipos_distintos.txt", "r", encoding="utf8") as f:
+        e_distintos = json.load(f)
+    ranking_e = [(equipo, len(set(campeones))) for equipo, campeones in e_distintos.items()]
+    top_equipos_distintos = sorted(ranking_e, key=lambda x: x[1], reverse=True)
+
+    with open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\jugadores_distintos.txt", "r", encoding="utf8") as f:
+        j_distintos = json.load(f)
+    ranking_j = [(equipo, len(set(campeones))) for equipo, campeones in j_distintos.items()]
+    top_jugadores_distintos = sorted(ranking_j, key=lambda x: x[1], reverse=True)
+
     # Exportar todo
     datos_web = {
         "top_picks": [{"campeon": k, "cantidad": v} for k, v in top_picks],
         "top_bans": [{"campeon": k, "cantidad": v} for k, v in top_bans],
-        "top_kills": [{"jugador": k, "kills": v} for k, v in top_kills_record],
-        "top_victorias_cortas": [{"equipo": k, "tiempo": v} for k, v in top_victorias_cortas],
-        "top_kda": [{"jugador": k, "kda": round(v, 2)} for k, v in top_kda],
         "top_winrate": [{"campeon": k, "winrate": round(v * 100, 2)} for k, v in top_winrate],
+        "low_winrate": [{"campeon": k, "winrate": round(v * 100, 2)} for k, v in low_winrate],
+        "top_kills_c": [{"campeon": k, "cantidad": v} for k, v in top_kills_c],
+        "top_kda": [{"jugador": k, "kda": round(v, 2)} for k, v in top_kda],
+        "top_kills": [{"jugador": k, "kills": v} for k, v in top_kills_record],
+        "top_sangre": [{"jugador": k, "cantidad": v} for k, v in top_sangre],
+        "top_victorias_cortas": [{"equipo": k, "tiempo": v} for k, v in top_victorias_cortas],
+        "top_equipos_distintos": [{"equipo": k, "cantidad": v} for k, v in top_equipos_distintos],
+        "top_jugadores_distintos": [{"jugador": k, "cantidad": v} for k, v in top_jugadores_distintos],
+        "top_kills_e": [{"jugador": k, "cantidad": v} for k, v in top_kills_e],
+        
+        
+        #"distintos": [{"campeon": k, "cantidad": v} for k, v in campeones_distintos],
     }
     
     # Guardar en archivo JSON para la web
@@ -451,7 +526,7 @@ def main(links, link):
             duracion_partida(ganador,duracion)
             #print(jugadores_partida)
             #print(campeones_partida)
-            kda(t,jugadores_partida,campeones_partida)
+            kda(t,jugadores_partida,campeones_partida,equipos_partida)
             #partida_mas_larga(duracion)
             jugadores_distintos_2(jugadores_partida,campeones_partida)
             equipos_distintos_2(equipos_partida,campeones_partida)
@@ -510,6 +585,7 @@ def main(links, link):
 
 if __name__ == "__main__":
     # Inicializar archivos si es necesario
+    
     link = "https://liquipedia.net/leagueoflegends/Match:ID_Wrd25PlyIn_R01-M001"
     try:
         with open(r"C:\Users\ismae\OneDrive\Documentos\Entretenimiento\Worlds2025\links.txt","r") as fichero:
