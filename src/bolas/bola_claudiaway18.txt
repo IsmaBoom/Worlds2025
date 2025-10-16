@@ -1,0 +1,22 @@
+{
+    "Picks": "Sylas",
+    "Bans": "K'Sante",
+    "Mayor winrate": "Taliyah",
+    "Menor winrate": "Vi",
+    "Más kills": "Kai'Sa",
+    "KDA": "deokdam",
+    "Camepones distintos": "Caps",
+    "Pentakill": "Viper",
+    "Primera sangre": "Shanks",
+    "Récord kills": "Viper",
+    "Ancianos": "Bilibili Gaming",
+    "Robar barones": "T1",
+    "Victoria más corta": "Gen.G Esports",
+    "Más asesinatos": "Anyone's Legend",
+    "Equipos_distintos": "G2 Esports",
+    "Pentakills": 2,
+    "Barones robados": "3-5",
+    "Remontadas": 1,
+    "Campeones distintos": "115-119",
+    "Teemo": "Se ha jugado a Teemo"
+}

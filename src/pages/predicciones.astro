@@ -1,12 +1,61 @@
 ---
+import fs from "fs";
 import Layout from "../Layouts/Layout.astro";
-import predicciones from "../data/predicciones.json";
 
-interface Prediccion {
-  persona: string;
-  campeon: string;
-  subcampeon: string;
-  mvp: string;
+interface BolaAtomix {
+  Picks: string;
+  Bans: string;
+  "Mayor winrate": string;
+  "Menor winrate": string;
+  "Más kills": string;
+  KDA: string;
+  "Camepones distintos": string;
+  Pentakill: string;
+  "Primera sangre": string;
+  "Récord kills": string;
+  Ancianos: string;
+  "Robar barones": string;
+  "Victoria más corta": string;
+  "Más asesinatos": string;
+  Equipos_distintos: string;
+  Pentakills: number | string;
+  "Barones robados": number | string;
+  Remontadas: number;
+  "Campeones distintos": number | string;
+  Teemo: string;
+}
+
+interface PersonaBola {
+  nombre: string;
+  datos: BolaAtomix;
+}
+
+// Leer todos los archivos de bolas
+const participantes: PersonaBola[] = [];
+const bolasFiles = [
+  { nombre: "Labradoor13", archivo: "bola_atomix.txt" },
+  { nombre: "Alvaro MKOI", archivo: "bola_alvaro_mkoi.txt" },
+  { nombre: "ubahh", archivo: "bola_ubahh.txt" },
+  { nombre: "Iuar", archivo: "bola_iuar.txt" },
+  { nombre: "Terrorizan", archivo: "bola_terrorizan.txt" },
+  { nombre: "IsmaBoom", archivo: "bola_ismaboom.txt" },
+  { nombre: "Pumba Disléxico", archivo: "bola_pumba_dislexico.txt" },
+  { nombre: "ElBartoMoreno", archivo: "bola_elbartomoreno.txt" },
+  { nombre: "Taeko", archivo: "bola_taeko.txt" },
+  { nombre: "FarAway18", archivo: "bola_faraway18.txt" },
+  { nombre: "ClaudiAway18", archivo: "bola_claudiaway18.txt" },
+  { nombre: "20raul20", archivo: "bola_20raul20.txt" },
+];
+
+for (const bola of bolasFiles) {
+  try {
+    const bolaPath = `./src/bolas/${bola.archivo}`;
+    const bolaContent = fs.readFileSync(bolaPath, "utf-8");
+    const datos = JSON.parse(bolaContent) as BolaAtomix;
+    participantes.push({ nombre: bola.nombre, datos });
+  } catch (error) {
+    console.error(`Error al leer ${bola.archivo}:`, error);
+  }
 }
 ---
 
@@ -14,44 +63,268 @@ interface Prediccion {
   <div class="container">
     <h1>🔮 Predicciones del Pick'em 🔮</h1>
     <p class="subtitle">
-      Descubre qué equipo ganará según nuestros participantes.
+      Selecciona un participante para ver sus predicciones detalladas.
     </p>
 
-    <div class="predictions-grid">
+    <!-- Selector de Participantes -->
+    <div id="selector-view" class="selector-container">
       {
-        predicciones.map((pred: Prediccion) => (
-          <div class="prediction-card">
-            <h2 class="person-name">{pred.persona}</h2>
-            <div class="prediction-item">
-              <span class="label">🏆 Campeón:</span>
-              <span class="value champion">{pred.campeon}</span>
-            </div>
-            <div class="prediction-item">
-              <span class="label">🥈 Subcampeón:</span>
-              <span class="value">{pred.subcampeon}</span>
-            </div>
-            <div class="prediction-item">
-              <span class="label">⭐ MVP del Torneo:</span>
-              <span class="value mvp">{pred.mvp}</span>
-            </div>
-          </div>
+        participantes.map(({ nombre }, index) => (
+          <button
+            class="participante-card"
+            data-index={index}
+            onclick={`mostrarPredicciones(${index})`}
+          >
+            <span class="card-icon">🎯</span>
+            <span class="card-nombre">{nombre}</span>
+          </button>
         ))
       }
     </div>
+
+    <!-- Vista de Predicciones (inicialmente oculta) -->
+    {
+      participantes.map(({ nombre, datos }, index) => (
+        <div
+          id={`prediccion-${index}`}
+          class="prediccion-view"
+          style="display: none;"
+        >
+          <button class="btn-volver" onclick="volverSelector()">
+            ← Volver a la lista
+          </button>
+
+          <div class="participante-section">
+            <h2 class="person-title">🎯 {nombre}</h2>
+
+            {/* Bloque 1: Estadísticas de Campeones */}
+            <div class="block-container">
+              <h3 class="block-title">📊 Estadísticas de Campeones</h3>
+              <div class="predictions-block">
+                <div class="pred-item">
+                  <span class="icon">🏆</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Top Picks</span>
+                    <span class="pred-value">{datos.Picks}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">🚫</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Top Bans</span>
+                    <span class="pred-value">{datos.Bans}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">📈</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Mayor Winrate</span>
+                    <span class="pred-value">{datos["Mayor winrate"]}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">📉</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Menor Winrate</span>
+                    <span class="pred-value">{datos["Menor winrate"]}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">🗡️</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Más Kills</span>
+                    <span class="pred-value">{datos["Más kills"]}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bloque 2: Jugadores Destacados */}
+            <div class="block-container">
+              <h3 class="block-title">⭐ Jugadores Destacados</h3>
+              <div class="predictions-block">
+                <div class="pred-item">
+                  <span class="icon">📊</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Mejor KDA</span>
+                    <span class="pred-value">{datos.KDA}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">🎮</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Campeones Distintos</span>
+                    <span class="pred-value">
+                      {datos["Camepones distintos"]}
+                    </span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">🌟</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Pentakill</span>
+                    <span class="pred-value">{datos.Pentakill}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">🩸</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Primera Sangre</span>
+                    <span class="pred-value">{datos["Primera sangre"]}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">💀</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Récord Kills</span>
+                    <span class="pred-value">{datos["Récord kills"]}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bloque 3: Equipos */}
+            <div class="block-container">
+              <h3 class="block-title">🏆 Equipos</h3>
+              <div class="predictions-block">
+                <div class="pred-item">
+                  <span class="icon">🐉</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Dragones Ancianos</span>
+                    <span class="pred-value">{datos.Ancianos}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">👑</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Robar Barones</span>
+                    <span class="pred-value">{datos["Robar barones"]}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">⚡</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Victoria Más Corta</span>
+                    <span class="pred-value">
+                      {datos["Victoria más corta"]}
+                    </span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">⚔️</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Más Asesinatos</span>
+                    <span class="pred-value">{datos["Más asesinatos"]}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">🎭</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Equipos Distintos</span>
+                    <span class="pred-value">{datos.Equipos_distintos}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bloque 4: Predicciones Numéricas */}
+            <div class="block-container">
+              <h3 class="block-title">🎲 Predicciones Numéricas</h3>
+              <div class="predictions-block">
+                <div class="pred-item">
+                  <span class="icon">🌟</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Pentakills Totales</span>
+                    <span class="pred-value highlight">{datos.Pentakills}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">🎯</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Barones Robados</span>
+                    <span class="pred-value highlight">
+                      {datos["Barones robados"]}
+                    </span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">🔄</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Remontadas</span>
+                    <span class="pred-value highlight">{datos.Remontadas}</span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">🎮</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Campeones Distintos</span>
+                    <span class="pred-value highlight">
+                      {datos["Campeones distintos"]}
+                    </span>
+                  </div>
+                </div>
+                <div class="pred-item">
+                  <span class="icon">🐹</span>
+                  <div class="pred-content">
+                    <span class="pred-label">Teemo</span>
+                    <span class="pred-value teemo">{datos.Teemo}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))
+    }
   </div>
+
+  <script is:inline>
+    function mostrarPredicciones(index) {
+      // Ocultar selector
+      const selector = document.getElementById("selector-view");
+      if (selector) selector.style.display = "none";
+
+      // Ocultar todas las predicciones
+      document.querySelectorAll(".prediccion-view").forEach((view) => {
+        view.style.display = "none";
+      });
+
+      // Mostrar la predicción seleccionada
+      const prediccion = document.getElementById(`prediccion-${index}`);
+      if (prediccion) prediccion.style.display = "block";
+
+      // Scroll al inicio
+      window.scrollTo(0, 0);
+    }
+
+    function volverSelector() {
+      // Ocultar todas las predicciones
+      document.querySelectorAll(".prediccion-view").forEach((view) => {
+        view.style.display = "none";
+      });
+
+      // Mostrar selector
+      const selector = document.getElementById("selector-view");
+      if (selector) selector.style.display = "grid";
+
+      // Scroll al inicio
+      window.scrollTo(0, 0);
+    }
+  </script>
 
   <style>
     .container {
-      max-width: 1200px;
+      max-width: 1400px;
       margin: 0 auto;
-      padding: 0 1rem;
+      padding: 2rem;
     }
 
     h1 {
       text-align: center;
       color: #c89b3c;
       font-size: 3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 20px rgba(200, 155, 60, 0.5);
     }
 
     .subtitle {
@@ -61,63 +334,262 @@ interface Prediccion {
       margin-bottom: 3rem;
     }
 
-    .predictions-grid {
+    /* Selector de Participantes */
+    .selector-container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 1.5rem;
+      padding: 2rem 0;
     }
 
-    .prediction-card {
-      background: rgba(26, 31, 58, 0.8);
-      border-radius: 12px;
-      padding: 1.5rem 2rem;
-      border: 1px solid rgba(200, 155, 60, 0.2);
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    .participante-card {
+      background: linear-gradient(
+        135deg,
+        rgba(26, 31, 58, 0.9),
+        rgba(40, 30, 70, 0.9)
+      );
+      border: 2px solid rgba(200, 155, 60, 0.3);
+      border-radius: 16px;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 1rem;
-    }
-
-    .prediction-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 24px rgba(200, 155, 60, 0.2);
-    }
-
-    .person-name {
+      cursor: pointer;
+      transition: all 0.3s ease;
       color: #fff;
-      font-size: 1.8rem;
-      text-align: center;
-      margin: 0 0 0.5rem 0;
-      padding-bottom: 0.75rem;
-      border-bottom: 2px solid #c89b3c;
+      font-size: 1.1rem;
+      font-weight: 600;
     }
 
-    .prediction-item {
+    .participante-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(200, 155, 60, 0.6);
+      box-shadow: 0 12px 32px rgba(200, 155, 60, 0.3);
+      background: linear-gradient(
+        135deg,
+        rgba(40, 45, 70, 0.95),
+        rgba(50, 40, 80, 0.95)
+      );
+    }
+
+    .card-icon {
+      font-size: 3rem;
+    }
+
+    .card-nombre {
+      text-align: center;
+      color: #ffd700;
+    }
+
+    /* Botón Volver */
+    .btn-volver {
+      background: rgba(200, 155, 60, 0.2);
+      border: 2px solid rgba(200, 155, 60, 0.5);
+      border-radius: 10px;
+      padding: 0.75rem 1.5rem;
+      color: #ffd700;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+
+    .btn-volver:hover {
+      background: rgba(200, 155, 60, 0.4);
+      border-color: rgba(200, 155, 60, 0.8);
+      transform: translateX(-5px);
+    }
+
+    /* Vista de Predicciones */
+    .prediccion-view {
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .participantes-container {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .participante-section {
+      background: rgba(20, 25, 45, 0.6);
+      border-radius: 20px;
+      padding: 2rem;
+      border: 2px solid rgba(200, 155, 60, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .person-title {
+      text-align: center;
+      color: #ffd700;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+      padding-bottom: 1rem;
+      border-bottom: 2px solid rgba(200, 155, 60, 0.3);
+    }
+
+    .block-container {
+      margin-bottom: 2rem;
+    }
+
+    .block-container:last-child {
+      margin-bottom: 0;
+    }
+
+    .block-title {
+      color: #c89b3c;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      padding-left: 0.5rem;
+      border-left: 4px solid #c89b3c;
+    }
+
+    .predictions-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      background: rgba(26, 31, 58, 0.4);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid rgba(200, 155, 60, 0.15);
+    }
+
+    .pred-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: transparent;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border: none;
+      transition: all 0.2s ease;
+    }
+
+    .pred-item:hover {
+      background: rgba(40, 45, 70, 0.6);
+      transform: translateX(5px);
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      min-width: 1.5rem;
+      text-align: center;
+    }
+
+    .pred-content {
+      flex: 1;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 1.1rem;
+      gap: 1rem;
     }
 
-    .label {
-      color: #a0a0a0;
-    }
-
-    .value {
+    .pred-label {
       color: #e0e0e0;
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+
+    .pred-value {
+      color: #fff;
       font-weight: 600;
+      font-size: 1rem;
       text-align: right;
     }
 
-    .value.champion {
+    .pred-value.highlight {
       color: #ffd700;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      font-weight: 700;
     }
 
-    .value.mvp {
-      color: #ff8c00;
+    .pred-value.teemo {
+      color: #ff6b6b;
+    }
+
+    @media (max-width: 1200px) {
+      .container {
+        padding: 1.5rem;
+      }
+
+      .selector-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .selector-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+      }
+
+      .participante-card {
+        padding: 1.5rem 1rem;
+      }
+
+      .card-icon {
+        font-size: 2.5rem;
+      }
+
+      .card-nombre {
+        font-size: 0.95rem;
+      }
+
+      .person-title {
+        font-size: 1.6rem;
+      }
+
+      .participante-section {
+        padding: 1.5rem;
+      }
+
+      .predictions-block {
+        padding: 1rem;
+      }
+
+      .block-title {
+        font-size: 1.1rem;
+      }
+
+      .pred-item {
+        padding: 0.5rem 0.75rem;
+      }
+
+      .icon {
+        font-size: 1.3rem;
+      }
+
+      .pred-label {
+        font-size: 0.85rem;
+      }
+
+      .pred-value {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </Layout>

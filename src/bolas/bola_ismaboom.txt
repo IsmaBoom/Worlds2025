@@ -1,0 +1,22 @@
+{
+    "Picks": "Maokai",
+    "Bans": "Nocturne",
+    "Mayor winrate": "Rell",
+    "Menor winrate": "Jayce",
+    "Más kills": "Ashe",
+    "KDA": "Zeus",
+    "Camepones distintos": "Bin",
+    "Pentakill": "JackeyLove",
+    "Primera sangre": "BrokenBlade",
+    "Récord kills": "knight",
+    "Ancianos": "Hanwha Life Esports",
+    "Robar barones": "Bilibili Gaming",
+    "Victoria más corta": "FlyQuest",
+    "Más asesinatos": "Gen.G Esports",
+    "Equipos_distintos": "G2 Esports",
+    "Pentakills": 1,
+    "Barones robados": 5,
+    "Remontadas": 0,
+    "Campeones distintos": 78,
+    "Teemo": "No se ha jugado Teemo"
+}

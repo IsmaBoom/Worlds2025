@@ -1,0 +1,22 @@
+{
+    "Picks": "Alistar",
+    "Bans": "Azir",
+    "Mayor winrate": "Aphelios",
+    "Menor winrate": "Nautilus",
+    "Más kills": "Kai'Sa",
+    "KDA": "Chovy",
+    "Camepones distintos": "Chovy",
+    "Pentakill": "Ruler",
+    "Primera sangre": "Oner",
+    "Récord kills": "Viper",
+    "Ancianos": "Gen.G Esports",
+    "Robar barones": "T1",
+    "Victoria más corta": "KOI",
+    "Más asesinatos": "Gen.G Esports",
+    "Equipos_distintos": "KOI",
+    "Pentakills": 1,
+    "Barones robados": "3-5",
+    "Remontadas": 0,
+    "Campeones distintos": "115-119",
+    "Teemo": "No se ha jugado Teemo"
+}

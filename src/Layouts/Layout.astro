@@ -18,9 +18,14 @@ const currentPath = Astro.url.pathname; // Detecta la ruta actual
       }
 
       .main-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
         background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
         padding: 1rem 2rem;
         text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
       }
 
       .header-content h1 {
@@ -89,6 +94,12 @@ const currentPath = Astro.url.pathname; // Detecta la ruta actual
             class={`nav-link ${currentPath === "/predicciones" ? "active" : ""}`}
           >
             Predicciones
+          </a>
+          <a
+            href="/predicciones_resultados"
+            class={`nav-link ${currentPath === "/predicciones_resultados" ? "active" : ""}`}
+          >
+            Resultados
           </a>
         </div>
       </div>

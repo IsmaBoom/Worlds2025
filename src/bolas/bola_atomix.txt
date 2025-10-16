@@ -1,0 +1,22 @@
+{
+    "Picks": "Nautilus",
+    "Bans": "Yunara",
+    "Mayor winrate": "Caitlyn",
+    "Menor winrate": "Corki",
+    "Más kills": "Kai'Sa",
+    "KDA": "Ruler",
+    "Camepones distintos": "Keria",
+    "Pentakill": "Gumayusi",
+    "Primera sangre": "Tarzan",
+    "Récord kills": "Viper",
+    "Ancianos": "KT Rolster",
+    "Robar barones": "Bilibili Gaming",
+    "Victoria más corta": "Hanwha Life Esports",
+    "Más asesinatos": "Anyone's Legend",
+    "Equipos_distintos": "T1",
+    "Pentakills": 2,
+    "Barones robados": "6-8",
+    "Remontadas": 1,
+    "Campeones distintos": "110-114",
+    "Teemo": "No se ha jugado Teemo"
+}

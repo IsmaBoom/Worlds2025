@@ -1,0 +1,22 @@
+{
+    "Picks": "Xin Zhao",
+    "Bans": "Pantheon",
+    "Mayor winrate": "Aphelios",
+    "Menor winrate": "Jhin",
+    "Más kills": "Kai'Sa",
+    "KDA": "Chovy",
+    "Camepones distintos": "knight",
+    "Pentakill": "Ruler",
+    "Primera sangre": "Elk",
+    "Récord kills": "Ruler",
+    "Ancianos": "Gen.G Esports",
+    "Robar barones": "T1",
+    "Victoria más corta": "Gen.G Esports",
+    "Más asesinatos": "Bilibili Gaming",
+    "Equipos_distintos": "Bilibili Gaming",
+    "Pentakills": 1,
+    "Barones robados": "0-2",
+    "Remontadas": 1,
+    "Campeones distintos": "100-104",
+    "Teemo": "No se ha jugado Teemo"
+}

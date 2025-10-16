@@ -1,0 +1,22 @@
+{
+    "Picks": "Alistar",
+    "Bans": "Poppy",
+    "Mayor winrate": "Azir",
+    "Menor winrate": "Alistar",
+    "Más kills": "Kai'Sa",
+    "KDA": "Ruler",
+    "Camepones distintos": "knight",
+    "Pentakill": "Ruler",
+    "Primera sangre": "Shad0w",
+    "Récord kills": "Viper",
+    "Ancianos": "Hanwha Life Esports",
+    "Robar barones": "Bilibili Gaming",
+    "Victoria más corta": "FlyQuest",
+    "Más asesinatos": "Hanwha Life Esports",
+    "Equipos_distintos": "Bilibili Gaming",
+    "Pentakills": 1,
+    "Barones robados": "0-2",
+    "Remontadas": 0,
+    "Campeones distintos": "100-104",
+    "Teemo": "No se ha jugado Teemo"
+}

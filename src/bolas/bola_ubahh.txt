@@ -1,0 +1,22 @@
+{
+    "Picks": "Kai'Sa",
+    "Bans": "Lee Sin",
+    "Mayor winrate": "Taric",
+    "Menor winrate": "Sylas",
+    "Más kills": "Illaoi",
+    "KDA": "Keria",
+    "Camepones distintos": "Razork",
+    "Pentakill": "Kiin",
+    "Primera sangre": "Viper",
+    "Récord kills": "deokdam",
+    "Ancianos": "T1",
+    "Robar barones": "Gen.G Esports",
+    "Victoria más corta": "Anyone's Legend",
+    "Más asesinatos": "T1",
+    "Equipos_distintos": "Bilibili Gaming",
+    "Pentakills": 2,
+    "Barones robados": "3-5",
+    "Remontadas": 2,
+    "Campeones distintos": "115-119",
+    "Teemo": "Se ha jugado a Teemo"
+}

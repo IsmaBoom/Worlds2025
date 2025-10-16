@@ -1,0 +1,22 @@
+{
+    "Picks": "Rakan",
+    "Bans": "Maokai",
+    "Mayor winrate": "Nautilus",
+    "Menor winrate": "Karma",
+    "Más kills": "Xayah",
+    "KDA": "Gumayusi",
+    "Camepones distintos": "Oner",
+    "Pentakill": "Faker",
+    "Primera sangre": "Bin",
+    "Récord kills": "Ruler",
+    "Ancianos": "KT Rolster",
+    "Robar barones": "Top Esports",
+    "Victoria más corta": "Hanwha Life Esports",
+    "Más asesinatos": "FlyQuest",
+    "Equipos_distintos": "Fnatic",
+    "Pentakills": 5,
+    "Barones robados": 2,
+    "Remontadas": 3,
+    "Campeones distintos": 87,
+    "Teemo": "No se ha jugado Teemo"
+}

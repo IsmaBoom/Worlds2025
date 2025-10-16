@@ -1,0 +1,22 @@
+{
+    "Picks": "Jarvan IV",
+    "Bans": "K'Sante",
+    "Mayor winrate": "Orianna",
+    "Menor winrate": "Renekton",
+    "Más kills": "Lucian",
+    "KDA": "Canyon",
+    "Camepones distintos": "Faker",
+    "Pentakill": "Bin",
+    "Primera sangre": "Peanut",
+    "Récord kills": "Gumayusi",
+    "Ancianos": "Top Esports",
+    "Robar barones": "Gen.G Esports",
+    "Victoria más corta": "Bilibili Gaming",
+    "Más asesinatos": "G2 Esports",
+    "Equipos_distintos": "FlyQuest",
+    "Pentakills": 4,
+    "Barones robados": 2,
+    "Remontadas": 2,
+    "Campeones distintos": 95,
+    "Teemo": "No se ha jugado Teemo"
+}

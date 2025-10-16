@@ -5,7 +5,7 @@ import Layout from "../Layouts/Layout.astro";
 
 interface CampeonStat {
   campeon: string;
-  cantidad: number;
+  cantidad?: number;
   winrate?: number;
 }
 
@@ -13,20 +13,41 @@ interface JugadorStat {
   jugador: string;
   kills?: number;
   kda?: number;
+  cantidad?: number;
 }
 
-interface VictoriaStat {
+interface EquipoStat {
   equipo: string;
-  tiempo: string;
+  tiempo?: string;
+  cantidad?: number;
+}
+
+interface EstadisticasGenerales {
+  cantidad_pentakills: number;
+  robos_baron: number;
+  remontadas: number;
+  campeones_distintos: number;
+  teemo_jugado: boolean;
+  teemo_mensaje: string;
 }
 
 interface DatosWeb {
   top_picks: CampeonStat[];
   top_bans: CampeonStat[];
   top_kills: JugadorStat[];
-  top_victorias_cortas: VictoriaStat[];
+  top_victorias_cortas: EquipoStat[];
   top_kda: JugadorStat[];
   top_winrate: CampeonStat[];
+  low_winrate?: CampeonStat[];
+  top_kills_c?: CampeonStat[];
+  top_sangre?: JugadorStat[];
+  top_equipos_distintos?: EquipoStat[];
+  top_jugadores_distintos?: JugadorStat[];
+  top_kills_e?: EquipoStat[];
+  pentakills_jugadores?: string[];
+  estadisticas_generales?: EstadisticasGenerales;
+  ancianos_por_equipo?: EquipoStat[];
+  barones_por_equipo?: EquipoStat[];
 }
 
 // Leer el archivo JSON con los datos
@@ -46,6 +67,23 @@ try {
     top_victorias_cortas: [],
     top_kda: [],
     top_winrate: [],
+    low_winrate: [],
+    top_kills_c: [],
+    top_sangre: [],
+    top_equipos_distintos: [],
+    top_jugadores_distintos: [],
+    top_kills_e: [],
+    pentakills_jugadores: [],
+    estadisticas_generales: {
+      cantidad_pentakills: 0,
+      robos_baron: 0,
+      remontadas: 0,
+      campeones_distintos: 0,
+      teemo_jugado: false,
+      teemo_mensaje: "No se ha jugado Teemo",
+    },
+    ancianos_por_equipo: [],
+    barones_por_equipo: [],
   };
 }
 ---
@@ -247,6 +285,352 @@ try {
           </tbody>
         </table>
       </div>
+
+      {
+        datos.low_winrate && datos.low_winrate.length > 0 && (
+          <div class="card">
+            <h2 class="card-title">📉 Top 10 Peor Winrate</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Posición</th>
+                  <th>Campeón</th>
+                  <th>Winrate</th>
+                </tr>
+              </thead>
+              <tbody>
+                {datos.low_winrate.map((item, index) => (
+                  <tr>
+                    <td>
+                      <span class="rank">{index + 1}</span>
+                    </td>
+                    <td>{item.campeon}</td>
+                    <td>
+                      <span class="value low">{item.winrate}%</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )
+      }
+
+      {
+        datos.top_kills_c && datos.top_kills_c.length > 0 && (
+          <div class="card">
+            <h2 class="card-title">🗡️ Top 10 Kills por Campeón</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Posición</th>
+                  <th>Campeón</th>
+                  <th>Kills</th>
+                </tr>
+              </thead>
+              <tbody>
+                {datos.top_kills_c.map((item, index) => (
+                  <tr>
+                    <td>
+                      <span
+                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
+                      >
+                        {index + 1}
+                      </span>
+                    </td>
+                    <td>{item.campeon}</td>
+                    <td>
+                      <span class="value">{item.cantidad}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )
+      }
+
+      {
+        datos.top_sangre && datos.top_sangre.length > 0 && (
+          <div class="card">
+            <h2 class="card-title">🩸 Top 10 Primera Sangre</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Posición</th>
+                  <th>Jugador</th>
+                  <th>Cantidad</th>
+                </tr>
+              </thead>
+              <tbody>
+                {datos.top_sangre.map((item, index) => (
+                  <tr>
+                    <td>
+                      <span
+                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
+                      >
+                        {index + 1}
+                      </span>
+                    </td>
+                    <td>{item.jugador}</td>
+                    <td>
+                      <span class="value">{item.cantidad}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )
+      }
+
+      {
+        datos.top_equipos_distintos &&
+          datos.top_equipos_distintos.length > 0 && (
+            <div class="card">
+              <h2 class="card-title">🎭 Equipos con Más Campeones Distintos</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Posición</th>
+                    <th>Equipo</th>
+                    <th>Campeones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {datos.top_equipos_distintos
+                    .slice(0, 10)
+                    .map((item, index) => (
+                      <tr>
+                        <td>
+                          <span
+                            class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
+                          >
+                            {index + 1}
+                          </span>
+                        </td>
+                        <td>{item.equipo}</td>
+                        <td>
+                          <span class="value">{item.cantidad}</span>
+                        </td>
+                      </tr>
+                    ))}
+                </tbody>
+              </table>
+            </div>
+          )
+      }
+
+      {
+        datos.top_jugadores_distintos &&
+          datos.top_jugadores_distintos.length > 0 && (
+            <div class="card">
+              <h2 class="card-title">
+                🎮 Jugadores con Más Campeones Distintos
+              </h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Posición</th>
+                    <th>Jugador</th>
+                    <th>Campeones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {datos.top_jugadores_distintos
+                    .slice(0, 10)
+                    .map((item, index) => (
+                      <tr>
+                        <td>
+                          <span
+                            class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
+                          >
+                            {index + 1}
+                          </span>
+                        </td>
+                        <td>{item.jugador}</td>
+                        <td>
+                          <span class="value">{item.cantidad}</span>
+                        </td>
+                      </tr>
+                    ))}
+                </tbody>
+              </table>
+            </div>
+          )
+      }
+
+      {
+        datos.top_kills_e && datos.top_kills_e.length > 0 && (
+          <div class="card">
+            <h2 class="card-title">⚔️ Top 10 Kills por Equipo</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Posición</th>
+                  <th>Equipo</th>
+                  <th>Kills</th>
+                </tr>
+              </thead>
+              <tbody>
+                {datos.top_kills_e.map((item, index) => (
+                  <tr>
+                    <td>
+                      <span
+                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
+                      >
+                        {index + 1}
+                      </span>
+                    </td>
+                    <td>{item.equipo}</td>
+                    <td>
+                      <span class="value">{item.cantidad}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )
+      }
+
+      {
+        datos.ancianos_por_equipo && datos.ancianos_por_equipo.length > 0 && (
+          <div class="card">
+            <h2 class="card-title">🐉 Dragones Ancianos por Equipo</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Posición</th>
+                  <th>Equipo</th>
+                  <th>Ancianos</th>
+                </tr>
+              </thead>
+              <tbody>
+                {datos.ancianos_por_equipo.slice(0, 10).map((item, index) => (
+                  <tr>
+                    <td>
+                      <span
+                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
+                      >
+                        {index + 1}
+                      </span>
+                    </td>
+                    <td>{item.equipo}</td>
+                    <td>
+                      <span class="value">{item.cantidad}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )
+      }
+
+      {
+        datos.barones_por_equipo && datos.barones_por_equipo.length > 0 && (
+          <div class="card">
+            <h2 class="card-title">👑 Barones por Equipo</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Posición</th>
+                  <th>Equipo</th>
+                  <th>Barones</th>
+                </tr>
+              </thead>
+              <tbody>
+                {datos.barones_por_equipo.slice(0, 10).map((item, index) => (
+                  <tr>
+                    <td>
+                      <span
+                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
+                      >
+                        {index + 1}
+                      </span>
+                    </td>
+                    <td>{item.equipo}</td>
+                    <td>
+                      <span class="value">{item.cantidad}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )
+      }
+
+      {
+        datos.pentakills_jugadores && datos.pentakills_jugadores.length > 0 && (
+          <div class="card special">
+            <h2 class="card-title">🌟 Pentakills Conseguidos</h2>
+            <div class="special-content">
+              {datos.pentakills_jugadores.map((jugador) => (
+                <div class="pentakill-badge">{jugador}</div>
+              ))}
+            </div>
+          </div>
+        )
+      }
+
+      {
+        datos.estadisticas_generales && (
+          <div class="card wide">
+            <h2 class="card-title">📊 Estadísticas Generales del Torneo</h2>
+            <div class="stats-general">
+              <div class="stat-item">
+                <div class="stat-icon">🌟</div>
+                <div class="stat-info">
+                  <div class="stat-label">Pentakills Totales</div>
+                  <div class="stat-value">
+                    {datos.estadisticas_generales.cantidad_pentakills}
+                  </div>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-info">
+                  <div class="stat-label">Robos de Barón</div>
+                  <div class="stat-value">
+                    {datos.estadisticas_generales.robos_baron}
+                  </div>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-icon">🔄</div>
+                <div class="stat-info">
+                  <div class="stat-label">Remontadas</div>
+                  <div class="stat-value">
+                    {datos.estadisticas_generales.remontadas}
+                  </div>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-icon">🎮</div>
+                <div class="stat-info">
+                  <div class="stat-label">Campeones Distintos</div>
+                  <div class="stat-value">
+                    {datos.estadisticas_generales.campeones_distintos}
+                  </div>
+                </div>
+              </div>
+              <div class="stat-item full-width">
+                <div class="stat-icon">
+                  {datos.estadisticas_generales.teemo_jugado ? "✅" : "❌"}
+                </div>
+                <div class="stat-info">
+                  <div class="stat-label">Teemo</div>
+                  <div class="stat-value teemo">
+                    {datos.estadisticas_generales.teemo_mensaje}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )
+      }
     </div>
   </div>
 
@@ -389,6 +773,101 @@ try {
       font-size: 1.1rem;
     }
 
+    .value.low {
+      color: #ff6b6b;
+    }
+
+    .card.wide {
+      grid-column: 1 / -1;
+    }
+
+    .card.special {
+      background: linear-gradient(
+        135deg,
+        rgba(26, 31, 58, 0.9),
+        rgba(50, 40, 80, 0.9)
+      );
+      border: 2px solid rgba(200, 155, 60, 0.4);
+    }
+
+    .special-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    .pentakill-badge {
+      background: linear-gradient(135deg, #ffd700, #ff8c00);
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .stats-general {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.02);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid rgba(200, 155, 60, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .stat-item:hover {
+      background: rgba(200, 155, 60, 0.05);
+      border-color: rgba(200, 155, 60, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .stat-item.full-width {
+      grid-column: 1 / -1;
+      justify-content: center;
+    }
+
+    .stat-icon {
+      font-size: 2.5rem;
+      filter: drop-shadow(0 0 10px rgba(200, 155, 60, 0.3));
+    }
+
+    .stat-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .stat-label {
+      color: #a0a0a0;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .stat-value {
+      color: #c89b3c;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-shadow: 0 0 10px rgba(200, 155, 60, 0.3);
+    }
+
+    .stat-value.teemo {
+      font-size: 1.2rem;
+    }
+
     @media (max-width: 768px) {
       .grid {
         grid-template-columns: 1fr;
@@ -406,6 +885,19 @@ try {
       td {
         padding: 0.75rem 0.5rem;
         font-size: 0.9rem;
+      }
+
+      .stats-general {
+        grid-template-columns: 1fr;
+      }
+
+      .pentakill-badge {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+      }
+
+      .stat-value {
+        font-size: 1.5rem;
       }
     }
 

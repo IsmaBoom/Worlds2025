@@ -1,0 +1,22 @@
+{
+    "Picks": "Sejuani",
+    "Bans": "Yone",
+    "Mayor winrate": "Jhin",
+    "Menor winrate": "Zeri",
+    "Más kills": "Ezreal",
+    "KDA": "Chovy",
+    "Camepones distintos": "JackeyLove",
+    "Pentakill": "Ruler",
+    "Primera sangre": "Inspired",
+    "Récord kills": "Zeus",
+    "Ancianos": "FlyQuest",
+    "Robar barones": "Hanwha Life Esports",
+    "Victoria más corta": "KT Rolster",
+    "Más asesinatos": "Bilibili Gaming",
+    "Equipos_distintos": "KT Rolster",
+    "Pentakills": 3,
+    "Barones robados": 1,
+    "Remontadas": 4,
+    "Campeones distintos": 82,
+    "Teemo": "No se ha jugado Teemo"
+}

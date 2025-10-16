@@ -1,0 +1,22 @@
+{
+    "Picks": "Rell",
+    "Bans": "Kai'Sa",
+    "Mayor winrate": "K'Sante",
+    "Menor winrate": "Ahri",
+    "Más kills": "Kai'Sa",
+    "KDA": "Duro",
+    "Camepones distintos": "Elyoya",
+    "Pentakill": "Supa",
+    "Primera sangre": "Canyon",
+    "Récord kills": "Hans Sama",
+    "Ancianos": "Gen.G Esportsg",
+    "Robar barones": "Fnatic",
+    "Victoria más corta": "T1",
+    "Más asesinatos": "Gen.G Esports",
+    "Equipos_distintos": "Hanwha Life Esports",
+    "Pentakills": "Más de 3",
+    "Barones robados": "3-5",
+    "Remontadas": 2,
+    "Campeones distintos": "105-109",
+    "Teemo": "No se ha jugado Teemo"
+}

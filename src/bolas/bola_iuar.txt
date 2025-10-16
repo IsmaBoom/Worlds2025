@@ -1,0 +1,22 @@
+{
+    "Picks": "Thresh",
+    "Bans": "Sylas",
+    "Mayor winrate": "Vi",
+    "Menor winrate": "Kalista",
+    "Más kills": "Jinx",
+    "KDA": "Faker",
+    "Camepones distintos": "Caps",
+    "Pentakill": "Ruler",
+    "Primera sangre": "Zeus",
+    "Récord kills": "Chovy",
+    "Ancianos": "T1",
+    "Robar barones": "G2 Esports",
+    "Victoria más corta": "Gen.G Esports",
+    "Más asesinatos": "KT Rolster",
+    "Equipos_distintos": "Bilibili Gaming",
+    "Pentakills": 2,
+    "Barones robados": 4,
+    "Remontadas": 1,
+    "Campeones distintos": 88,
+    "Teemo": "No se ha jugado Teemo"
+}

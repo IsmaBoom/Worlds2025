@@ -1,0 +1,362 @@
+{
+    "369": [
+        "Aatrox",
+        "Sion"
+    ],
+    "Alvaro": [
+        "Lulu",
+        "Alistar"
+    ],
+    "Azhi": [
+        "Rumble",
+        "Yorick"
+    ],
+    "Bdd": [
+        "Orianna"
+    ],
+    "Beichuan": [
+        "Jarvan IV"
+    ],
+    "Betty": [
+        "Sivir",
+        "Caitlyn"
+    ],
+    "Bin": [
+        "Rek'Sai",
+        "Renekton"
+    ],
+    "Boal": [
+        "K'Sante",
+        "Sion"
+    ],
+    "BrokenBlade": [
+        "Sion",
+        "K'Sante"
+    ],
+    "Busio": [
+        "Neeko",
+        "Alistar"
+    ],
+    "Bwipo": [
+        "Mordekaiser"
+    ],
+    "Canyon": [
+        "Wukong",
+        "Xin Zhao"
+    ],
+    "Caps": [
+        "Azir",
+        "LeBlanc"
+    ],
+    "Chovy": [
+        "Galio",
+        "Ryze"
+    ],
+    "Creme": [
+        "Orianna",
+        "Ryze"
+    ],
+    "Cuzz": [
+        "Xin Zhao",
+        "Trundle"
+    ],
+    "Delight": [
+        "Alistar",
+        "Bard"
+    ],
+    "deokdam": [
+        "Caitlyn"
+    ],
+    "Dhokla": [
+        "Sion",
+        "Ambessa"
+    ],
+    "Dire": [
+        "Aurora",
+        "Galio"
+    ],
+    "Disamis": [
+        "Jarvan IV"
+    ],
+    "Doggo": [
+        "Caitlyn",
+        "Draven"
+    ],
+    "Doran": [
+        "Ambessa",
+        "K'Sante",
+        "Galio",
+        "Ornn",
+        "Rek'Sai"
+    ],
+    "Driver": [
+        "Sion"
+    ],
+    "Duro": [
+        "Braum",
+        "Alistar"
+    ],
+    "Eddie": [
+        "Kai'Sa",
+        "Ezreal"
+    ],
+    "Elk": [
+        "Caitlyn",
+        "Xayah"
+    ],
+    "Elyoya": [
+        "Jarvan IV",
+        "Wukong"
+    ],
+    "Eyla": [
+        "Rell",
+        "Rakan"
+    ],
+    "Faker": [
+        "Taliyah",
+        "Akali",
+        "Annie",
+        "LeBlanc",
+        "Cassiopeia"
+    ],
+    "FBI": [
+        "Ziggs",
+        "Kai'Sa"
+    ],
+    "Flandre": [
+        "Rek'Sai"
+    ],
+    "GALA": [
+        "Corki",
+        "Caitlyn",
+        "Smolder",
+        "Ziggs"
+    ],
+    "Gumayusi": [
+        "Sivir",
+        "Miss Fortune",
+        "Yunara",
+        "Ashe",
+        "Xayah",
+        "Caitlyn"
+    ],
+    "Hang": [
+        "Karma",
+        "Leona"
+    ],
+    "Hans Sama": [
+        "Xayah",
+        "Yunara"
+    ],
+    "Hiro02": [
+        "Renekton",
+        "Rumble"
+    ],
+    "Hizto": [
+        "Vi",
+        "Jarvan IV"
+    ],
+    "HongQ": [
+        "Ryze"
+    ],
+    "Hope": [
+        "Yunara",
+        "Corki"
+    ],
+    "Inspired": [
+        "Jarvan IV",
+        "Wukong"
+    ],
+    "JackeyLove": [
+        "Yunara"
+    ],
+    "Jojopyun": [
+        "Galio",
+        "Taliyah"
+    ],
+    "JunJia": [
+        "Xin Zhao",
+        "Qiyana"
+    ],
+    "Kael": [
+        "Neeko",
+        "Poppy"
+    ],
+    "Kaiwing": [
+        "Neeko",
+        "Alistar"
+    ],
+    "Kanavi": [
+        "Trundle",
+        "Qiyana"
+    ],
+    "Karsa": [
+        "Vi",
+        "Naafiri"
+    ],
+    "Keria": [
+        "Alistar",
+        "Rakan",
+        "Renata Glasc",
+        "Lulu",
+        "Bard",
+        "Neeko"
+    ],
+    "Kiin": [
+        "Ambessa",
+        "K'Sante"
+    ],
+    "knight": [
+        "Taliyah",
+        "Orianna"
+    ],
+    "Labrov": [
+        "Rakan",
+        "Bard"
+    ],
+    "Maple": [
+        "Swain",
+        "Taliyah"
+    ],
+    "Massu": [
+        "Kai'Sa",
+        "Yunara"
+    ],
+    "Meiko": [
+        "Neeko",
+        "Karma",
+        "Leona",
+        "Nautilus"
+    ],
+    "Mikyx": [
+        "Nautilus",
+        "Morgana"
+    ],
+    "Mireu": [
+        "Ryze",
+        "Orianna"
+    ],
+    "Morttheus": [
+        "Yunara",
+        "Kai'Sa"
+    ],
+    "Myrwn": [
+        "K'Sante",
+        "Jax"
+    ],
+    "Oner": [
+        "Trundle",
+        "Jarvan IV",
+        "Xin Zhao",
+        "Nocturne",
+        "Wukong",
+        "Vi"
+    ],
+    "ON": [
+        "Elise",
+        "Rakan"
+    ],
+    "Oscarinin": [
+        "K'Sante",
+        "Poppy"
+    ],
+    "Peanut": [
+        "Jarvan IV",
+        "Vi"
+    ],
+    "PerfecT": [
+        "Rumble",
+        "Ornn"
+    ],
+    "Peter": [
+        "Braum",
+        "Neeko"
+    ],
+    "Poby": [
+        "Taliyah",
+        "Aurora"
+    ],
+    "Quad": [
+        "Ryze",
+        "Viktor"
+    ],
+    "Quid": [
+        "Aurora",
+        "Taliyah"
+    ],
+    "Razork": [
+        "Vi"
+    ],
+    "River": [
+        "Xin Zhao",
+        "Vi"
+    ],
+    "Rookie": [
+        "Ryze",
+        "Orianna",
+        "Hwei",
+        "Sylas"
+    ],
+    "Ruler": [
+        "Lucian",
+        "Kai'Sa"
+    ],
+    "Shad0w": [
+        "Naafiri"
+    ],
+    "Shanks": [
+        "Cassiopeia",
+        "Taliyah"
+    ],
+    "SkewMond": [
+        "Xin Zhao"
+    ],
+    "Supa": [
+        "Yunara",
+        "Caitlyn"
+    ],
+    "Taki": [
+        "Rell",
+        "Bard"
+    ],
+    "Tarzan": [
+        "Pantheon",
+        "Qiyana"
+    ],
+    "TheShy": [
+        "Rek'Sai",
+        "Sion",
+        "Rumble",
+        "Varus"
+    ],
+    "Trymbi": [
+        "Rakan",
+        "Nautilus"
+    ],
+    "Upset": [
+        "Ezreal",
+        "Caitlyn"
+    ],
+    "Viper": [
+        "Kai'Sa",
+        "Ezreal"
+    ],
+    "Wei": [
+        "Qiyana",
+        "Wukong",
+        "Vi",
+        "Pantheon"
+    ],
+    "Woody": [
+        "Rell",
+        "Karma"
+    ],
+    "Zeka": [
+        "Ryze",
+        "Aurora"
+    ],
+    "Zeus": [
+        "K'Sante",
+        "Ambessa"
+    ]
+}
