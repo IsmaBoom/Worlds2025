@@ -98,10 +98,10 @@ const participantes: Participante[] = [
 
             <div class="imagen-container">
               <img
-                src={`/src/fotos_resultados/${participante.nombreArchivo}.png`}
+                src={`/fotos_resultados/${participante.nombreArchivo}.png`}
                 alt={`Resultados de ${participante.nombre}`}
                 class="resultado-imagen"
-                onerror="this.onerror=null; this.src='/src/fotos_resultados/default.png'; this.parentElement.innerHTML='<p class=error-msg>📷 Imagen no disponible</p>';"
+                onerror="this.onerror=null; this.src='/fotos_resultados/default.png'; this.parentElement.innerHTML='<p class=error-msg>📷 Imagen no disponible</p>';"
               />
             </div>
           </div>
