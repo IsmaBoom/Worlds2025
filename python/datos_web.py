@@ -696,6 +696,31 @@ def exportar_datos_web():
     # Barones por equipo - convertir a formato de tabla
     barones_ranking = sorted(Barones.items(), key=lambda x: x[1], reverse=True)
 
+    # Obtener puntuaciones de los participantes
+    puntuaciones = puntuacion()
+    
+    # Mapeo de nombres de archivo a nombres para mostrar
+    nombres_display = {
+        "atomix": "Labradoor13",
+        "alvaro_mkoi": "Alvaro MKOI",
+        "ubahh": "ubahh",
+        "iuar": "Iuar",
+        "terrorizan": "Terrorizan",
+        "ismaboom": "IsmaBoom",
+        "pumba_dislexico": "Pumba Disléxico",
+        "elbartomoreno": "ElBartoMoreno",
+        "taeko": "Taeko",
+        "faraway18": "FarAway18",
+        "claudiaway18": "ClaudiAway18",
+        "20raul20": "20raul20"
+    }
+    
+    # Convertir puntuaciones al formato deseado
+    clasificacion = [
+        {"name": nombres_display[k], "points": v} 
+        for k, v in puntuaciones.items()
+    ]
+
     # Exportar todo
     datos_web = {
         "top_picks": [{"campeon": k, "cantidad": v} for k, v in top_picks],
@@ -721,6 +746,7 @@ def exportar_datos_web():
         },
         "ancianos_por_equipo": [{"equipo": k, "cantidad": v} for k, v in ancianos_ranking],
         "barones_por_equipo": [{"equipo": k, "cantidad": v} for k, v in barones_ranking],
+        "clasificacion": clasificacion,
     }
     
     # Guardar en archivo JSON para la web
