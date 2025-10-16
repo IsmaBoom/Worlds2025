@@ -2,107 +2,107 @@
     "top_picks": [
         {
             "campeon": "Caitlyn",
-            "cantidad": 53
+            "cantidad": 54
         },
         {
             "campeon": "Taliyah",
-            "cantidad": 52
+            "cantidad": 53
         },
         {
             "campeon": "Vi",
-            "cantidad": 52
+            "cantidad": 53
         },
         {
             "campeon": "Ambessa",
-            "cantidad": 48
+            "cantidad": 49
         },
         {
             "campeon": "Aurora",
-            "cantidad": 48
+            "cantidad": 49
         },
         {
             "campeon": "Bard",
-            "cantidad": 48
+            "cantidad": 49
         },
         {
             "campeon": "Ezreal",
-            "cantidad": 47
+            "cantidad": 48
         },
         {
             "campeon": "Karma",
-            "cantidad": 47
+            "cantidad": 48
         },
         {
             "campeon": "Naafiri",
-            "cantidad": 46
+            "cantidad": 47
         },
         {
             "campeon": "Yorick",
-            "cantidad": 45
+            "cantidad": 46
         }
     ],
     "top_bans": [
         {
             "campeon": "Azir",
-            "cantidad": 60
+            "cantidad": 61
         },
         {
             "campeon": "Orianna",
-            "cantidad": 56
+            "cantidad": 57
         },
         {
             "campeon": "Poppy",
-            "cantidad": 56
+            "cantidad": 57
         },
         {
             "campeon": "Neeko",
-            "cantidad": 55
+            "cantidad": 56
         },
         {
             "campeon": "Yunara",
-            "cantidad": 55
+            "cantidad": 56
         },
         {
             "campeon": "Wukong",
-            "cantidad": 53
+            "cantidad": 54
         },
         {
             "campeon": "Alistar",
-            "cantidad": 50
+            "cantidad": 51
         },
         {
             "campeon": "Kai'Sa",
-            "cantidad": 50
+            "cantidad": 51
         },
         {
             "campeon": "Ryze",
-            "cantidad": 50
+            "cantidad": 51
         },
         {
             "campeon": "Leona",
-            "cantidad": 48
+            "cantidad": 49
         }
     ],
     "top_winrate": [
         {
             "campeon": "Ambessa",
-            "winrate": 97.92
+            "winrate": 97.96
         },
         {
             "campeon": "Aurora",
-            "winrate": 97.92
+            "winrate": 97.96
         },
         {
             "campeon": "Bard",
-            "winrate": 97.92
+            "winrate": 97.96
         },
         {
             "campeon": "Ezreal",
-            "winrate": 95.74
+            "winrate": 95.83
         },
         {
             "campeon": "Vi",
-            "winrate": 88.46
+            "winrate": 88.68
         },
         {
             "campeon": "Orianna",
@@ -170,35 +170,35 @@
     "top_kills_c": [
         {
             "campeon": "Aurora",
-            "cantidad": 331
+            "cantidad": 338
         },
         {
             "campeon": "Ambessa",
-            "cantidad": 185
+            "cantidad": 189
         },
         {
             "campeon": "Vi",
-            "cantidad": 151
+            "cantidad": 154
         },
         {
             "campeon": "Caitlyn",
-            "cantidad": 131
+            "cantidad": 133
         },
         {
             "campeon": "Naafiri",
-            "cantidad": 96
+            "cantidad": 98
         },
         {
             "campeon": "Ezreal",
-            "cantidad": 92
+            "cantidad": 94
         },
         {
             "campeon": "Taliyah",
-            "cantidad": 65
+            "cantidad": 66
         },
         {
             "campeon": "Yorick",
-            "cantidad": 45
+            "cantidad": 46
         },
         {
             "campeon": "Yunara",
@@ -212,7 +212,7 @@
     "top_kda": [
         {
             "jugador": "Viper",
-            "kda": 115.25
+            "kda": 117.75
         },
         {
             "jugador": "Creme",
@@ -796,11 +796,11 @@
     "top_kills_e": [
         {
             "equipo": "Hanwha Life Esports",
-            "cantidad": 734
+            "cantidad": 750
         },
         {
             "equipo": "PSG Talon",
-            "cantidad": 280
+            "cantidad": 286
         },
         {
             "equipo": "T1",
@@ -907,5 +907,271 @@
             "name": "ubahh",
             "points": 20
         }
-    ]
+    ],
+    "aciertos": {
+        "20raul20": {
+            "Picks": 0,
+            "Bans": 50,
+            "Mayor winrate": 0,
+            "Menor winrate": 0,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 50,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 10,
+            "Equipos_distintos": 0,
+            "Pentakills": 0,
+            "Barones robados": 0,
+            "Remontadas": 50,
+            "Campeones distintos": 0,
+            "Teemo": 50
+        },
+        "Alvaro MKOI": {
+            "Picks": 0,
+            "Bans": 10,
+            "Mayor winrate": 0,
+            "Menor winrate": 0,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 50,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 0,
+            "Equipos_distintos": 0,
+            "Pentakills": 0,
+            "Barones robados": 50,
+            "Remontadas": 50,
+            "Campeones distintos": 0,
+            "Teemo": 50
+        },
+        "Labradoor13": {
+            "Picks": 0,
+            "Bans": 0,
+            "Mayor winrate": 0,
+            "Menor winrate": 0,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 50,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 0,
+            "Equipos_distintos": 50,
+            "Pentakills": 0,
+            "Barones robados": 0,
+            "Remontadas": 0,
+            "Campeones distintos": 0,
+            "Teemo": 50
+        },
+        "ClaudiAway18": {
+            "Picks": 0,
+            "Bans": 0,
+            "Mayor winrate": 0,
+            "Menor winrate": 0,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 50,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 0,
+            "Equipos_distintos": 0,
+            "Pentakills": 0,
+            "Barones robados": 0,
+            "Remontadas": 0,
+            "Campeones distintos": 0,
+            "Teemo": 0
+        },
+        "ElBartoMoreno": {
+            "Picks": 0,
+            "Bans": 0,
+            "Mayor winrate": 0,
+            "Menor winrate": 0,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 0,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 0,
+            "Equipos_distintos": 0,
+            "Pentakills": 0,
+            "Barones robados": 0,
+            "Remontadas": 0,
+            "Campeones distintos": 0,
+            "Teemo": 50
+        },
+        "FarAway18": {
+            "Picks": 0,
+            "Bans": 0,
+            "Mayor winrate": 0,
+            "Menor winrate": 20,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 0,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 10,
+            "Equipos_distintos": 0,
+            "Pentakills": 0,
+            "Barones robados": 0,
+            "Remontadas": 0,
+            "Campeones distintos": 0,
+            "Teemo": 50
+        },
+        "IsmaBoom": {
+            "Picks": 0,
+            "Bans": 0,
+            "Mayor winrate": 0,
+            "Menor winrate": 0,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 0,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 0,
+            "Equipos_distintos": 0,
+            "Pentakills": 0,
+            "Barones robados": 0,
+            "Remontadas": 0,
+            "Campeones distintos": 0,
+            "Teemo": 50
+        },
+        "Iuar": {
+            "Picks": 0,
+            "Bans": 0,
+            "Mayor winrate": 0,
+            "Menor winrate": 0,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 0,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 0,
+            "Equipos_distintos": 0,
+            "Pentakills": 50,
+            "Barones robados": 0,
+            "Remontadas": 50,
+            "Campeones distintos": 0,
+            "Teemo": 50
+        },
+        "Pumba Disléxico": {
+            "Picks": 0,
+            "Bans": 0,
+            "Mayor winrate": 0,
+            "Menor winrate": 0,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 0,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 0,
+            "Equipos_distintos": 0,
+            "Pentakills": 0,
+            "Barones robados": 50,
+            "Remontadas": 0,
+            "Campeones distintos": 0,
+            "Teemo": 50
+        },
+        "Taeko": {
+            "Picks": 0,
+            "Bans": 0,
+            "Mayor winrate": 0,
+            "Menor winrate": 0,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 0,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 0,
+            "Equipos_distintos": 0,
+            "Pentakills": 0,
+            "Barones robados": 0,
+            "Remontadas": 50,
+            "Campeones distintos": 0,
+            "Teemo": 50
+        },
+        "Terrorizan": {
+            "Picks": 0,
+            "Bans": 0,
+            "Mayor winrate": 0,
+            "Menor winrate": 0,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 20,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 0,
+            "Equipos_distintos": 0,
+            "Pentakills": 0,
+            "Barones robados": 0,
+            "Remontadas": 0,
+            "Campeones distintos": 0,
+            "Teemo": 50
+        },
+        "ubahh": {
+            "Picks": 0,
+            "Bans": 0,
+            "Mayor winrate": 0,
+            "Menor winrate": 0,
+            "Más kills": 0,
+            "KDA": 0,
+            "Camepones distintos": 0,
+            "Pentakill": 0,
+            "Primera sangre": 0,
+            "Récord kills": 0,
+            "Ancianos": 0,
+            "Robar barones": 0,
+            "Victoria más corta": 0,
+            "Más asesinatos": 20,
+            "Equipos_distintos": 0,
+            "Pentakills": 0,
+            "Barones robados": 0,
+            "Remontadas": 0,
+            "Campeones distintos": 0,
+            "Teemo": 0
+        }
+    }
 }
