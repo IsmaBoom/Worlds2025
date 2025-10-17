@@ -76,7 +76,6 @@ def reiniciar_jugadores():
         "jugadores_muertes.txt",
         "jugadores_asistencias.txt",
         "jugadores_asesinatos.txt",
-        "primera_sangre.txt"
     ]
     
     for archivo in archivos_jugadores:
