@@ -5,7 +5,7 @@
     "Menor winrate": "Nautilus",
     "Más kills": "Kai'Sa",
     "KDA": "Chovy",
-    "Camepones distintos": "Chovy",
+    "Jugadores distintos": "Chovy",
     "Pentakill": "Ruler",
     "Primera sangre": "Oner",
     "Récord kills": "Viper",

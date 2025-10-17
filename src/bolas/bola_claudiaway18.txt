@@ -5,7 +5,7 @@
     "Menor winrate": "Vi",
     "Más kills": "Kai'Sa",
     "KDA": "deokdam",
-    "Camepones distintos": "Caps",
+    "Jugadores distintos": "Caps",
     "Pentakill": "Viper",
     "Primera sangre": "Shanks",
     "Récord kills": "Viper",

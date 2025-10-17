@@ -5,7 +5,7 @@
     "Menor winrate": "Jhin",
     "Más kills": "Kai'Sa",
     "KDA": "Chovy",
-    "Camepones distintos": "knight",
+    "Jugadores distintos": "knight",
     "Pentakill": "Ruler",
     "Primera sangre": "Elk",
     "Récord kills": "Ruler",

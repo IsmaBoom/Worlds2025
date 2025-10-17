@@ -5,7 +5,7 @@
     "Menor winrate": "Ahri",
     "Más kills": "Kai'Sa",
     "KDA": "Duro",
-    "Camepones distintos": "Elyoya",
+    "Jugadores distintos": "Elyoya",
     "Pentakill": "Supa",
     "Primera sangre": "Canyon",
     "Récord kills": "Hans Sama",

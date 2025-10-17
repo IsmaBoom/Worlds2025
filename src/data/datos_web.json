@@ -1,109 +1,89 @@
 {
     "top_picks": [
         {
-            "campeon": "Vi",
-            "cantidad": 59
+            "campeon": "Caitlyn",
+            "cantidad": 9
         },
         {
-            "campeon": "Caitlyn",
-            "cantidad": 57
+            "campeon": "K'Sante",
+            "cantidad": 9
+        },
+        {
+            "campeon": "Ryze",
+            "cantidad": 9
+        },
+        {
+            "campeon": "Jarvan IV",
+            "cantidad": 8
         },
         {
             "campeon": "Taliyah",
-            "cantidad": 56
+            "cantidad": 8
         },
         {
-            "campeon": "Ambessa",
-            "cantidad": 55
+            "campeon": "Vi",
+            "cantidad": 8
         },
         {
-            "campeon": "Aurora",
-            "cantidad": 55
+            "campeon": "Yunara",
+            "cantidad": 8
         },
         {
-            "campeon": "Bard",
-            "cantidad": 55
+            "campeon": "Alistar",
+            "cantidad": 7
         },
         {
-            "campeon": "Ezreal",
-            "cantidad": 54
+            "campeon": "Sion",
+            "cantidad": 7
         },
         {
-            "campeon": "Karma",
-            "cantidad": 51
-        },
-        {
-            "campeon": "Naafiri",
-            "cantidad": 50
-        },
-        {
-            "campeon": "Yorick",
-            "cantidad": 49
+            "campeon": "Xin Zhao",
+            "cantidad": 7
         }
     ],
     "top_bans": [
         {
             "campeon": "Azir",
-            "cantidad": 62
+            "cantidad": 17
         },
         {
             "campeon": "Orianna",
-            "cantidad": 58
+            "cantidad": 13
         },
         {
             "campeon": "Poppy",
-            "cantidad": 58
-        },
-        {
-            "campeon": "Neeko",
-            "cantidad": 57
+            "cantidad": 13
         },
         {
             "campeon": "Yunara",
-            "cantidad": 57
+            "cantidad": 12
+        },
+        {
+            "campeon": "Neeko",
+            "cantidad": 11
+        },
+        {
+            "campeon": "Ambessa",
+            "cantidad": 9
         },
         {
             "campeon": "Wukong",
-            "cantidad": 55
-        },
-        {
-            "campeon": "Alistar",
-            "cantidad": 54
-        },
-        {
-            "campeon": "Kai'Sa",
-            "cantidad": 52
-        },
-        {
-            "campeon": "Ryze",
-            "cantidad": 52
-        },
-        {
-            "campeon": "Leona",
-            "cantidad": 50
-        }
-    ],
-    "top_winrate": [
-        {
-            "campeon": "Ambessa",
-            "winrate": 92.73
+            "cantidad": 9
         },
         {
             "campeon": "Aurora",
-            "winrate": 92.73
+            "cantidad": 8
         },
         {
-            "campeon": "Bard",
-            "winrate": 92.73
+            "campeon": "Qiyana",
+            "cantidad": 7
         },
         {
-            "campeon": "Ezreal",
-            "winrate": 90.74
-        },
-        {
-            "campeon": "Vi",
-            "winrate": 84.75
-        },
+            "campeon": "Alistar",
+            "cantidad": 6
+        }
+    ],
+    "top_winrate": [
         {
             "campeon": "Orianna",
             "winrate": 83.33
@@ -123,6 +103,26 @@
         {
             "campeon": "Xin Zhao",
             "winrate": 71.43
+        },
+        {
+            "campeon": "Alistar",
+            "winrate": 57.14
+        },
+        {
+            "campeon": "Neeko",
+            "winrate": 50.0
+        },
+        {
+            "campeon": "Caitlyn",
+            "winrate": 44.44
+        },
+        {
+            "campeon": "Rek'Sai",
+            "winrate": 40.0
+        },
+        {
+            "campeon": "Taliyah",
+            "winrate": 37.5
         }
     ],
     "low_winrate": [
@@ -140,6 +140,10 @@
         },
         {
             "campeon": "Akshan",
+            "winrate": 0
+        },
+        {
+            "campeon": "Ambessa",
             "winrate": 0
         },
         {
@@ -161,44 +165,12 @@
         {
             "campeon": "Ashe",
             "winrate": 0
-        },
-        {
-            "campeon": "Aurelion Sol",
-            "winrate": 0
         }
     ],
     "top_kills_c": [
         {
-            "campeon": "Aurora",
-            "cantidad": 352
-        },
-        {
-            "campeon": "Ambessa",
-            "cantidad": 197
-        },
-        {
-            "campeon": "Vi",
-            "cantidad": 160
-        },
-        {
             "campeon": "Caitlyn",
-            "cantidad": 137
-        },
-        {
-            "campeon": "Naafiri",
-            "cantidad": 102
-        },
-        {
-            "campeon": "Ezreal",
-            "cantidad": 98
-        },
-        {
-            "campeon": "Taliyah",
-            "cantidad": 68
-        },
-        {
-            "campeon": "Yorick",
-            "cantidad": 48
+            "cantidad": 43
         },
         {
             "campeon": "Yunara",
@@ -206,18 +178,38 @@
         },
         {
             "campeon": "Ryze",
-            "cantidad": 32
+            "cantidad": 35
+        },
+        {
+            "campeon": "Wukong",
+            "cantidad": 31
+        },
+        {
+            "campeon": "Kai'Sa",
+            "cantidad": 28
+        },
+        {
+            "campeon": "Xin Zhao",
+            "cantidad": 26
+        },
+        {
+            "campeon": "Aurora",
+            "cantidad": 23
+        },
+        {
+            "campeon": "Qiyana",
+            "cantidad": 22
+        },
+        {
+            "campeon": "Taliyah",
+            "cantidad": 21
+        },
+        {
+            "campeon": "Orianna",
+            "cantidad": 19
         }
     ],
     "top_kda": [
-        {
-            "jugador": "Viper",
-            "kda": 122.75
-        },
-        {
-            "jugador": "Creme",
-            "kda": 34.0
-        },
         {
             "jugador": "Doggo",
             "kda": 32.0
@@ -228,11 +220,7 @@
         },
         {
             "jugador": "Bdd",
-            "kda": 23.0
-        },
-        {
-            "jugador": "Kanavi",
-            "kda": 16.0
+            "kda": 19.5
         },
         {
             "jugador": "Taki",
@@ -243,12 +231,24 @@
             "kda": 13.0
         },
         {
-            "jugador": "PerfecT",
-            "kda": 13.0
+            "jugador": "shad0w",
+            "kda": 12.0
         },
         {
-            "jugador": "Shad0w",
-            "kda": 12.0
+            "jugador": "Shanks",
+            "kda": 11.33
+        },
+        {
+            "jugador": "Tarzan",
+            "kda": 8.75
+        },
+        {
+            "jugador": "Ruler",
+            "kda": 8.33
+        },
+        {
+            "jugador": "Creme",
+            "kda": 8.0
         }
     ],
     "top_kills": [
@@ -295,10 +295,6 @@
     ],
     "top_sangre": [
         {
-            "jugador": "Disamis",
-            "cantidad": 1
-        },
-        {
             "jugador": "369",
             "cantidad": 0
         },
@@ -333,9 +329,17 @@
         {
             "jugador": "BrokenBlade",
             "cantidad": 0
+        },
+        {
+            "jugador": "Busio",
+            "cantidad": 0
         }
     ],
     "top_victorias_cortas": [
+        {
+            "equipo": "KT Rolster",
+            "tiempo": ""
+        },
         {
             "equipo": "Top Esports",
             "tiempo": "26:20"
@@ -351,10 +355,6 @@
         {
             "equipo": "Bilibili Gaming",
             "tiempo": "27:53"
-        },
-        {
-            "equipo": "KT Rolster",
-            "tiempo": "28:06"
         },
         {
             "equipo": "Hanwha Life Esports",
@@ -385,6 +385,14 @@
         {
             "equipo": "Invictus Gaming",
             "cantidad": 20
+        },
+        {
+            "equipo": "Top Esports",
+            "cantidad": 13
+        },
+        {
+            "equipo": "KT Rolster",
+            "cantidad": 12
         },
         {
             "equipo": "100 Thieves",
@@ -435,15 +443,7 @@
             "cantidad": 9
         },
         {
-            "equipo": "Top Esports",
-            "cantidad": 9
-        },
-        {
             "equipo": "CTBC Flying Oyster",
-            "cantidad": 8
-        },
-        {
-            "equipo": "KT Rolster",
             "cantidad": 8
         }
     ],
@@ -490,7 +490,23 @@
         },
         {
             "jugador": "369",
-            "cantidad": 2
+            "cantidad": 3
+        },
+        {
+            "jugador": "Hang",
+            "cantidad": 3
+        },
+        {
+            "jugador": "Kanavi",
+            "cantidad": 3
+        },
+        {
+            "jugador": "PerfecT",
+            "cantidad": 3
+        },
+        {
+            "jugador": "Peter",
+            "cantidad": 3
         },
         {
             "jugador": "Alvaro",
@@ -498,6 +514,10 @@
         },
         {
             "jugador": "Azhi",
+            "cantidad": 2
+        },
+        {
+            "jugador": "Bdd",
             "cantidad": 2
         },
         {
@@ -545,6 +565,10 @@
             "cantidad": 2
         },
         {
+            "jugador": "deokdam",
+            "cantidad": 2
+        },
+        {
             "jugador": "Dhokla",
             "cantidad": 2
         },
@@ -581,10 +605,6 @@
             "cantidad": 2
         },
         {
-            "jugador": "Hang",
-            "cantidad": 2
-        },
-        {
             "jugador": "Hans Sama",
             "cantidad": 2
         },
@@ -605,6 +625,10 @@
             "cantidad": 2
         },
         {
+            "jugador": "JackeyLove",
+            "cantidad": 2
+        },
+        {
             "jugador": "Jojopyun",
             "cantidad": 2
         },
@@ -618,10 +642,6 @@
         },
         {
             "jugador": "Kaiwing",
-            "cantidad": 2
-        },
-        {
-            "jugador": "Kanavi",
             "cantidad": 2
         },
         {
@@ -674,14 +694,6 @@
         },
         {
             "jugador": "Peanut",
-            "cantidad": 2
-        },
-        {
-            "jugador": "PerfecT",
-            "cantidad": 2
-        },
-        {
-            "jugador": "Peter",
             "cantidad": 2
         },
         {
@@ -745,19 +757,11 @@
             "cantidad": 2
         },
         {
-            "jugador": "Bdd",
-            "cantidad": 1
-        },
-        {
             "jugador": "Beichuan",
             "cantidad": 1
         },
         {
             "jugador": "Bwipo",
-            "cantidad": 1
-        },
-        {
-            "jugador": "deokdam",
             "cantidad": 1
         },
         {
@@ -777,15 +781,11 @@
             "cantidad": 1
         },
         {
-            "jugador": "JackeyLove",
-            "cantidad": 1
-        },
-        {
             "jugador": "Razork",
             "cantidad": 1
         },
         {
-            "jugador": "Shad0w",
+            "jugador": "shad0w",
             "cantidad": 1
         },
         {
@@ -794,14 +794,6 @@
         }
     ],
     "top_kills_e": [
-        {
-            "equipo": "Hanwha Life Esports",
-            "cantidad": 782
-        },
-        {
-            "equipo": "PSG Talon",
-            "cantidad": 298
-        },
         {
             "equipo": "T1",
             "cantidad": 125
@@ -812,11 +804,15 @@
         },
         {
             "equipo": "Top Esports",
-            "cantidad": 46
+            "cantidad": 53
         },
         {
             "equipo": "Anyone's Legend",
             "cantidad": 45
+        },
+        {
+            "equipo": "KT Rolster",
+            "cantidad": 44
         },
         {
             "equipo": "CTBC Flying Oyster",
@@ -833,51 +829,181 @@
         {
             "equipo": "100 Thieves",
             "cantidad": 31
+        },
+        {
+            "equipo": "Gen.G Esports",
+            "cantidad": 31
         }
     ],
-    "pentakills_jugadores": [
-        "Nadie"
-    ],
+    "pentakills_jugadores": [],
     "estadisticas_generales": {
         "cantidad_pentakills": 0,
         "robos_baron": 0,
         "remontadas": 0,
-        "campeones_distintos": 62,
+        "campeones_distintos": 63,
         "teemo_jugado": false,
         "teemo_mensaje": "No se ha jugado Teemo"
     },
     "ancianos_por_equipo": [
         {
+            "equipo": "100 Thieves",
+            "cantidad": 0
+        },
+        {
             "equipo": "Anyone's Legend",
-            "cantidad": 1
+            "cantidad": 0
+        },
+        {
+            "equipo": "Bilibili Gaming",
+            "cantidad": 0
+        },
+        {
+            "equipo": "CTBC Flying Oyster",
+            "cantidad": 0
+        },
+        {
+            "equipo": "FlyQuest",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Fnatic",
+            "cantidad": 0
+        },
+        {
+            "equipo": "G2 Esports",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Gen.G Esports",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Hanwha Life Esports",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Invictus Gaming",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Keyd Stars",
+            "cantidad": 0
+        },
+        {
+            "equipo": "KOI",
+            "cantidad": 0
+        },
+        {
+            "equipo": "KT Rolster",
+            "cantidad": 0
+        },
+        {
+            "equipo": "PSG Talon",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Secret Whales",
+            "cantidad": 0
+        },
+        {
+            "equipo": "T1",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Top Esports",
+            "cantidad": 0
         }
     ],
     "barones_por_equipo": [
         {
-            "equipo": "Nadie",
+            "equipo": "100 Thieves",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Anyone's Legend",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Bilibili Gaming",
+            "cantidad": 0
+        },
+        {
+            "equipo": "CTBC Flying Oyster",
+            "cantidad": 0
+        },
+        {
+            "equipo": "FlyQuest",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Fnatic",
+            "cantidad": 0
+        },
+        {
+            "equipo": "G2 Esports",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Gen.G Esports",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Hanwha Life Esports",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Invictus Gaming",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Keyd Stars",
+            "cantidad": 0
+        },
+        {
+            "equipo": "KOI",
+            "cantidad": 0
+        },
+        {
+            "equipo": "KT Rolster",
+            "cantidad": 0
+        },
+        {
+            "equipo": "PSG Talon",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Secret Whales",
+            "cantidad": 0
+        },
+        {
+            "equipo": "T1",
+            "cantidad": 0
+        },
+        {
+            "equipo": "Top Esports",
             "cantidad": 0
         }
     ],
     "clasificacion": [
         {
             "name": "20raul20",
-            "points": 260
+            "points": 250
         },
         {
             "name": "Alvaro MKOI",
-            "points": 260
+            "points": 270
         },
         {
             "name": "Labradoor13",
-            "points": 200
+            "points": 230
         },
         {
             "name": "ClaudiAway18",
-            "points": 50
+            "points": 60
         },
         {
             "name": "ElBartoMoreno",
-            "points": 100
+            "points": 150
         },
         {
             "name": "FarAway18",
@@ -885,7 +1011,7 @@
         },
         {
             "name": "IsmaBoom",
-            "points": 150
+            "points": 120
         },
         {
             "name": "Iuar",
@@ -897,15 +1023,15 @@
         },
         {
             "name": "Taeko",
-            "points": 150
+            "points": 170
         },
         {
             "name": "Terrorizan",
-            "points": 120
+            "points": 20
         },
         {
             "name": "ubahh",
-            "points": 20
+            "points": 10
         }
     ],
     "aciertos": {
@@ -916,14 +1042,14 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
             "Ancianos": 0,
             "Robar barones": 0,
             "Victoria más corta": 0,
-            "Más asesinatos": 10,
+            "Más asesinatos": 0,
             "Equipos_distintos": 0,
             "Pentakills": 0,
             "Barones robados": 0,
@@ -938,12 +1064,12 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
             "Ancianos": 0,
-            "Robar barones": 0,
+            "Robar barones": 10,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
             "Equipos_distintos": 0,
@@ -960,12 +1086,12 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 20,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
             "Ancianos": 0,
-            "Robar barones": 0,
+            "Robar barones": 10,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
             "Equipos_distintos": 50,
@@ -982,11 +1108,11 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
-            "Ancianos": 0,
+            "Ancianos": 10,
             "Robar barones": 0,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
@@ -1004,13 +1130,13 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
             "Ancianos": 0,
             "Robar barones": 0,
-            "Victoria más corta": 0,
+            "Victoria más corta": 50,
             "Más asesinatos": 0,
             "Equipos_distintos": 0,
             "Pentakills": 0,
@@ -1026,14 +1152,14 @@
             "Menor winrate": 20,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
             "Ancianos": 0,
             "Robar barones": 0,
-            "Victoria más corta": 0,
-            "Más asesinatos": 10,
+            "Victoria más corta": 10,
+            "Más asesinatos": 0,
             "Equipos_distintos": 0,
             "Pentakills": 0,
             "Barones robados": 0,
@@ -1048,11 +1174,11 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
-            "Ancianos": 50,
+            "Ancianos": 20,
             "Robar barones": 0,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
@@ -1070,7 +1196,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1092,7 +1218,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1114,7 +1240,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 20,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1136,20 +1262,20 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
-            "Récord kills": 20,
-            "Ancianos": 0,
+            "Récord kills": 0,
+            "Ancianos": 10,
             "Robar barones": 0,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
-            "Equipos_distintos": 0,
+            "Equipos_distintos": 10,
             "Pentakills": 0,
             "Barones robados": 0,
             "Remontadas": 0,
             "Campeones distintos": 0,
-            "Teemo": 100
+            "Teemo": 0
         },
         "ubahh": {
             "Picks": 0,
@@ -1158,14 +1284,14 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos jugadores": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
             "Ancianos": 0,
             "Robar barones": 0,
             "Victoria más corta": 0,
-            "Más asesinatos": 20,
+            "Más asesinatos": 10,
             "Equipos_distintos": 0,
             "Pentakills": 0,
             "Barones robados": 0,

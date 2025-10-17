@@ -5,7 +5,7 @@
     "Menor winrate": "Sylas",
     "Más kills": "Illaoi",
     "KDA": "Keria",
-    "Camepones distintos": "Razork",
+    "Jugadores distintos": "Razork",
     "Pentakill": "Kiin",
     "Primera sangre": "Viper",
     "Récord kills": "deokdam",

@@ -5,7 +5,7 @@
     "Menor winrate": "Lucian",
     "Más kills": "Kai'Sa",
     "KDA": "Ruler",
-    "Camepones distintos": "knight",
+    "Jugadores distintos": "knight",
     "Pentakill": "Viper",
     "Primera sangre": "Beichuan",
     "Récord kills": "Ruler",

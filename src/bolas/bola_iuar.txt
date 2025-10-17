@@ -5,7 +5,7 @@
     "Menor winrate": "",
     "Más kills": "",
     "KDA": "",
-    "Camepones distintos": "",
+    "Jugadores distintos": "",
     "Pentakill": "",
     "Primera sangre": "",
     "Récord kills": "",

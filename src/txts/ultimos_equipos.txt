@@ -1,4 +1,1 @@
-[
-    "Hanwha Life Esports",
-    "PSG Talon"
-]
+[]

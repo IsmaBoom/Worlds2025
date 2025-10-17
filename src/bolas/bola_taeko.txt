@@ -5,7 +5,7 @@
     "Menor winrate": "Lucian",
     "Más kills": "Kai'Sa",
     "KDA": "Ruler",
-    "Camepones distintos": "Keria",
+    "Jugadores distintos": "Keria",
     "Pentakill": "Ruler",
     "Primera sangre": "Peanut",
     "Récord kills": "Ruler",
