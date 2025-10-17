@@ -2,107 +2,107 @@
     "top_picks": [
         {
             "campeon": "Vi",
-            "cantidad": 59
+            "cantidad": 66
         },
         {
             "campeon": "Caitlyn",
-            "cantidad": 57
+            "cantidad": 64
         },
         {
             "campeon": "Taliyah",
-            "cantidad": 56
+            "cantidad": 63
         },
         {
             "campeon": "Ambessa",
-            "cantidad": 55
+            "cantidad": 62
         },
         {
             "campeon": "Aurora",
-            "cantidad": 55
+            "cantidad": 62
         },
         {
             "campeon": "Bard",
-            "cantidad": 55
+            "cantidad": 62
         },
         {
             "campeon": "Ezreal",
-            "cantidad": 54
+            "cantidad": 61
         },
         {
             "campeon": "Karma",
-            "cantidad": 51
+            "cantidad": 58
         },
         {
             "campeon": "Naafiri",
-            "cantidad": 50
+            "cantidad": 57
         },
         {
             "campeon": "Yorick",
-            "cantidad": 49
+            "cantidad": 56
         }
     ],
     "top_bans": [
         {
             "campeon": "Azir",
-            "cantidad": 62
+            "cantidad": 69
         },
         {
             "campeon": "Orianna",
-            "cantidad": 58
+            "cantidad": 65
         },
         {
             "campeon": "Poppy",
-            "cantidad": 58
+            "cantidad": 65
         },
         {
             "campeon": "Neeko",
-            "cantidad": 57
+            "cantidad": 64
         },
         {
             "campeon": "Yunara",
-            "cantidad": 57
+            "cantidad": 64
         },
         {
             "campeon": "Wukong",
-            "cantidad": 55
+            "cantidad": 62
         },
         {
             "campeon": "Alistar",
-            "cantidad": 54
+            "cantidad": 61
         },
         {
             "campeon": "Kai'Sa",
-            "cantidad": 52
+            "cantidad": 59
         },
         {
             "campeon": "Ryze",
-            "cantidad": 52
+            "cantidad": 59
         },
         {
             "campeon": "Leona",
-            "cantidad": 50
+            "cantidad": 57
         }
     ],
     "top_winrate": [
         {
             "campeon": "Ambessa",
-            "winrate": 92.73
+            "winrate": 93.55
         },
         {
             "campeon": "Aurora",
-            "winrate": 92.73
+            "winrate": 93.55
         },
         {
             "campeon": "Bard",
-            "winrate": 92.73
+            "winrate": 93.55
         },
         {
             "campeon": "Ezreal",
-            "winrate": 90.74
+            "winrate": 91.8
         },
         {
             "campeon": "Vi",
-            "winrate": 84.75
+            "winrate": 86.36
         },
         {
             "campeon": "Orianna",
@@ -170,35 +170,35 @@
     "top_kills_c": [
         {
             "campeon": "Aurora",
-            "cantidad": 352
+            "cantidad": 394
         },
         {
             "campeon": "Ambessa",
-            "cantidad": 197
+            "cantidad": 221
         },
         {
             "campeon": "Vi",
-            "cantidad": 160
+            "cantidad": 178
         },
         {
             "campeon": "Caitlyn",
-            "cantidad": 137
+            "cantidad": 149
         },
         {
             "campeon": "Naafiri",
-            "cantidad": 102
+            "cantidad": 114
         },
         {
             "campeon": "Ezreal",
-            "cantidad": 98
+            "cantidad": 110
         },
         {
             "campeon": "Taliyah",
-            "cantidad": 68
+            "cantidad": 74
         },
         {
             "campeon": "Yorick",
-            "cantidad": 48
+            "cantidad": 54
         },
         {
             "campeon": "Yunara",
@@ -212,7 +212,7 @@
     "top_kda": [
         {
             "jugador": "Viper",
-            "kda": 122.75
+            "kda": 137.75
         },
         {
             "jugador": "Creme",
@@ -791,16 +791,20 @@
         {
             "jugador": "SkewMond",
             "cantidad": 1
+        },
+        {
+            "jugador": "Rest",
+            "cantidad": 0
         }
     ],
     "top_kills_e": [
         {
             "equipo": "Hanwha Life Esports",
-            "cantidad": 782
+            "cantidad": 878
         },
         {
             "equipo": "PSG Talon",
-            "cantidad": 298
+            "cantidad": 334
         },
         {
             "equipo": "T1",
@@ -854,8 +858,8 @@
     ],
     "barones_por_equipo": [
         {
-            "equipo": "Nadie",
-            "cantidad": 0
+            "equipo": "Anyone's Legend",
+            "cantidad": 1
         }
     ],
     "clasificacion": [
@@ -869,7 +873,7 @@
         },
         {
             "name": "Labradoor13",
-            "points": 200
+            "points": 220
         },
         {
             "name": "ClaudiAway18",
@@ -897,7 +901,7 @@
         },
         {
             "name": "Taeko",
-            "points": 150
+            "points": 170
         },
         {
             "name": "Terrorizan",
@@ -916,7 +920,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
@@ -938,7 +942,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
@@ -960,7 +964,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 20,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
@@ -982,7 +986,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
@@ -1004,7 +1008,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1026,7 +1030,7 @@
             "Menor winrate": 20,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1048,7 +1052,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1070,7 +1074,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1092,7 +1096,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1114,7 +1118,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 20,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1136,7 +1140,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 20,
@@ -1158,7 +1162,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Camepones distintos": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,

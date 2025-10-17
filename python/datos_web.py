@@ -475,7 +475,7 @@ def bola_ideal():
             "Menor winrate":(low_winrate[0][0],low_winrate[1][0],low_winrate[2][0]),
             "Más kills":(kills_c_L[0][0],kills_c_L[1][0],kills_c_L[2][0]),
             "KDA":(kda[0][0],kda[1][0],kda[2][0]),
-            "Campeones distintos":(ranking_jugadores_diferentes[0][0],ranking_jugadores_diferentes[1][0],ranking_jugadores_diferentes[2][0]),
+            "Jugadores distintos":(ranking_jugadores_diferentes[0][0],ranking_jugadores_diferentes[1][0],ranking_jugadores_diferentes[2][0]),
             "Pentakill":mano_L["Pentakills_J"],
             "Primera Sangre":(sangre_L[0][0],sangre_L[1][0],sangre_L[2][0]),
             "Récord kills":(record_L[0][0],record_L[1][0],record_L[2][0]),
@@ -588,17 +588,17 @@ def puntuacion_detallada():
             aciertos[nombre]["KDA"] = 0
             
         # Campeones distintos (jugadores)
-        if bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][0]:
+        if bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][0]:
             puntos[nombre] += 50
-            aciertos[nombre]["Camepones distintos"] = 50
-        elif bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][1]:
+            aciertos[nombre]["Jugadores distintos"] = 50
+        elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][1]:
             puntos[nombre] += 20
-            aciertos[nombre]["Camepones distintos"] = 20
-        elif bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][2]:
+            aciertos[nombre]["Jugadores distintos"] = 20
+        elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][2]:
             puntos[nombre] += 10
-            aciertos[nombre]["Camepones distintos"] = 10
+            aciertos[nombre]["Jugadores distintos"] = 10
         else:
-            aciertos[nombre]["Camepones distintos"] = 0
+            aciertos[nombre]["Jugadores distintos"] = 0
             
         # Pentakill
         if bolas[nombre]["Pentakill"] in bola_general["Pentakill"]:
@@ -732,9 +732,8 @@ def puntuacion_detallada():
             aciertos[nombre]["Teemo"] = 100
         else:
             aciertos[nombre]["Teemo"] = 0
-    
     return puntos, aciertos
-
+    
 def puntuacion():
     """Mantiene compatibilidad, solo retorna puntos"""
     puntos, _ = puntuacion_detallada()
@@ -1003,7 +1002,7 @@ def exportar_datos_web():
         "clasificacion": clasificacion,
         "aciertos": aciertos_display,
     }
-    
+    print(aciertos_display)
     # Guardar en archivo JSON para la web
     output_path = os.path.join(SCRIPT_DIR, "..", "src", "data", "datos_web.json")
     with open(output_path, "w", encoding="utf8") as f:

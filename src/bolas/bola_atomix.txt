@@ -5,7 +5,7 @@
     "Menor winrate": "Corki",
     "Más kills": "Kai'Sa",
     "KDA": "Ruler",
-    "Camepones distintos": "Keria",
+    "Jugadores distintos": "Keria",
     "Pentakill": "Gumayusi",
     "Primera sangre": "Tarzan",
     "Récord kills": "Viper",

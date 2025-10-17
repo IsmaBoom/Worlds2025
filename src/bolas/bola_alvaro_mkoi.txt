@@ -5,7 +5,7 @@
     "Menor winrate": "Alistar",
     "Más kills": "Kai'Sa",
     "KDA": "Ruler",
-    "Camepones distintos": "knight",
+    "Jugadores distintos": "knight",
     "Pentakill": "Ruler",
     "Primera sangre": "Shad0w",
     "Récord kills": "Viper",

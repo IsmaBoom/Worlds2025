@@ -5,7 +5,7 @@
     "Menor winrate": "Renekton",
     "Más kills": "Lucian",
     "KDA": "Canyon",
-    "Camepones distintos": "Faker",
+    "Jugadores distintos": "Faker",
     "Pentakill": "Bin",
     "Primera sangre": "Peanut",
     "Récord kills": "Gumayusi",

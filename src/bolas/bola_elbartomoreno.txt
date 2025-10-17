@@ -5,7 +5,7 @@
     "Menor winrate": "Zeri",
     "Más kills": "Ezreal",
     "KDA": "Chovy",
-    "Camepones distintos": "JackeyLove",
+    "Jugadores distintos": "JackeyLove",
     "Pentakill": "Ruler",
     "Primera sangre": "Inspired",
     "Récord kills": "Zeus",

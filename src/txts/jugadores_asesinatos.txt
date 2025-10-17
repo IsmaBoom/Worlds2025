@@ -68,6 +68,7 @@
     "Quad": 9,
     "Quid": 9,
     "Razork": 1,
+    "Rest":0,
     "River": 3,
     "Rookie": 8,
     "Ruler": 8,
