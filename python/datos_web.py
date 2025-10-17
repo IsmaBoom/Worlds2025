@@ -492,7 +492,255 @@ def bola_ideal():
             }
     return(bola)
 
+def puntuacion_detallada():
+    """Calcula puntos y aciertos de cada participante con detalle"""
+    participantes = ("20raul20","alvaro_mkoi","atomix","claudiaway18","elbartomoreno","faraway18","ismaboom","iuar","pumba_dislexico","taeko","terrorizan","ubahh")
+    puntos = {}
+    aciertos = {}
+    bolas = {}
+    bola_general = bola_ideal()
+    
+    for i in participantes:
+        x = open(os.path.join(ALTERNATIVE_PATH, f"bola_{i}.txt"),"r+",encoding="utf8")
+        bolas[i] = json.loads(x.read())
+        x.close()
+    
+    for nombre in participantes:
+        puntos[nombre] = 0
+        aciertos[nombre] = {}
+        
+        # Picks
+        if bolas[nombre]["Picks"] == bola_general["Picks"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Picks"] = 50
+        elif bolas[nombre]["Picks"] == bola_general["Picks"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Picks"] = 20
+        elif bolas[nombre]["Picks"] == bola_general["Picks"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Picks"] = 10
+        else:
+            aciertos[nombre]["Picks"] = 0
+            
+        # Bans
+        if bolas[nombre]["Bans"] == bola_general["Bans"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Bans"] = 50
+        elif bolas[nombre]["Bans"] == bola_general["Bans"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Bans"] = 20
+        elif bolas[nombre]["Bans"] == bola_general["Bans"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Bans"] = 10
+        else:
+            aciertos[nombre]["Bans"] = 0
+            
+        # Mayor winrate
+        if bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Mayor winrate"] = 50
+        elif bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Mayor winrate"] = 20
+        elif bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Mayor winrate"] = 10
+        else:
+            aciertos[nombre]["Mayor winrate"] = 0
+            
+        # Menor winrate
+        if bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Menor winrate"] = 50
+        elif bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Menor winrate"] = 20
+        elif bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Menor winrate"] = 10
+        else:
+            aciertos[nombre]["Menor winrate"] = 0
+            
+        # Más kills
+        if bolas[nombre]["Más kills"] == bola_general["Más kills"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Más kills"] = 50
+        elif bolas[nombre]["Más kills"] == bola_general["Más kills"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Más kills"] = 20
+        elif bolas[nombre]["Más kills"] == bola_general["Más kills"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Más kills"] = 10
+        else:
+            aciertos[nombre]["Más kills"] = 0
+            
+        # KDA
+        if bolas[nombre]["KDA"] == bola_general["KDA"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["KDA"] = 50
+        elif bolas[nombre]["KDA"] == bola_general["KDA"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["KDA"] = 20
+        elif bolas[nombre]["KDA"] == bola_general["KDA"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["KDA"] = 10
+        else:
+            aciertos[nombre]["KDA"] = 0
+            
+        # Campeones distintos (jugadores)
+        if bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Camepones distintos"] = 50
+        elif bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Camepones distintos"] = 20
+        elif bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Camepones distintos"] = 10
+        else:
+            aciertos[nombre]["Camepones distintos"] = 0
+            
+        # Pentakill
+        if bolas[nombre]["Pentakill"] in bola_general["Pentakill"]:
+            puntos[nombre] += 100
+            aciertos[nombre]["Pentakill"] = 100
+        else:
+            aciertos[nombre]["Pentakill"] = 0
+            
+        # Primera sangre
+        if bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Primera sangre"] = 50
+        elif bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Primera sangre"] = 20
+        elif bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Primera sangre"] = 10
+        else:
+            aciertos[nombre]["Primera sangre"] = 0
+            
+        # Récord kills
+        if bolas[nombre]["Récord kills"] == bola_general["Récord kills"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Récord kills"] = 50
+        elif bolas[nombre]["Récord kills"] == bola_general["Récord kills"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Récord kills"] = 20
+        elif bolas[nombre]["Récord kills"] == bola_general["Récord kills"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Récord kills"] = 10
+        else:
+            aciertos[nombre]["Récord kills"] = 0
+            
+        # Ancianos
+        if bolas[nombre]["Ancianos"] == bola_general["Ancianos"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Ancianos"] = 50
+        elif len(bola_general["Ancianos"]) > 1 and bolas[nombre]["Ancianos"] == bola_general["Ancianos"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Ancianos"] = 20
+        elif len(bola_general["Ancianos"]) > 2 and bolas[nombre]["Ancianos"] == bola_general["Ancianos"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Ancianos"] = 10
+        else:
+            aciertos[nombre]["Ancianos"] = 0
+            
+        # Robar barones
+        if bolas[nombre]["Robar barones"] == bola_general["Robar barones"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Robar barones"] = 50
+        elif len(bola_general["Robar barones"]) > 1 and bolas[nombre]["Robar barones"] == bola_general["Robar barones"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Robar barones"] = 20
+        elif len(bola_general["Robar barones"]) > 2 and bolas[nombre]["Robar barones"] == bola_general["Robar barones"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Robar barones"] = 10
+        else:
+            aciertos[nombre]["Robar barones"] = 0
+            
+        # Victoria más corta
+        if bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Victoria más corta"] = 50
+        elif bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Victoria más corta"] = 20
+        elif bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Victoria más corta"] = 10
+        else:
+            aciertos[nombre]["Victoria más corta"] = 0
+            
+        # Más asesinatos
+        if bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Más asesinatos"] = 50
+        elif bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Más asesinatos"] = 20
+        elif bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Más asesinatos"] = 10
+        else:
+            aciertos[nombre]["Más asesinatos"] = 0
+            
+        # Equipos distintos
+        if bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][0]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Equipos_distintos"] = 50
+        elif bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][1]:
+            puntos[nombre] += 20
+            aciertos[nombre]["Equipos_distintos"] = 20
+        elif bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][2]:
+            puntos[nombre] += 10
+            aciertos[nombre]["Equipos_distintos"] = 10
+        else:
+            aciertos[nombre]["Equipos_distintos"] = 0
+            
+        # Pentakills totales
+        if bolas[nombre]["Pentakills"] == bola_general["Pentakills"]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Pentakills"] = 50
+        else:
+            aciertos[nombre]["Pentakills"] = 0
+            
+        # Barones robados
+        if bolas[nombre]["Barones robados"] == bola_general["Barones robados"]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Barones robados"] = 50
+        else:
+            aciertos[nombre]["Barones robados"] = 0
+            
+        # Remontadas
+        if bolas[nombre]["Remontadas"] == bola_general["Remontadas"]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Remontadas"] = 50
+        else:
+            aciertos[nombre]["Remontadas"] = 0
+            
+        # Campeones distintos totales
+        if bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"]:
+            puntos[nombre] += 50
+            aciertos[nombre]["Campeones distintos"] = 50
+        else:
+            aciertos[nombre]["Campeones distintos"] = 0
+            
+        # Teemo
+        if bolas[nombre]["Teemo"] == bola_general["Teemo"]:
+            puntos[nombre] += 100
+            aciertos[nombre]["Teemo"] = 100
+        else:
+            aciertos[nombre]["Teemo"] = 0
+    
+    return puntos, aciertos
+
 def puntuacion():
+    """Mantiene compatibilidad, solo retorna puntos"""
+    puntos, _ = puntuacion_detallada()
+    return puntos
+
+def puntuacion_con_aciertos():
     participantes = ("20raul20","alvaro_mkoi","atomix","claudiaway18","elbartomoreno","faraway18","ismaboom","iuar","pumba_dislexico","taeko","terrorizan","ubahh")
     puntos = {}
     bolas = {}
@@ -696,6 +944,37 @@ def exportar_datos_web():
     # Barones por equipo - convertir a formato de tabla
     barones_ranking = sorted(Barones.items(), key=lambda x: x[1], reverse=True)
 
+    # Obtener puntuaciones y aciertos de los participantes
+    puntos, aciertos = puntuacion_detallada()
+    
+    # Mapeo de nombres de archivo a nombres para mostrar
+    nombres_display = {
+        "atomix": "Labradoor13",
+        "alvaro_mkoi": "Alvaro MKOI",
+        "ubahh": "ubahh",
+        "iuar": "Iuar",
+        "terrorizan": "Terrorizan",
+        "ismaboom": "IsmaBoom",
+        "pumba_dislexico": "Pumba Disléxico",
+        "elbartomoreno": "ElBartoMoreno",
+        "taeko": "Taeko",
+        "faraway18": "FarAway18",
+        "claudiaway18": "ClaudiAway18",
+        "20raul20": "20raul20"
+    }
+    
+    # Convertir puntuaciones al formato deseado
+    clasificacion = [
+        {"name": nombres_display[k], "points": v} 
+        for k, v in puntos.items()
+    ]
+    
+    # Convertir aciertos con nombres para display
+    aciertos_display = {
+        nombres_display[k]: v 
+        for k, v in aciertos.items()
+    }
+
     # Exportar todo
     datos_web = {
         "top_picks": [{"campeon": k, "cantidad": v} for k, v in top_picks],
@@ -721,6 +1000,8 @@ def exportar_datos_web():
         },
         "ancianos_por_equipo": [{"equipo": k, "cantidad": v} for k, v in ancianos_ranking],
         "barones_por_equipo": [{"equipo": k, "cantidad": v} for k, v in barones_ranking],
+        "clasificacion": clasificacion,
+        "aciertos": aciertos_display,
     }
     
     # Guardar en archivo JSON para la web

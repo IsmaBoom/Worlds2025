@@ -28,6 +28,24 @@ interface BolaAtomix {
 interface PersonaBola {
   nombre: string;
   datos: BolaAtomix;
+  aciertos: { [key: string]: number };
+}
+
+interface DatosWeb {
+  aciertos?: { [participante: string]: { [prediccion: string]: number } };
+  [key: string]: any;
+}
+
+// Leer aciertos desde datos_web.json
+let aciertosData: { [participante: string]: { [prediccion: string]: number } } =
+  {};
+try {
+  const datosWebPath = "./src/data/datos_web.json";
+  const datosWebContent = fs.readFileSync(datosWebPath, "utf-8");
+  const datosWeb = JSON.parse(datosWebContent) as DatosWeb;
+  aciertosData = datosWeb.aciertos || {};
+} catch (error) {
+  console.error("Error al leer aciertos:", error);
 }
 
 // Leer todos los archivos de bolas
@@ -52,10 +70,19 @@ for (const bola of bolasFiles) {
     const bolaPath = `./src/bolas/${bola.archivo}`;
     const bolaContent = fs.readFileSync(bolaPath, "utf-8");
     const datos = JSON.parse(bolaContent) as BolaAtomix;
-    participantes.push({ nombre: bola.nombre, datos });
+    const aciertos = aciertosData[bola.nombre] || {};
+    participantes.push({ nombre: bola.nombre, datos, aciertos });
   } catch (error) {
     console.error(`Error al leer ${bola.archivo}:`, error);
   }
+}
+
+// Función para obtener la clase CSS según los puntos
+function getAciertoClass(puntos: number): string {
+  if (puntos >= 50) return "acierto-oro";
+  if (puntos >= 20) return "acierto-plata";
+  if (puntos >= 10) return "acierto-bronce";
+  return "";
 }
 ---
 
@@ -84,7 +111,7 @@ for (const bola of bolasFiles) {
 
     <!-- Vista de Predicciones (inicialmente oculta) -->
     {
-      participantes.map(({ nombre, datos }, index) => (
+      participantes.map(({ nombre, datos, aciertos }, index) => (
         <div
           id={`prediccion-${index}`}
           class="prediccion-view"
@@ -101,35 +128,45 @@ for (const bola of bolasFiles) {
             <div class="block-container">
               <h3 class="block-title">📊 Estadísticas de Campeones</h3>
               <div class="predictions-block">
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Picks"] || 0)}`}
+                >
                   <span class="icon">🏆</span>
                   <div class="pred-content">
                     <span class="pred-label">Top Picks</span>
                     <span class="pred-value">{datos.Picks}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Bans"] || 0)}`}
+                >
                   <span class="icon">🚫</span>
                   <div class="pred-content">
                     <span class="pred-label">Top Bans</span>
                     <span class="pred-value">{datos.Bans}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Mayor winrate"] || 0)}`}
+                >
                   <span class="icon">📈</span>
                   <div class="pred-content">
                     <span class="pred-label">Mayor Winrate</span>
                     <span class="pred-value">{datos["Mayor winrate"]}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Menor winrate"] || 0)}`}
+                >
                   <span class="icon">📉</span>
                   <div class="pred-content">
                     <span class="pred-label">Menor Winrate</span>
                     <span class="pred-value">{datos["Menor winrate"]}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Más kills"] || 0)}`}
+                >
                   <span class="icon">🗡️</span>
                   <div class="pred-content">
                     <span class="pred-label">Más Kills</span>
@@ -143,14 +180,18 @@ for (const bola of bolasFiles) {
             <div class="block-container">
               <h3 class="block-title">⭐ Jugadores Destacados</h3>
               <div class="predictions-block">
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["KDA"] || 0)}`}
+                >
                   <span class="icon">📊</span>
                   <div class="pred-content">
                     <span class="pred-label">Mejor KDA</span>
                     <span class="pred-value">{datos.KDA}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Camepones distintos"] || 0)}`}
+                >
                   <span class="icon">🎮</span>
                   <div class="pred-content">
                     <span class="pred-label">Campeones Distintos</span>
@@ -159,21 +200,27 @@ for (const bola of bolasFiles) {
                     </span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Pentakill"] || 0)}`}
+                >
                   <span class="icon">🌟</span>
                   <div class="pred-content">
                     <span class="pred-label">Pentakill</span>
                     <span class="pred-value">{datos.Pentakill}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Primera sangre"] || 0)}`}
+                >
                   <span class="icon">🩸</span>
                   <div class="pred-content">
                     <span class="pred-label">Primera Sangre</span>
                     <span class="pred-value">{datos["Primera sangre"]}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Récord kills"] || 0)}`}
+                >
                   <span class="icon">💀</span>
                   <div class="pred-content">
                     <span class="pred-label">Récord Kills</span>
@@ -187,21 +234,27 @@ for (const bola of bolasFiles) {
             <div class="block-container">
               <h3 class="block-title">🏆 Equipos</h3>
               <div class="predictions-block">
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Ancianos"] || 0)}`}
+                >
                   <span class="icon">🐉</span>
                   <div class="pred-content">
                     <span class="pred-label">Dragones Ancianos</span>
                     <span class="pred-value">{datos.Ancianos}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Robar barones"] || 0)}`}
+                >
                   <span class="icon">👑</span>
                   <div class="pred-content">
                     <span class="pred-label">Robar Barones</span>
                     <span class="pred-value">{datos["Robar barones"]}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Victoria más corta"] || 0)}`}
+                >
                   <span class="icon">⚡</span>
                   <div class="pred-content">
                     <span class="pred-label">Victoria Más Corta</span>
@@ -210,14 +263,18 @@ for (const bola of bolasFiles) {
                     </span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Más asesinatos"] || 0)}`}
+                >
                   <span class="icon">⚔️</span>
                   <div class="pred-content">
                     <span class="pred-label">Más Asesinatos</span>
                     <span class="pred-value">{datos["Más asesinatos"]}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Equipos_distintos"] || 0)}`}
+                >
                   <span class="icon">🎭</span>
                   <div class="pred-content">
                     <span class="pred-label">Equipos Distintos</span>
@@ -231,14 +288,18 @@ for (const bola of bolasFiles) {
             <div class="block-container">
               <h3 class="block-title">🎲 Predicciones Numéricas</h3>
               <div class="predictions-block">
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Pentakills"] || 0)}`}
+                >
                   <span class="icon">🌟</span>
                   <div class="pred-content">
                     <span class="pred-label">Pentakills Totales</span>
                     <span class="pred-value highlight">{datos.Pentakills}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Barones robados"] || 0)}`}
+                >
                   <span class="icon">🎯</span>
                   <div class="pred-content">
                     <span class="pred-label">Barones Robados</span>
@@ -247,14 +308,18 @@ for (const bola of bolasFiles) {
                     </span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Remontadas"] || 0)}`}
+                >
                   <span class="icon">🔄</span>
                   <div class="pred-content">
                     <span class="pred-label">Remontadas</span>
                     <span class="pred-value highlight">{datos.Remontadas}</span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Campeones distintos"] || 0)}`}
+                >
                   <span class="icon">🎮</span>
                   <div class="pred-content">
                     <span class="pred-label">Campeones Distintos</span>
@@ -263,7 +328,9 @@ for (const bola of bolasFiles) {
                     </span>
                   </div>
                 </div>
-                <div class="pred-item">
+                <div
+                  class={`pred-item ${getAciertoClass(aciertos["Teemo"] || 0)}`}
+                >
                   <span class="icon">🐹</span>
                   <div class="pred-content">
                     <span class="pred-label">Teemo</span>
@@ -520,6 +587,64 @@ for (const bola of bolasFiles) {
 
     .pred-value.teemo {
       color: #ff6b6b;
+    }
+
+    /* Estilos de aciertos */
+    .acierto-oro {
+      background: linear-gradient(
+        90deg,
+        rgba(255, 215, 0, 0.15),
+        rgba(255, 215, 0, 0.05)
+      ) !important;
+      border-left: 4px solid #ffd700 !important;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    }
+
+    .acierto-oro:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(255, 215, 0, 0.25),
+        rgba(255, 215, 0, 0.1)
+      ) !important;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    }
+
+    .acierto-plata {
+      background: linear-gradient(
+        90deg,
+        rgba(192, 192, 192, 0.15),
+        rgba(192, 192, 192, 0.05)
+      ) !important;
+      border-left: 4px solid #c0c0c0 !important;
+      box-shadow: 0 0 15px rgba(192, 192, 192, 0.3);
+    }
+
+    .acierto-plata:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(192, 192, 192, 0.25),
+        rgba(192, 192, 192, 0.1)
+      ) !important;
+      box-shadow: 0 0 20px rgba(192, 192, 192, 0.5);
+    }
+
+    .acierto-bronce {
+      background: linear-gradient(
+        90deg,
+        rgba(205, 127, 50, 0.15),
+        rgba(205, 127, 50, 0.05)
+      ) !important;
+      border-left: 4px solid #cd7f32 !important;
+      box-shadow: 0 0 15px rgba(205, 127, 50, 0.3);
+    }
+
+    .acierto-bronce:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(205, 127, 50, 0.25),
+        rgba(205, 127, 50, 0.1)
+      ) !important;
+      box-shadow: 0 0 20px rgba(205, 127, 50, 0.5);
     }
 
     @media (max-width: 1200px) {

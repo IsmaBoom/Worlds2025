@@ -1,18 +1,44 @@
 ---
-const players = [
-  { name: "Labradoor13", points: 120 },
-  { name: "Ismaboom", points: 95 },
-  { name: "Taeko", points: 80 },
-  { name: "Iuar", points: 60 },
-  { name: "Alvaro MKOI", points: 60 },
-  { name: "Pumba Dislexico", points: 60 },
-  { name: "ClaudiAway18", points: 60 },
-  { name: "FarAway18", points: 60 },
-  { name: "Ubahh", points: 60 },
-  { name: "Terrorizan", points: 60 },
-  { name: "ElBartoMoreno", points: 60 },
-  { name: "20raul20", points: 60 },
-];
+import fs from "fs";
+import path from "path";
+
+interface Jugador {
+  name: string;
+  points: number;
+}
+
+interface DatosWeb {
+  clasificacion: Jugador[];
+  [key: string]: any;
+}
+
+// Leer el archivo JSON con los datos
+const datosPath = "./src/data/datos_web.json";
+
+let players: Jugador[] = [];
+
+try {
+  const fileContent = fs.readFileSync(datosPath, "utf-8");
+  const datos = JSON.parse(fileContent) as DatosWeb;
+  players = datos.clasificacion || [];
+} catch (error) {
+  console.error("Error al leer los datos:", error);
+  // Datos por defecto en caso de error
+  players = [
+    { name: "Labradoor13", points: 0 },
+    { name: "IsmaBoom", points: 0 },
+    { name: "Taeko", points: 0 },
+    { name: "Iuar", points: 0 },
+    { name: "Alvaro MKOI", points: 0 },
+    { name: "Pumba Disléxico", points: 0 },
+    { name: "ClaudiAway18", points: 0 },
+    { name: "FarAway18", points: 0 },
+    { name: "ubahh", points: 0 },
+    { name: "Terrorizan", points: 0 },
+    { name: "ElBartoMoreno", points: 0 },
+    { name: "20raul20", points: 0 },
+  ];
+}
 
 const sortedPlayers = players.sort((a, b) => b.points - a.points);
 ---
