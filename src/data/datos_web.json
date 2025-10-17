@@ -842,7 +842,7 @@
     "pentakills_jugadores": [],
     "estadisticas_generales": {
         "cantidad_pentakills": 0,
-        "robos_baron": 0,
+        "robos_baron": 1,
         "remontadas": 0,
         "campeones_distintos": 67,
         "teemo_jugado": false,
@@ -850,11 +850,11 @@
     },
     "ancianos_por_equipo": [
         {
-            "equipo": "100 Thieves",
-            "cantidad": 0
+            "equipo": "Anyone's Legend",
+            "cantidad": 1
         },
         {
-            "equipo": "Anyone's Legend",
+            "equipo": "100 Thieves",
             "cantidad": 0
         },
         {
@@ -920,11 +920,11 @@
     ],
     "barones_por_equipo": [
         {
-            "equipo": "100 Thieves",
-            "cantidad": 0
+            "equipo": "Anyone's Legend",
+            "cantidad": 1
         },
         {
-            "equipo": "Anyone's Legend",
+            "equipo": "100 Thieves",
             "cantidad": 0
         },
         {
@@ -1015,7 +1015,7 @@
         },
         {
             "name": "IsmaBoom",
-            "points": 120
+            "points": 150
         },
         {
             "name": "Iuar",
@@ -1046,7 +1046,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
@@ -1068,7 +1068,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
@@ -1090,7 +1090,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 20,
+            "Jugadores distintos": 20,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
@@ -1112,7 +1112,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 50,
@@ -1134,7 +1134,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1156,7 +1156,7 @@
             "Menor winrate": 20,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1178,11 +1178,11 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
-            "Ancianos": 20,
+            "Ancianos": 50,
             "Robar barones": 0,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
@@ -1200,7 +1200,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1222,7 +1222,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1244,7 +1244,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 20,
+            "Jugadores distintos": 20,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1266,7 +1266,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
@@ -1288,7 +1288,7 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos jugadores": 0,
+            "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,

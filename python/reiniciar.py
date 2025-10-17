@@ -148,34 +148,9 @@ def reiniciar_equipos():
         json.dump(teams_distintos, f, indent=4)
     print(f"✓ equipos_distintos.txt reiniciado")
 
-def reiniciar_cosas_a_mano():
-    """Reinicia el archivo de cosas a mano"""
-    cosas_a_mano = {
-        "Pentakills": 0,
-        "Pentakills_J": [],
-        "Barones_robados": 0,
-        "Remontadas": 0,
-        "Ancianos": {
-            "100 Thieves": 0, "Anyone's Legend": 0, "Bilibili Gaming": 0,
-            "CTBC Flying Oyster": 0, "FlyQuest": 0, "Fnatic": 0,
-            "G2 Esports": 0, "Gen.G Esports": 0, "Hanwha Life Esports": 0,
-            "Invictus Gaming": 0, "Keyd Stars": 0, "KOI": 0,
-            "KT Rolster": 0, "PSG Talon": 0, "Secret Whales": 0,
-            "T1": 0, "Top Esports": 0,
-        },
-        "Equipo_baron": {
-            "100 Thieves": 0, "Anyone's Legend": 0, "Bilibili Gaming": 0,
-            "CTBC Flying Oyster": 0, "FlyQuest": 0, "Fnatic": 0,
-            "G2 Esports": 0, "Gen.G Esports": 0, "Hanwha Life Esports": 0,
-            "Invictus Gaming": 0, "Keyd Stars": 0, "KOI": 0,
-            "KT Rolster": 0, "PSG Talon": 0, "Secret Whales": 0,
-            "T1": 0, "Top Esports": 0,
-        }
-    }
+
     
-    with open(os.path.join(BASE_PATH, "cosas_a_mano.txt"), "w", encoding="utf8") as f:
-        json.dump(cosas_a_mano, f, indent=4)
-    print(f"✓ cosas_a_mano.txt reiniciado")
+    
 
 def reiniciar_links():
     """Reinicia el archivo de links"""
@@ -215,8 +190,6 @@ def main():
     reiniciar_equipos()
     print()
     
-    reiniciar_cosas_a_mano()
-    print()
     
     reiniciar_links()
     print()

@@ -430,7 +430,7 @@ def bola_ideal():
     e_diferentes_L = sorted(longitudes.items(), key=lambda x:x[1], reverse=True)[:10]
 
     campeones_distintos = len([c for c, n in picks_L if n > 0])
-    print(campeones_distintos)
+    
 
     mano = open(os.path.join(BASE_PATH, "cosas_a_mano.txt"),"r+",encoding="utf8")
     mano_L = json.loads(mano.read())
@@ -468,7 +468,6 @@ def bola_ideal():
     else:
         teemo = "No se ha jugado Teemo"
 
-    print(ranking_jugadores_diferentes[0][0])
     bola = {"Picks":(picks_L[0][0],picks_L[1][0],picks_L[2][0]),
             "Bans":(bans_L[0][0],bans_L[1][0],bans_L[2][0]),
             "Mayor winrate":(top_winrate[0][0],top_winrate[1][0],top_winrate[2][0]),
@@ -590,15 +589,15 @@ def puntuacion_detallada():
         # Campeones distintos (jugadores)
         if bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][0]:
             puntos[nombre] += 50
-            aciertos[nombre]["Jugadores distintos jugadores"] = 50
+            aciertos[nombre]["Jugadores distintos"] = 50
         elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][1]:
             puntos[nombre] += 20
-            aciertos[nombre]["Jugadores distintos jugadores"] = 20
+            aciertos[nombre]["Jugadores distintos"] = 20
         elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][2]:
             puntos[nombre] += 10
-            aciertos[nombre]["Jugadores distintos jugadores"] = 10
+            aciertos[nombre]["Jugadores distintos"] = 10
         else:
-            aciertos[nombre]["Jugadores distintos jugadores"] = 0
+            aciertos[nombre]["Jugadores distintos"] = 0
 
         # Pentakill
         if bolas[nombre]["Pentakill"] in bola_general["Pentakill"]:
