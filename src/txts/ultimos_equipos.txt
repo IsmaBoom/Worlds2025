@@ -1,1 +1,4 @@
-[]
+[
+    "CTBC Flying Oyster",
+    "Anyone's Legend"
+]
