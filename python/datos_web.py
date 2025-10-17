@@ -598,7 +598,7 @@ def puntuacion():
         if bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"]:
             puntos[nombre] += 50
         if bolas[nombre]["Teemo"] == bola_general["Teemo"]:
-            puntos[nombre] += 50
+            puntos[nombre] += 100
         
     return puntos
 

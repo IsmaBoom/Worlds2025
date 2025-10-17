@@ -2,107 +2,107 @@
     "top_picks": [
         {
             "campeon": "Caitlyn",
-            "cantidad": 52
+            "cantidad": 53
         },
         {
             "campeon": "Taliyah",
-            "cantidad": 51
+            "cantidad": 52
         },
         {
             "campeon": "Vi",
-            "cantidad": 51
+            "cantidad": 52
         },
         {
             "campeon": "Ambessa",
-            "cantidad": 47
+            "cantidad": 48
         },
         {
             "campeon": "Aurora",
-            "cantidad": 47
+            "cantidad": 48
         },
         {
             "campeon": "Bard",
-            "cantidad": 47
+            "cantidad": 48
         },
         {
             "campeon": "Ezreal",
-            "cantidad": 46
+            "cantidad": 47
         },
         {
             "campeon": "Karma",
-            "cantidad": 46
+            "cantidad": 47
         },
         {
             "campeon": "Naafiri",
-            "cantidad": 45
+            "cantidad": 46
         },
         {
             "campeon": "Yorick",
-            "cantidad": 44
+            "cantidad": 45
         }
     ],
     "top_bans": [
         {
             "campeon": "Azir",
-            "cantidad": 59
+            "cantidad": 60
         },
         {
             "campeon": "Orianna",
-            "cantidad": 55
+            "cantidad": 56
         },
         {
             "campeon": "Poppy",
-            "cantidad": 55
+            "cantidad": 56
         },
         {
             "campeon": "Neeko",
-            "cantidad": 54
+            "cantidad": 55
         },
         {
             "campeon": "Yunara",
-            "cantidad": 54
+            "cantidad": 55
         },
         {
             "campeon": "Wukong",
-            "cantidad": 52
+            "cantidad": 53
         },
         {
             "campeon": "Alistar",
-            "cantidad": 49
+            "cantidad": 50
         },
         {
             "campeon": "Kai'Sa",
-            "cantidad": 49
+            "cantidad": 50
         },
         {
             "campeon": "Ryze",
-            "cantidad": 49
+            "cantidad": 50
         },
         {
             "campeon": "Leona",
-            "cantidad": 47
+            "cantidad": 48
         }
     ],
     "top_winrate": [
         {
             "campeon": "Ambessa",
-            "winrate": 97.87
+            "winrate": 97.92
         },
         {
             "campeon": "Aurora",
-            "winrate": 97.87
+            "winrate": 97.92
         },
         {
             "campeon": "Bard",
-            "winrate": 97.87
+            "winrate": 97.92
         },
         {
             "campeon": "Ezreal",
-            "winrate": 95.65
+            "winrate": 95.74
         },
         {
             "campeon": "Vi",
-            "winrate": 88.24
+            "winrate": 88.46
         },
         {
             "campeon": "Orianna",
@@ -170,35 +170,35 @@
     "top_kills_c": [
         {
             "campeon": "Aurora",
-            "cantidad": 324
+            "cantidad": 331
         },
         {
             "campeon": "Ambessa",
-            "cantidad": 181
+            "cantidad": 185
         },
         {
             "campeon": "Vi",
-            "cantidad": 148
+            "cantidad": 151
         },
         {
             "campeon": "Caitlyn",
-            "cantidad": 129
+            "cantidad": 131
         },
         {
             "campeon": "Naafiri",
-            "cantidad": 94
+            "cantidad": 96
         },
         {
             "campeon": "Ezreal",
-            "cantidad": 90
+            "cantidad": 92
         },
         {
             "campeon": "Taliyah",
-            "cantidad": 64
+            "cantidad": 65
         },
         {
             "campeon": "Yorick",
-            "cantidad": 44
+            "cantidad": 45
         },
         {
             "campeon": "Yunara",
@@ -212,7 +212,7 @@
     "top_kda": [
         {
             "jugador": "Viper",
-            "kda": 112.75
+            "kda": 115.25
         },
         {
             "jugador": "Creme",
@@ -796,11 +796,11 @@
     "top_kills_e": [
         {
             "equipo": "Hanwha Life Esports",
-            "cantidad": 718
+            "cantidad": 734
         },
         {
             "equipo": "PSG Talon",
-            "cantidad": 274
+            "cantidad": 280
         },
         {
             "equipo": "T1",

@@ -9,7 +9,7 @@
     "Pentakill": "Viper",
     "Primera sangre": "Beichuan",
     "Récord kills": "Ruler",
-    "Ancianos": "Hanwha Life Esports",
+    "Ancianos": "Anyone's Legend",
     "Robar barones": "T1",
     "Victoria más corta": "Gen.G Esports",
     "Más asesinatos": "Bilibili Gaming",
