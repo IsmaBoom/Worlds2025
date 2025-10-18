@@ -4481,10 +4481,6 @@
     ],
     "top_victorias_cortas": [
         {
-            "equipo": "KT Rolster",
-            "tiempo": ""
-        },
-        {
             "equipo": "Hanwha Life Esports",
             "tiempo": "24:50"
         },
@@ -4507,6 +4503,10 @@
         {
             "equipo": "G2 Esports",
             "tiempo": "28:03"
+        },
+        {
+            "equipo": "KT Rolster",
+            "tiempo": "28:06"
         },
         {
             "equipo": "Anyone's Legend",
@@ -5195,11 +5195,11 @@
         },
         {
             "name": "Alvaro MKOI",
-            "points": 350
+            "points": 380
         },
         {
             "name": "Labradoor13",
-            "points": 240
+            "points": 270
         },
         {
             "name": "ClaudiAway18",
@@ -5207,11 +5207,11 @@
         },
         {
             "name": "ElBartoMoreno",
-            "points": 170
+            "points": 120
         },
         {
             "name": "FarAway18",
-            "points": 120
+            "points": 130
         },
         {
             "name": "IsmaBoom",
@@ -5235,7 +5235,7 @@
         },
         {
             "name": "ubahh",
-            "points": 0
+            "points": 10
         }
     ],
     "aciertos": {
@@ -5275,7 +5275,7 @@
             "Ancianos": 0,
             "Robar barones": 10,
             "Victoria más corta": 0,
-            "Más asesinatos": 20,
+            "Más asesinatos": 50,
             "Equipos_distintos": 0,
             "Pentakills": 0,
             "Barones robados": 50,
@@ -5296,7 +5296,7 @@
             "Récord kills": 50,
             "Ancianos": 0,
             "Robar barones": 10,
-            "Victoria más corta": 20,
+            "Victoria más corta": 50,
             "Más asesinatos": 0,
             "Equipos_distintos": 50,
             "Pentakills": 0,
@@ -5340,7 +5340,7 @@
             "Récord kills": 0,
             "Ancianos": 0,
             "Robar barones": 0,
-            "Victoria más corta": 50,
+            "Victoria más corta": 0,
             "Más asesinatos": 0,
             "Equipos_distintos": 0,
             "Pentakills": 0,
@@ -5362,7 +5362,7 @@
             "Récord kills": 0,
             "Ancianos": 0,
             "Robar barones": 0,
-            "Victoria más corta": 0,
+            "Victoria más corta": 10,
             "Más asesinatos": 0,
             "Equipos_distintos": 0,
             "Pentakills": 0,
@@ -5495,7 +5495,7 @@
             "Ancianos": 0,
             "Robar barones": 0,
             "Victoria más corta": 0,
-            "Más asesinatos": 0,
+            "Más asesinatos": 10,
             "Equipos_distintos": 0,
             "Pentakills": 0,
             "Barones robados": 0,
