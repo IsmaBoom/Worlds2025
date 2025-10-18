@@ -9,7 +9,11 @@
         "Vi",
         "Taliyah",
         "Kai'Sa",
-        "Rakan"
+        "Rakan",
+        "K'Sante",
+        "Pantheon",
+        "Senna",
+        "Alistar"
     ],
     "Anyone's Legend": [
         "Rek'Sai",
@@ -44,7 +48,12 @@
         "Naafiri",
         "Orianna",
         "Xayah",
-        "Rakan"
+        "Rakan",
+        "K'Sante",
+        "Qiyana",
+        "Ryze",
+        "Ezreal",
+        "Leona"
     ],
     "CTBC Flying Oyster": [
         "Sion",
@@ -79,7 +88,10 @@
         "Wukong",
         "Viktor",
         "Yunara",
-        "Alistar"
+        "Alistar",
+        "Sion",
+        "Azir",
+        "Corki"
     ],
     "Fnatic": [
         "K'Sante",
@@ -101,7 +113,11 @@
         "K'Sante",
         "LeBlanc",
         "Yunara",
-        "Bard"
+        "Bard",
+        "Poppy",
+        "Anivia",
+        "Varus",
+        "Braum"
     ],
     "Gen.G Esports": [
         "Ambessa",
@@ -113,7 +129,11 @@
         "Xin Zhao",
         "Ryze",
         "Kai'Sa",
-        "Alistar"
+        "Alistar",
+        "Sion",
+        "Orianna",
+        "Corki",
+        "Poppy"
     ],
     "Hanwha Life Esports": [
         "K'Sante",
@@ -125,7 +145,12 @@
         "Vi",
         "Aurora",
         "Ezreal",
-        "Bard"
+        "Bard",
+        "Sion",
+        "Xin Zhao",
+        "Azir",
+        "Lucian",
+        "Braum"
     ],
     "Invictus Gaming": [
         "Rek'Sai",
@@ -208,7 +233,10 @@
         "Jarvan IV",
         "Galio",
         "Ezreal",
-        "Bard"
+        "Bard",
+        "Mordekaiser",
+        "Qiyana",
+        "Rakan"
     ],
     "T1": [
         "Ambessa",
@@ -238,7 +266,9 @@
         "Vi",
         "Cassiopeia",
         "Caitlyn",
-        "Neeko"
+        "Neeko",
+        "Aurora",
+        "Kai'Sa"
     ],
     "Top Esports": [
         "Aatrox",
