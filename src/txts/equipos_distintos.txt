@@ -20,7 +20,19 @@
         "Qiyana",
         "Taliyah",
         "Corki",
-        "Poppy"
+        "Poppy",
+        "Kled",
+        "Maokai",
+        "Ryze",
+        "Ambessa",
+        "Xin Zhao",
+        "Orianna",
+        "Ziggs",
+        "Leona",
+        "Trundle",
+        "LeBlanc",
+        "Jhin",
+        "Alistar"
     ],
     "Bilibili Gaming": [
         "Rek'Sai",
@@ -42,7 +54,21 @@
         "Neeko",
         "Qiyana",
         "Draven",
-        "Alistar"
+        "Alistar",
+        "Wukong",
+        "Aurora",
+        "Corki",
+        "Nami",
+        "Rumble",
+        "Pantheon",
+        "Akali",
+        "Lucian",
+        "Braum",
+        "Renekton",
+        "Vi",
+        "Taliyah",
+        "Miss Fortune",
+        "Nautilus"
     ],
     "FlyQuest": [
         "Mordekaiser",
@@ -154,7 +180,11 @@
         "Braum",
         "Ornn",
         "Trundle",
-        "Neeko"
+        "Neeko",
+        "Renekton",
+        "Cassiopeia",
+        "Ezreal",
+        "Alistar"
     ],
     "PSG Talon": [
         "Rumble",
@@ -219,6 +249,10 @@
         "Sion",
         "Qiyana",
         "Ryze",
-        "Leona"
+        "Leona",
+        "K'Sante",
+        "Zed",
+        "Xayah",
+        "Rakan"
     ]
 }

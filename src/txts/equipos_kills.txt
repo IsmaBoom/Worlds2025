@@ -1,19 +1,19 @@
 {
     "100 Thieves": 31,
-    "Anyone's Legend": 45,
+    "Anyone's Legend": 83,
     "Bilibili Gaming": 20,
-    "CTBC Flying Oyster": 43,
+    "CTBC Flying Oyster": 81,
     "FlyQuest": 38,
     "Fnatic": 11,
     "G2 Esports": 27,
     "Gen.G Esports": 31,
-    "Hanwha Life Esports": 878,
+    "Hanwha Life Esports": 30,
     "Invictus Gaming": 58,
     "Keyd Stars": 13,
     "KOI": 14,
-    "KT Rolster": 26,
-    "PSG Talon": 334,
+    "KT Rolster": 44,
+    "PSG Talon": 16,
     "Secret Whales": 33,
     "T1": 125,
-    "Top Esports": 46
+    "Top Esports": 53
 }

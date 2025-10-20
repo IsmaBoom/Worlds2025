@@ -1,1 +1,44 @@
-{"Pentakills":0,"Pentakills_J":["Nadie"],"Ancianos":{"Anyone's Legend": 1},"Barones_robados":0,"Remontadas":0,"Equipo_baron":{"Anyone's Legend": 1}}
+{
+    "Pentakills": 0,
+    "Pentakills_J": [],
+    "Barones_robados": 0,
+    "Remontadas": 0,
+    "Ancianos": {
+        "100 Thieves": 0,
+        "Anyone's Legend": 0,
+        "Bilibili Gaming": 0,
+        "CTBC Flying Oyster": 0,
+        "FlyQuest": 0,
+        "Fnatic": 0,
+        "G2 Esports": 0,
+        "Gen.G Esports": 0,
+        "Hanwha Life Esports": 0,
+        "Invictus Gaming": 0,
+        "Keyd Stars": 0,
+        "KOI": 0,
+        "KT Rolster": 0,
+        "PSG Talon": 0,
+        "Secret Whales": 0,
+        "T1": 0,
+        "Top Esports": 0
+    },
+    "Equipo_baron": {
+        "100 Thieves": 0,
+        "Anyone's Legend": 0,
+        "Bilibili Gaming": 0,
+        "CTBC Flying Oyster": 0,
+        "FlyQuest": 0,
+        "Fnatic": 0,
+        "G2 Esports": 0,
+        "Gen.G Esports": 0,
+        "Hanwha Life Esports": 0,
+        "Invictus Gaming": 0,
+        "Keyd Stars": 0,
+        "KOI": 0,
+        "KT Rolster": 0,
+        "PSG Talon": 0,
+        "Secret Whales": 0,
+        "T1": 0,
+        "Top Esports": 0
+    }
+}

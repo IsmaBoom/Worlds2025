@@ -79,7 +79,7 @@ def jugadores():
     "Kaiwing": 0, "Kanavi": 0, "Karsa": 0, "Keria": 0, "Kiin": 0, "knight": 0,
     "Labrov": 0, "Maple": 0, "Massu": 0, "Meiko": 0, "Mikyx": 0, "Mireu": 0,
     "Morttheus": 0, "Myrwn": 0, "Oner": 0, "ON": 0, "Oscarinin": 0, "Peanut": 0,
-    "PerfecT": 0, "Peter": 0, "Poby": 0, "Quad": 0, "Quid": 0, "Razork": 0,
+    "PerfecT": 0, "Peter": 0, "Poby": 0, "Quad": 0, "Quid": 0, "Razork": 0, "Rest": 0,
     "River": 0, "Rookie": 0, "Ruler": 0, "shad0w": 0, "Shanks": 0,
     "SkewMond": 0, "Supa": 0, "Taki": 0, "Tarzan": 0, "TheShy": 0, "Trymbi": 0,
     "Upset": 0, "Viper": 0, "Wei": 0, "Woody": 0, "Zeka": 0, "Zeus": 0,
@@ -481,7 +481,7 @@ def bola_ideal():
             "Récord kills":(record_L[0][0],record_L[1][0],record_L[2][0]),
             "Ancianos": tuple(equipo for equipo, _ in ranking_ancianos[:3]),
             "Robar barones": tuple(equipo for equipo, _ in ranking_equipo_barones[:3]),
-            "Victoria más corta":corta_L[0][0],
+            "Victoria más corta":(corta_L[0][0],corta_L[1][0],corta_L[2][0]),
             "Más asesinatos":(kills_e_L[0][0],kills_e_L[1][0],kills_e_L[2][0]),
             "Equipos_distintos":(e_diferentes_L[0][0],e_diferentes_L[1][0],e_diferentes_L[2][0]),
             "Pentakills":mano_L["Pentakills"],
@@ -590,16 +590,16 @@ def puntuacion_detallada():
         # Campeones distintos (jugadores)
         if bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][0]:
             puntos[nombre] += 50
-            aciertos[nombre]["Jugadores distintos"] = 50
+            aciertos[nombre]["Jugadores distintos jugadores"] = 50
         elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][1]:
             puntos[nombre] += 20
-            aciertos[nombre]["Jugadores distintos"] = 20
+            aciertos[nombre]["Jugadores distintos jugadores"] = 20
         elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][2]:
             puntos[nombre] += 10
-            aciertos[nombre]["Jugadores distintos"] = 10
+            aciertos[nombre]["Jugadores distintos jugadores"] = 10
         else:
-            aciertos[nombre]["Jugadores distintos"] = 0
-            
+            aciertos[nombre]["Jugadores distintos jugadores"] = 0
+
         # Pentakill
         if bolas[nombre]["Pentakill"] in bola_general["Pentakill"]:
             puntos[nombre] += 100
@@ -786,11 +786,11 @@ def puntuacion_con_aciertos():
             puntos[nombre] += 20
         elif bolas[nombre]["KDA"] == bola_general["KDA"][2]:
             puntos[nombre] += 10
-        if bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][0]:
+        if bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][0]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][1]:
+        elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][1]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Campeones distintos"] == bola_general["Campeones distintos"][2]:
+        elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][2]:
             puntos[nombre] += 10
         if bolas[nombre]["Pentakill"] in bola_general["Pentakill"]:
             puntos[nombre] += 100
@@ -846,7 +846,7 @@ def puntuacion_con_aciertos():
             puntos[nombre] += 50
         if bolas[nombre]["Teemo"] == bola_general["Teemo"]:
             puntos[nombre] += 100
-        
+    
     return puntos
 
 def exportar_datos_web():
@@ -901,7 +901,7 @@ def exportar_datos_web():
     top_winrate = sorted(win.items(), key=lambda x: x[1], reverse=True)[:10]
     low_winrate = sorted(win.items(), key=lambda x: x[1], reverse=False)[:10]
 
-    #Camepones distintos
+    # Campeones distintos
     campeones_distintos = len([c for c, n in picks.items() if n > 0])
 
     teemo = "No se ha jugado Teemo"
@@ -1134,7 +1134,7 @@ def main(links, link):
 if __name__ == "__main__":
     # Inicializar archivos si es necesario
     
-    link = "https://liquipedia.net/leagueoflegends/Match:ID_Wrd25SwR2L_0004"
+    link = "https://liquipedia.net/leagueoflegends/Match:ID_Wrd25SwR3H_0002"
     try:
         with open(os.path.join(BASE_PATH, "links.txt"),"r") as fichero:
             links = json.load(fichero)

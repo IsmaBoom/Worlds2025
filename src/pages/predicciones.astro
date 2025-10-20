@@ -9,7 +9,7 @@ interface BolaAtomix {
   "Menor winrate": string;
   "Más kills": string;
   KDA: string;
-  "Camepones distintos": string;
+  "Jugadores distintos": string;
   Pentakill: string;
   "Primera sangre": string;
   "Récord kills": string;
@@ -190,13 +190,13 @@ function getAciertoClass(puntos: number): string {
                   </div>
                 </div>
                 <div
-                  class={`pred-item ${getAciertoClass(aciertos["Camepones distintos"] || 0)}`}
+                  class={`pred-item ${getAciertoClass(aciertos["Jugadores distintos"] || 0)}`}
                 >
                   <span class="icon">🎮</span>
                   <div class="pred-content">
-                    <span class="pred-label">Campeones Distintos</span>
+                    <span class="pred-label">Jugadores Distintos</span>
                     <span class="pred-value">
-                      {datos["Camepones distintos"]}
+                      {datos["Jugadores distintos"]}
                     </span>
                   </div>
                 </div>

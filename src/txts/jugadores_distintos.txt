@@ -1,7 +1,8 @@
 {
     "369": [
         "Aatrox",
-        "Sion"
+        "Sion",
+        "K'Sante"
     ],
     "Alvaro": [
         "Lulu",
@@ -12,7 +13,8 @@
         "Yorick"
     ],
     "Bdd": [
-        "Orianna"
+        "Orianna",
+        "Cassiopeia"
     ],
     "Beichuan": [
         "Jarvan IV"
@@ -65,7 +67,8 @@
         "Bard"
     ],
     "deokdam": [
-        "Caitlyn"
+        "Caitlyn",
+        "Ezreal"
     ],
     "Dhokla": [
         "Sion",
@@ -80,7 +83,10 @@
     ],
     "Doggo": [
         "Caitlyn",
-        "Draven"
+        "Draven",
+        "Corki",
+        "Lucian",
+        "Miss Fortune"
     ],
     "Doran": [
         "Ambessa",
@@ -124,7 +130,9 @@
         "Kai'Sa"
     ],
     "Flandre": [
-        "Rek'Sai"
+        "Rek'Sai",
+        "Kled",
+        "Ambessa"
     ],
     "GALA": [
         "Corki",
@@ -142,7 +150,8 @@
     ],
     "Hang": [
         "Karma",
-        "Leona"
+        "Leona",
+        "Rakan"
     ],
     "Hans Sama": [
         "Xayah",
@@ -157,18 +166,24 @@
         "Jarvan IV"
     ],
     "HongQ": [
-        "Ryze"
+        "Ryze",
+        "Aurora",
+        "Akali",
+        "Taliyah"
     ],
     "Hope": [
         "Yunara",
-        "Corki"
+        "Corki",
+        "Ziggs",
+        "Jhin"
     ],
     "Inspired": [
         "Jarvan IV",
         "Wukong"
     ],
     "JackeyLove": [
-        "Yunara"
+        "Yunara",
+        "Xayah"
     ],
     "Jojopyun": [
         "Galio",
@@ -176,19 +191,28 @@
     ],
     "JunJia": [
         "Xin Zhao",
-        "Qiyana"
+        "Qiyana",
+        "Wukong",
+        "Pantheon",
+        "Vi"
     ],
     "Kael": [
         "Neeko",
-        "Poppy"
+        "Poppy",
+        "Leona",
+        "Alistar"
     ],
     "Kaiwing": [
         "Neeko",
-        "Alistar"
+        "Alistar",
+        "Nami",
+        "Braum",
+        "Nautilus"
     ],
     "Kanavi": [
         "Trundle",
-        "Qiyana"
+        "Qiyana",
+        "Zed"
     ],
     "Karsa": [
         "Vi",
@@ -266,11 +290,13 @@
     ],
     "PerfecT": [
         "Rumble",
-        "Ornn"
+        "Ornn",
+        "Renekton"
     ],
     "Peter": [
         "Braum",
-        "Neeko"
+        "Neeko",
+        "Alistar"
     ],
     "Poby": [
         "Taliyah",
@@ -287,7 +313,11 @@
     "Razork": [
         "Vi"
     ],
-    "Rest": [],
+    "Rest": [
+        "Sion",
+        "Rumble",
+        "Renekton"
+    ],
     "River": [
         "Xin Zhao",
         "Vi"
@@ -302,12 +332,15 @@
         "Lucian",
         "Kai'Sa"
     ],
-    "Shad0w": [
+    "shad0w": [
         "Naafiri"
     ],
     "Shanks": [
         "Cassiopeia",
-        "Taliyah"
+        "Taliyah",
+        "Ryze",
+        "Orianna",
+        "LeBlanc"
     ],
     "SkewMond": [
         "Xin Zhao"
@@ -322,7 +355,10 @@
     ],
     "Tarzan": [
         "Pantheon",
-        "Qiyana"
+        "Qiyana",
+        "Maokai",
+        "Xin Zhao",
+        "Trundle"
     ],
     "TheShy": [
         "Rek'Sai",

@@ -1,4 +1,4 @@
 [
-    "Hanwha Life Esports",
-    "PSG Talon"
+    "CTBC Flying Oyster",
+    "Anyone's Legend"
 ]
