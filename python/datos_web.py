@@ -419,10 +419,10 @@ def bola_ideal():
     corta_L = json.loads(corta.read())
     corta.close()
     corta_L = sorted(corta_L.items(), key=lambda x:x[1], reverse=False)[:10]
-    kills_e = open(os.path.join(BASE_PATH, "equipos_corta.txt"),"r+",encoding="utf8")
+    kills_e = open(os.path.join(BASE_PATH, "equipos_kills.txt"),"r+",encoding="utf8")
     kills_e_L = json.loads(kills_e.read())
     kills_e.close()
-    kills_e_L = sorted(kills_e_L.items(), key=lambda x:x[1], reverse=False)[:10]
+    kills_e_L = sorted(kills_e_L.items(), key=lambda x:x[1], reverse=True)[:10]
     e_diferentes = open(os.path.join(BASE_PATH, "equipos_distintos.txt"),"r+",encoding="utf8")
     e_diferentes_L = json.loads(e_diferentes.read())
     e_diferentes.close()
@@ -498,10 +498,12 @@ def puntuacion_detallada():
     aciertos = {}
     bolas = {}
     bola_general = bola_ideal()
-    
+    print(bola_general)
+    print("------------------------------------------------------------------------")
     for i in participantes:
         x = open(os.path.join(ALTERNATIVE_PATH, f"bola_{i}.txt"),"r+",encoding="utf8")
-        bolas[i] = json.loads(x.read())
+        bola_de_i = x.read()
+        bolas[i] = json.loads(bola_de_i)
         x.close()
     
     for nombre in participantes:
@@ -731,6 +733,7 @@ def puntuacion_detallada():
             aciertos[nombre]["Teemo"] = 100
         else:
             aciertos[nombre]["Teemo"] = 0
+        
     return puntos, aciertos
     
 def puntuacion():
@@ -845,7 +848,7 @@ def puntuacion_con_aciertos():
             puntos[nombre] += 50
         if bolas[nombre]["Teemo"] == bola_general["Teemo"]:
             puntos[nombre] += 100
-    
+        
     return puntos
 
 def exportar_datos_web():

@@ -4967,10 +4967,6 @@
         {
             "jugador": "SkewMond",
             "cantidad": 1
-        },
-        {
-            "jugador": "Rest",
-            "cantidad": 0
         }
     ],
     "top_kills_e": [
@@ -5199,15 +5195,15 @@
         },
         {
             "name": "Alvaro MKOI",
-            "points": 380
+            "points": 330
         },
         {
             "name": "Labradoor13",
-            "points": 270
+            "points": 290
         },
         {
             "name": "ClaudiAway18",
-            "points": 60
+            "points": 80
         },
         {
             "name": "ElBartoMoreno",
@@ -5239,7 +5235,7 @@
         },
         {
             "name": "ubahh",
-            "points": 10
+            "points": 50
         }
     ],
     "aciertos": {
@@ -5279,7 +5275,7 @@
             "Ancianos": 0,
             "Robar barones": 10,
             "Victoria más corta": 0,
-            "Más asesinatos": 50,
+            "Más asesinatos": 0,
             "Equipos_distintos": 0,
             "Pentakills": 0,
             "Barones robados": 50,
@@ -5301,7 +5297,7 @@
             "Ancianos": 0,
             "Robar barones": 10,
             "Victoria más corta": 50,
-            "Más asesinatos": 0,
+            "Más asesinatos": 20,
             "Equipos_distintos": 50,
             "Pentakills": 0,
             "Barones robados": 0,
@@ -5323,7 +5319,7 @@
             "Ancianos": 10,
             "Robar barones": 0,
             "Victoria más corta": 0,
-            "Más asesinatos": 0,
+            "Más asesinatos": 20,
             "Equipos_distintos": 0,
             "Pentakills": 0,
             "Barones robados": 0,
@@ -5499,7 +5495,7 @@
             "Ancianos": 0,
             "Robar barones": 0,
             "Victoria más corta": 0,
-            "Más asesinatos": 10,
+            "Más asesinatos": 50,
             "Equipos_distintos": 0,
             "Pentakills": 0,
             "Barones robados": 0,
