@@ -1,4 +1,4 @@
 [
-    "CTBC Flying Oyster",
-    "Anyone's Legend"
+    "100 Thieves",
+    "Hanwha Life Esports"
 ]

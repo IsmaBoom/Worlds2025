@@ -25,7 +25,8 @@
     ],
     "Bin": [
         "Rek'Sai",
-        "Renekton"
+        "Renekton",
+        "K'Sante"
     ],
     "Boal": [
         "K'Sante",
@@ -33,14 +34,16 @@
     ],
     "BrokenBlade": [
         "Sion",
-        "K'Sante"
+        "K'Sante",
+        "Poppy"
     ],
     "Busio": [
         "Neeko",
         "Alistar"
     ],
     "Bwipo": [
-        "Mordekaiser"
+        "Mordekaiser",
+        "Sion"
     ],
     "Canyon": [
         "Wukong",
@@ -48,11 +51,13 @@
     ],
     "Caps": [
         "Azir",
-        "LeBlanc"
+        "LeBlanc",
+        "Anivia"
     ],
     "Chovy": [
         "Galio",
-        "Ryze"
+        "Ryze",
+        "Orianna"
     ],
     "Creme": [
         "Orianna",
@@ -64,7 +69,8 @@
     ],
     "Delight": [
         "Alistar",
-        "Bard"
+        "Bard",
+        "Braum"
     ],
     "deokdam": [
         "Caitlyn",
@@ -72,7 +78,8 @@
     ],
     "Dhokla": [
         "Sion",
-        "Ambessa"
+        "Ambessa",
+        "K'Sante"
     ],
     "Dire": [
         "Aurora",
@@ -100,7 +107,8 @@
     ],
     "Duro": [
         "Braum",
-        "Alistar"
+        "Alistar",
+        "Poppy"
     ],
     "Eddie": [
         "Kai'Sa",
@@ -108,7 +116,8 @@
     ],
     "Elk": [
         "Caitlyn",
-        "Xayah"
+        "Xayah",
+        "Ezreal"
     ],
     "Elyoya": [
         "Jarvan IV",
@@ -116,18 +125,21 @@
     ],
     "Eyla": [
         "Rell",
-        "Rakan"
+        "Rakan",
+        "Alistar"
     ],
     "Faker": [
         "Taliyah",
         "Akali",
         "Annie",
         "LeBlanc",
-        "Cassiopeia"
+        "Cassiopeia",
+        "Aurora"
     ],
     "FBI": [
         "Ziggs",
-        "Kai'Sa"
+        "Kai'Sa",
+        "Senna"
     ],
     "Flandre": [
         "Rek'Sai",
@@ -146,7 +158,8 @@
         "Yunara",
         "Ashe",
         "Xayah",
-        "Caitlyn"
+        "Caitlyn",
+        "Kai'Sa"
     ],
     "Hang": [
         "Karma",
@@ -155,15 +168,18 @@
     ],
     "Hans Sama": [
         "Xayah",
-        "Yunara"
+        "Yunara",
+        "Varus"
     ],
     "Hiro02": [
         "Renekton",
-        "Rumble"
+        "Rumble",
+        "Mordekaiser"
     ],
     "Hizto": [
         "Vi",
-        "Jarvan IV"
+        "Jarvan IV",
+        "Qiyana"
     ],
     "HongQ": [
         "Ryze",
@@ -228,15 +244,18 @@
     ],
     "Kiin": [
         "Ambessa",
-        "K'Sante"
+        "K'Sante",
+        "Sion"
     ],
     "knight": [
         "Taliyah",
-        "Orianna"
+        "Orianna",
+        "Ryze"
     ],
     "Labrov": [
         "Rakan",
-        "Bard"
+        "Bard",
+        "Braum"
     ],
     "Maple": [
         "Swain",
@@ -244,7 +263,8 @@
     ],
     "Massu": [
         "Kai'Sa",
-        "Yunara"
+        "Yunara",
+        "Corki"
     ],
     "Meiko": [
         "Neeko",
@@ -278,7 +298,8 @@
     ],
     "ON": [
         "Elise",
-        "Rakan"
+        "Rakan",
+        "Leona"
     ],
     "Oscarinin": [
         "K'Sante",
@@ -286,7 +307,8 @@
     ],
     "Peanut": [
         "Jarvan IV",
-        "Vi"
+        "Vi",
+        "Xin Zhao"
     ],
     "PerfecT": [
         "Rumble",
@@ -304,7 +326,8 @@
     ],
     "Quad": [
         "Ryze",
-        "Viktor"
+        "Viktor",
+        "Azir"
     ],
     "Quid": [
         "Aurora",
@@ -320,7 +343,8 @@
     ],
     "River": [
         "Xin Zhao",
-        "Vi"
+        "Vi",
+        "Pantheon"
     ],
     "Rookie": [
         "Ryze",
@@ -330,10 +354,12 @@
     ],
     "Ruler": [
         "Lucian",
-        "Kai'Sa"
+        "Kai'Sa",
+        "Corki"
     ],
     "shad0w": [
-        "Naafiri"
+        "Naafiri",
+        "Qiyana"
     ],
     "Shanks": [
         "Cassiopeia",
@@ -351,7 +377,8 @@
     ],
     "Taki": [
         "Rell",
-        "Bard"
+        "Bard",
+        "Rakan"
     ],
     "Tarzan": [
         "Pantheon",
@@ -376,7 +403,8 @@
     ],
     "Viper": [
         "Kai'Sa",
-        "Ezreal"
+        "Ezreal",
+        "Lucian"
     ],
     "Wei": [
         "Qiyana",
@@ -390,10 +418,12 @@
     ],
     "Zeka": [
         "Ryze",
-        "Aurora"
+        "Aurora",
+        "Azir"
     ],
     "Zeus": [
         "K'Sante",
-        "Ambessa"
+        "Ambessa",
+        "Sion"
     ]
 }

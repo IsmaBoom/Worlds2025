@@ -1,11 +1,11 @@
 {
     "Pentakills": 0,
     "Pentakills_J": [],
-    "Barones_robados": 0,
+    "Barones_robados": 1,
     "Remontadas": 0,
     "Ancianos": {
         "100 Thieves": 0,
-        "Anyone's Legend": 0,
+        "Anyone's Legend": 1,
         "Bilibili Gaming": 0,
         "CTBC Flying Oyster": 0,
         "FlyQuest": 0,
@@ -24,7 +24,7 @@
     },
     "Equipo_baron": {
         "100 Thieves": 0,
-        "Anyone's Legend": 0,
+        "Anyone's Legend": 1,
         "Bilibili Gaming": 0,
         "CTBC Flying Oyster": 0,
         "FlyQuest": 0,
