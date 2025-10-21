@@ -377,8 +377,10 @@ def bola_ideal():
     victorias.close()
     winrate_L = winrate()
     #winrate = sorted(winrate.items(), key=lambda x:x[1], reverse=True)[:10]
-    top_winrate = sorted(winrate_L.items(), key=lambda x: x[1], reverse=True)[:10]
-    low_winrate = sorted(winrate_L.items(), key=lambda x: x[1], reverse=False)[:10]
+    # Filtrar campeones con más de 4 partidas jugadas (winrate > 0)
+    winrate_filtrado = {k: v for k, v in winrate_L.items() if v > 0}
+    top_winrate = sorted(winrate_filtrado.items(), key=lambda x: x[1], reverse=True)[:10]
+    low_winrate = sorted(winrate_filtrado.items(), key=lambda x: x[1], reverse=False)[:10]
     kills_c = open(os.path.join(BASE_PATH, "campeones_kills.txt"),"r+",encoding="utf8")
     kills_c_L = json.loads(kills_c.read())
     kills_c.close()
@@ -899,9 +901,10 @@ def exportar_datos_web():
     with open(os.path.join(BASE_PATH, "campeones_picks.txt"), "r", encoding="utf8") as f:
         picks = json.load(f)
     win = winrate()
-    #win_filtrado = {c: w for c, w in win.items() if picks.get(c, 0) >= 5}
-    top_winrate = sorted(win.items(), key=lambda x: x[1], reverse=True)
-    low_winrate = sorted(win.items(), key=lambda x: x[1], reverse=False)
+    # Filtrar campeones con más de 4 partidas jugadas (winrate > 0)
+    win_filtrado = {c: w for c, w in win.items() if w > 0}
+    top_winrate = sorted(win_filtrado.items(), key=lambda x: x[1], reverse=True)
+    low_winrate = sorted(win_filtrado.items(), key=lambda x: x[1], reverse=False)
 
     # Campeones distintos
     campeones_distintos = len([c for c, n in picks.items() if n > 0])
