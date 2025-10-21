@@ -86,6 +86,45 @@ try {
     barones_por_equipo: [],
   };
 }
+
+// Función para obtener la posición considerando empates
+function obtenerPosicion(
+  array: any[],
+  index: number,
+  valorKey: string
+): number {
+  if (index === 0) return 1;
+  const valorActual = array[index][valorKey];
+  const valorAnterior = array[index - 1][valorKey];
+
+  if (valorActual === valorAnterior) {
+    return obtenerPosicion(array, index - 1, valorKey);
+  }
+  return index + 1;
+}
+
+// Función para obtener la medalla basándose en valores distintos
+function obtenerMedalla(array: any[], index: number, valorKey: string): number {
+  const valorActual = array[index][valorKey];
+  const valoresDistintos = new Set<any>();
+
+  for (let i = 0; i < index; i++) {
+    valoresDistintos.add(array[i][valorKey]);
+  }
+
+  if (!valoresDistintos.has(valorActual)) {
+    return valoresDistintos.size + 1;
+  }
+
+  // Buscar el primer índice con este valor
+  for (let i = 0; i < index; i++) {
+    if (array[i][valorKey] === valorActual) {
+      return obtenerMedalla(array, i, valorKey);
+    }
+  }
+
+  return 1;
+}
 ---
 
 <Layout title="Worlds 2025 - Estadísticas">
@@ -183,21 +222,31 @@ try {
           </thead>
           <tbody>
             {
-              datos.top_picks.map((item, index) => (
-                <tr>
-                  <td>
-                    <span
-                      class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                    >
-                      {index + 1}
-                    </span>
-                  </td>
-                  <td>{item.campeon}</td>
-                  <td>
-                    <span class="value">{item.cantidad}</span>
-                  </td>
-                </tr>
-              ))
+              datos.top_picks.map((item, index) => {
+                const posicion = obtenerPosicion(
+                  datos.top_picks,
+                  index,
+                  "cantidad"
+                );
+                const medalla = obtenerMedalla(
+                  datos.top_picks,
+                  index,
+                  "cantidad"
+                );
+                return (
+                  <tr>
+                    <td>
+                      <span class={`rank rank-${medalla <= 3 ? medalla : ""}`}>
+                        {posicion}
+                      </span>
+                    </td>
+                    <td>{item.campeon}</td>
+                    <td>
+                      <span class="value">{item.cantidad}</span>
+                    </td>
+                  </tr>
+                );
+              })
             }
           </tbody>
         </table>
@@ -215,21 +264,31 @@ try {
           </thead>
           <tbody>
             {
-              datos.top_bans.map((item, index) => (
-                <tr>
-                  <td>
-                    <span
-                      class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                    >
-                      {index + 1}
-                    </span>
-                  </td>
-                  <td>{item.campeon}</td>
-                  <td>
-                    <span class="value">{item.cantidad}</span>
-                  </td>
-                </tr>
-              ))
+              datos.top_bans.map((item, index) => {
+                const posicion = obtenerPosicion(
+                  datos.top_bans,
+                  index,
+                  "cantidad"
+                );
+                const medalla = obtenerMedalla(
+                  datos.top_bans,
+                  index,
+                  "cantidad"
+                );
+                return (
+                  <tr>
+                    <td>
+                      <span class={`rank rank-${medalla <= 3 ? medalla : ""}`}>
+                        {posicion}
+                      </span>
+                    </td>
+                    <td>{item.campeon}</td>
+                    <td>
+                      <span class="value">{item.cantidad}</span>
+                    </td>
+                  </tr>
+                );
+              })
             }
           </tbody>
         </table>
@@ -247,21 +306,27 @@ try {
           </thead>
           <tbody>
             {
-              datos.top_kills.map((item, index) => (
-                <tr>
-                  <td>
-                    <span
-                      class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                    >
-                      {index + 1}
-                    </span>
-                  </td>
-                  <td>{item.jugador}</td>
-                  <td>
-                    <span class="value">{item.kills}</span>
-                  </td>
-                </tr>
-              ))
+              datos.top_kills.map((item, index) => {
+                const posicion = obtenerPosicion(
+                  datos.top_kills,
+                  index,
+                  "kills"
+                );
+                const medalla = obtenerMedalla(datos.top_kills, index, "kills");
+                return (
+                  <tr>
+                    <td>
+                      <span class={`rank rank-${medalla <= 3 ? medalla : ""}`}>
+                        {posicion}
+                      </span>
+                    </td>
+                    <td>{item.jugador}</td>
+                    <td>
+                      <span class="value">{item.kills}</span>
+                    </td>
+                  </tr>
+                );
+              })
             }
           </tbody>
         </table>
@@ -279,21 +344,31 @@ try {
           </thead>
           <tbody>
             {
-              datos.top_victorias_cortas.map((item, index) => (
-                <tr>
-                  <td>
-                    <span
-                      class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                    >
-                      {index + 1}
-                    </span>
-                  </td>
-                  <td>{item.equipo}</td>
-                  <td>
-                    <span class="value">{item.tiempo}</span>
-                  </td>
-                </tr>
-              ))
+              datos.top_victorias_cortas.map((item, index) => {
+                const posicion = obtenerPosicion(
+                  datos.top_victorias_cortas,
+                  index,
+                  "tiempo"
+                );
+                const medalla = obtenerMedalla(
+                  datos.top_victorias_cortas,
+                  index,
+                  "tiempo"
+                );
+                return (
+                  <tr>
+                    <td>
+                      <span class={`rank rank-${medalla <= 3 ? medalla : ""}`}>
+                        {posicion}
+                      </span>
+                    </td>
+                    <td>{item.equipo}</td>
+                    <td>
+                      <span class="value">{item.tiempo}</span>
+                    </td>
+                  </tr>
+                );
+              })
             }
           </tbody>
         </table>
@@ -311,21 +386,23 @@ try {
           </thead>
           <tbody>
             {
-              datos.top_kda.map((item, index) => (
-                <tr>
-                  <td>
-                    <span
-                      class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                    >
-                      {index + 1}
-                    </span>
-                  </td>
-                  <td>{item.jugador}</td>
-                  <td>
-                    <span class="value">{item.kda}</span>
-                  </td>
-                </tr>
-              ))
+              datos.top_kda.map((item, index) => {
+                const posicion = obtenerPosicion(datos.top_kda, index, "kda");
+                const medalla = obtenerMedalla(datos.top_kda, index, "kda");
+                return (
+                  <tr>
+                    <td>
+                      <span class={`rank rank-${medalla <= 3 ? medalla : ""}`}>
+                        {posicion}
+                      </span>
+                    </td>
+                    <td>{item.jugador}</td>
+                    <td>
+                      <span class="value">{item.kda}</span>
+                    </td>
+                  </tr>
+                );
+              })
             }
           </tbody>
         </table>
@@ -343,21 +420,31 @@ try {
           </thead>
           <tbody>
             {
-              datos.top_winrate.map((item, index) => (
-                <tr>
-                  <td>
-                    <span
-                      class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                    >
-                      {index + 1}
-                    </span>
-                  </td>
-                  <td>{item.campeon}</td>
-                  <td>
-                    <span class="value">{item.winrate}%</span>
-                  </td>
-                </tr>
-              ))
+              datos.top_winrate.map((item, index) => {
+                const posicion = obtenerPosicion(
+                  datos.top_winrate,
+                  index,
+                  "winrate"
+                );
+                const medalla = obtenerMedalla(
+                  datos.top_winrate,
+                  index,
+                  "winrate"
+                );
+                return (
+                  <tr>
+                    <td>
+                      <span class={`rank rank-${medalla <= 3 ? medalla : ""}`}>
+                        {posicion}
+                      </span>
+                    </td>
+                    <td>{item.campeon}</td>
+                    <td>
+                      <span class="value">{item.winrate}%</span>
+                    </td>
+                  </tr>
+                );
+              })
             }
           </tbody>
         </table>
@@ -384,17 +471,33 @@ try {
                 </tr>
               </thead>
               <tbody>
-                {datos.low_winrate.map((item, index) => (
-                  <tr>
-                    <td>
-                      <span class="rank">{index + 1}</span>
-                    </td>
-                    <td>{item.campeon}</td>
-                    <td>
-                      <span class="value low">{item.winrate}%</span>
-                    </td>
-                  </tr>
-                ))}
+                {datos.low_winrate.map((item, index) => {
+                  const posicion = obtenerPosicion(
+                    datos.low_winrate!,
+                    index,
+                    "winrate"
+                  );
+                  const medalla = obtenerMedalla(
+                    datos.low_winrate!,
+                    index,
+                    "winrate"
+                  );
+                  return (
+                    <tr>
+                      <td>
+                        <span
+                          class={`rank rank-${medalla <= 3 ? medalla : ""}`}
+                        >
+                          {posicion}
+                        </span>
+                      </td>
+                      <td>{item.campeon}</td>
+                      <td>
+                        <span class="value low">{item.winrate}%</span>
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -422,21 +525,33 @@ try {
                 </tr>
               </thead>
               <tbody>
-                {datos.top_kills_c.map((item, index) => (
-                  <tr>
-                    <td>
-                      <span
-                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                      >
-                        {index + 1}
-                      </span>
-                    </td>
-                    <td>{item.campeon}</td>
-                    <td>
-                      <span class="value">{item.cantidad}</span>
-                    </td>
-                  </tr>
-                ))}
+                {datos.top_kills_c.map((item, index) => {
+                  const posicion = obtenerPosicion(
+                    datos.top_kills_c!,
+                    index,
+                    "cantidad"
+                  );
+                  const medalla = obtenerMedalla(
+                    datos.top_kills_c!,
+                    index,
+                    "cantidad"
+                  );
+                  return (
+                    <tr>
+                      <td>
+                        <span
+                          class={`rank rank-${medalla <= 3 ? medalla : ""}`}
+                        >
+                          {posicion}
+                        </span>
+                      </td>
+                      <td>{item.campeon}</td>
+                      <td>
+                        <span class="value">{item.cantidad}</span>
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -464,21 +579,33 @@ try {
                 </tr>
               </thead>
               <tbody>
-                {datos.top_sangre.map((item, index) => (
-                  <tr>
-                    <td>
-                      <span
-                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                      >
-                        {index + 1}
-                      </span>
-                    </td>
-                    <td>{item.jugador}</td>
-                    <td>
-                      <span class="value">{item.cantidad}</span>
-                    </td>
-                  </tr>
-                ))}
+                {datos.top_sangre.map((item, index) => {
+                  const posicion = obtenerPosicion(
+                    datos.top_sangre!,
+                    index,
+                    "cantidad"
+                  );
+                  const medalla = obtenerMedalla(
+                    datos.top_sangre!,
+                    index,
+                    "cantidad"
+                  );
+                  return (
+                    <tr>
+                      <td>
+                        <span
+                          class={`rank rank-${medalla <= 3 ? medalla : ""}`}
+                        >
+                          {posicion}
+                        </span>
+                      </td>
+                      <td>{item.jugador}</td>
+                      <td>
+                        <span class="value">{item.cantidad}</span>
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -510,21 +637,33 @@ try {
                 </tr>
               </thead>
               <tbody>
-                {datos.top_equipos_distintos.map((item, index) => (
-                  <tr>
-                    <td>
-                      <span
-                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                      >
-                        {index + 1}
-                      </span>
-                    </td>
-                    <td>{item.equipo}</td>
-                    <td>
-                      <span class="value">{item.cantidad}</span>
-                    </td>
-                  </tr>
-                ))}
+                {datos.top_equipos_distintos.map((item, index) => {
+                  const posicion = obtenerPosicion(
+                    datos.top_equipos_distintos!,
+                    index,
+                    "cantidad"
+                  );
+                  const medalla = obtenerMedalla(
+                    datos.top_equipos_distintos!,
+                    index,
+                    "cantidad"
+                  );
+                  return (
+                    <tr>
+                      <td>
+                        <span
+                          class={`rank rank-${medalla <= 3 ? medalla : ""}`}
+                        >
+                          {posicion}
+                        </span>
+                      </td>
+                      <td>{item.equipo}</td>
+                      <td>
+                        <span class="value">{item.cantidad}</span>
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -557,21 +696,33 @@ try {
                   </tr>
                 </thead>
                 <tbody>
-                  {datos.top_jugadores_distintos.map((item, index) => (
-                    <tr>
-                      <td>
-                        <span
-                          class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                        >
-                          {index + 1}
-                        </span>
-                      </td>
-                      <td>{item.jugador}</td>
-                      <td>
-                        <span class="value">{item.cantidad}</span>
-                      </td>
-                    </tr>
-                  ))}
+                  {datos.top_jugadores_distintos.map((item, index) => {
+                    const posicion = obtenerPosicion(
+                      datos.top_jugadores_distintos!,
+                      index,
+                      "cantidad"
+                    );
+                    const medalla = obtenerMedalla(
+                      datos.top_jugadores_distintos!,
+                      index,
+                      "cantidad"
+                    );
+                    return (
+                      <tr>
+                        <td>
+                          <span
+                            class={`rank rank-${medalla <= 3 ? medalla : ""}`}
+                          >
+                            {posicion}
+                          </span>
+                        </td>
+                        <td>{item.jugador}</td>
+                        <td>
+                          <span class="value">{item.cantidad}</span>
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
@@ -599,21 +750,33 @@ try {
                 </tr>
               </thead>
               <tbody>
-                {datos.top_kills_e.map((item, index) => (
-                  <tr>
-                    <td>
-                      <span
-                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                      >
-                        {index + 1}
-                      </span>
-                    </td>
-                    <td>{item.equipo}</td>
-                    <td>
-                      <span class="value">{item.cantidad}</span>
-                    </td>
-                  </tr>
-                ))}
+                {datos.top_kills_e.map((item, index) => {
+                  const posicion = obtenerPosicion(
+                    datos.top_kills_e!,
+                    index,
+                    "cantidad"
+                  );
+                  const medalla = obtenerMedalla(
+                    datos.top_kills_e!,
+                    index,
+                    "cantidad"
+                  );
+                  return (
+                    <tr>
+                      <td>
+                        <span
+                          class={`rank rank-${medalla <= 3 ? medalla : ""}`}
+                        >
+                          {posicion}
+                        </span>
+                      </td>
+                      <td>{item.equipo}</td>
+                      <td>
+                        <span class="value">{item.cantidad}</span>
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -641,21 +804,33 @@ try {
                 </tr>
               </thead>
               <tbody>
-                {datos.ancianos_por_equipo.map((item, index) => (
-                  <tr>
-                    <td>
-                      <span
-                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                      >
-                        {index + 1}
-                      </span>
-                    </td>
-                    <td>{item.equipo}</td>
-                    <td>
-                      <span class="value">{item.cantidad}</span>
-                    </td>
-                  </tr>
-                ))}
+                {datos.ancianos_por_equipo.map((item, index) => {
+                  const posicion = obtenerPosicion(
+                    datos.ancianos_por_equipo!,
+                    index,
+                    "cantidad"
+                  );
+                  const medalla = obtenerMedalla(
+                    datos.ancianos_por_equipo!,
+                    index,
+                    "cantidad"
+                  );
+                  return (
+                    <tr>
+                      <td>
+                        <span
+                          class={`rank rank-${medalla <= 3 ? medalla : ""}`}
+                        >
+                          {posicion}
+                        </span>
+                      </td>
+                      <td>{item.equipo}</td>
+                      <td>
+                        <span class="value">{item.cantidad}</span>
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -683,21 +858,33 @@ try {
                 </tr>
               </thead>
               <tbody>
-                {datos.barones_por_equipo.map((item, index) => (
-                  <tr>
-                    <td>
-                      <span
-                        class={`rank rank-${index + 1 <= 3 ? index + 1 : ""}`}
-                      >
-                        {index + 1}
-                      </span>
-                    </td>
-                    <td>{item.equipo}</td>
-                    <td>
-                      <span class="value">{item.cantidad}</span>
-                    </td>
-                  </tr>
-                ))}
+                {datos.barones_por_equipo.map((item, index) => {
+                  const posicion = obtenerPosicion(
+                    datos.barones_por_equipo!,
+                    index,
+                    "cantidad"
+                  );
+                  const medalla = obtenerMedalla(
+                    datos.barones_por_equipo!,
+                    index,
+                    "cantidad"
+                  );
+                  return (
+                    <tr>
+                      <td>
+                        <span
+                          class={`rank rank-${medalla <= 3 ? medalla : ""}`}
+                        >
+                          {posicion}
+                        </span>
+                      </td>
+                      <td>{item.equipo}</td>
+                      <td>
+                        <span class="value">{item.cantidad}</span>
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -997,15 +1184,15 @@ try {
       background: rgba(200, 155, 60, 0.05);
     }
 
-    .full-table tbody tr:nth-child(1) {
+    .full-table tbody tr:has(.rank-1) {
       background: rgba(255, 215, 0, 0.1);
     }
 
-    .full-table tbody tr:nth-child(2) {
+    .full-table tbody tr:has(.rank-2) {
       background: rgba(192, 192, 192, 0.1);
     }
 
-    .full-table tbody tr:nth-child(3) {
+    .full-table tbody tr:has(.rank-3) {
       background: rgba(205, 127, 50, 0.1);
     }
 
