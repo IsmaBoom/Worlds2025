@@ -1,4 +1,4 @@
 [
-    "100 Thieves",
-    "Hanwha Life Esports"
+    "Keyd Stars",
+    "PSG Talon"
 ]

@@ -6,11 +6,16 @@
     ],
     "Alvaro": [
         "Lulu",
-        "Alistar"
+        "Alistar",
+        "Rakan",
+        "Bard",
+        "Braum"
     ],
     "Azhi": [
         "Rumble",
-        "Yorick"
+        "Yorick",
+        "Ambessa",
+        "K'Sante"
     ],
     "Bdd": [
         "Orianna",
@@ -21,7 +26,10 @@
     ],
     "Betty": [
         "Sivir",
-        "Caitlyn"
+        "Caitlyn",
+        "Corki",
+        "Varus",
+        "Xayah"
     ],
     "Bin": [
         "Rek'Sai",
@@ -30,7 +38,9 @@
     ],
     "Boal": [
         "K'Sante",
-        "Sion"
+        "Sion",
+        "Ornn",
+        "Poppy"
     ],
     "BrokenBlade": [
         "Sion",
@@ -86,7 +96,10 @@
         "Galio"
     ],
     "Disamis": [
-        "Jarvan IV"
+        "Jarvan IV",
+        "Xin Zhao",
+        "Pantheon",
+        "Nocturne"
     ],
     "Doggo": [
         "Caitlyn",
@@ -121,7 +134,9 @@
     ],
     "Elyoya": [
         "Jarvan IV",
-        "Wukong"
+        "Wukong",
+        "Qiyana",
+        "Xin Zhao"
     ],
     "Eyla": [
         "Rell",
@@ -203,7 +218,9 @@
     ],
     "Jojopyun": [
         "Galio",
-        "Taliyah"
+        "Taliyah",
+        "Ryze",
+        "Kassadin"
     ],
     "JunJia": [
         "Xin Zhao",
@@ -232,7 +249,9 @@
     ],
     "Karsa": [
         "Vi",
-        "Naafiri"
+        "Naafiri",
+        "Wukong",
+        "Jarvan IV"
     ],
     "Keria": [
         "Alistar",
@@ -259,7 +278,10 @@
     ],
     "Maple": [
         "Swain",
-        "Taliyah"
+        "Taliyah",
+        "Ryze",
+        "Aurora",
+        "Orianna"
     ],
     "Massu": [
         "Kai'Sa",
@@ -274,19 +296,29 @@
     ],
     "Mikyx": [
         "Nautilus",
-        "Morgana"
+        "Morgana",
+        "Alistar",
+        "Poppy",
+        "Rell"
     ],
     "Mireu": [
         "Ryze",
-        "Orianna"
+        "Orianna",
+        "Taliyah",
+        "Annie",
+        "Akali"
     ],
     "Morttheus": [
         "Yunara",
-        "Kai'Sa"
+        "Kai'Sa",
+        "Sivir",
+        "Ezreal"
     ],
     "Myrwn": [
         "K'Sante",
-        "Jax"
+        "Jax",
+        "Sion",
+        "Ornn"
     ],
     "Oner": [
         "Trundle",
@@ -303,7 +335,10 @@
     ],
     "Oscarinin": [
         "K'Sante",
-        "Poppy"
+        "Poppy",
+        "Ambessa",
+        "Rumble",
+        "Jax"
     ],
     "Peanut": [
         "Jarvan IV",
@@ -322,7 +357,10 @@
     ],
     "Poby": [
         "Taliyah",
-        "Aurora"
+        "Aurora",
+        "Cassiopeia",
+        "Viktor",
+        "Azir"
     ],
     "Quad": [
         "Ryze",
@@ -334,7 +372,10 @@
         "Taliyah"
     ],
     "Razork": [
-        "Vi"
+        "Vi",
+        "Pantheon",
+        "Jarvan IV",
+        "Trundle"
     ],
     "Rest": [
         "Sion",
@@ -373,7 +414,10 @@
     ],
     "Supa": [
         "Yunara",
-        "Caitlyn"
+        "Caitlyn",
+        "Zeri",
+        "Sivir",
+        "Vayne"
     ],
     "Taki": [
         "Rell",
@@ -395,11 +439,16 @@
     ],
     "Trymbi": [
         "Rakan",
-        "Nautilus"
+        "Nautilus",
+        "Alistar",
+        "Rell",
+        "Bard"
     ],
     "Upset": [
         "Ezreal",
-        "Caitlyn"
+        "Caitlyn",
+        "Xayah",
+        "Kai'Sa"
     ],
     "Viper": [
         "Kai'Sa",
@@ -414,7 +463,10 @@
     ],
     "Woody": [
         "Rell",
-        "Karma"
+        "Karma",
+        "Rakan",
+        "Leona",
+        "Braum"
     ],
     "Zeka": [
         "Ryze",

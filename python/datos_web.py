@@ -1139,7 +1139,7 @@ def main(links, link):
 if __name__ == "__main__":
     # Inicializar archivos si es necesario
     
-    link = "https://liquipedia.net/leagueoflegends/Match:ID_Wrd25SwR3M_0004"
+    link = "https://liquipedia.net/leagueoflegends/Match:ID_Wrd25SwR3L_0002"
     try:
         with open(os.path.join(BASE_PATH, "links.txt"),"r") as fichero:
             links = json.load(fichero)
