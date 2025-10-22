@@ -348,6 +348,39 @@ def top_kills(kills,jugador):
           record = open(os.path.join(BASE_PATH, "jugadores_asesinatos.txt"),"w",encoding="utf8")
           json.dump(record_L,record,indent = 4)
 
+def agrupar_por_medallas(ranking_completo):
+    """
+    Agrupa elementos de un ranking por sus valores distintos.
+    Devuelve un diccionario con listas de nombres para cada medalla (oro, plata, bronce).
+    
+    Args:
+        ranking_completo: Lista de tuplas [(nombre, valor), ...] ordenada por valor
+    
+    Returns:
+        dict: {'oro': [nombres], 'plata': [nombres], 'bronce': [nombres]}
+    """
+    if not ranking_completo:
+        return {'oro': [], 'plata': [], 'bronce': []}
+    
+    medallas = {'oro': [], 'plata': [], 'bronce': []}
+    valores_unicos = []
+    
+    # Identificar los valores únicos y agrupar nombres
+    for nombre, valor in ranking_completo:
+        if not valores_unicos or valores_unicos[-1][1] != valor:
+            valores_unicos.append(([], valor))
+        valores_unicos[-1][0].append(nombre)
+    
+    # Asignar medallas según el grupo de valor
+    if len(valores_unicos) >= 1:
+        medallas['oro'] = valores_unicos[0][0]
+    if len(valores_unicos) >= 2:
+        medallas['plata'] = valores_unicos[1][0]
+    if len(valores_unicos) >= 3:
+        medallas['bronce'] = valores_unicos[2][0]
+    
+    return medallas
+
 def winrate():
     victorias = open(os.path.join(BASE_PATH, "campeones_victorias.txt"),"r+",encoding="utf8")
     victorias_L = json.loads(victorias.read())
@@ -491,7 +524,26 @@ def bola_ideal():
             "Campeones distintos":c_distintos,
             "Teemo":teemo
             }
-    return(bola)
+    
+    # Crear estructura de medallas para comparación con empates
+    medallas = {
+        "Picks": agrupar_por_medallas(picks_L),
+        "Bans": agrupar_por_medallas(bans_L),
+        "Mayor winrate": agrupar_por_medallas(top_winrate),
+        "Menor winrate": agrupar_por_medallas(low_winrate),
+        "Más kills": agrupar_por_medallas(kills_c_L),
+        "KDA": agrupar_por_medallas(kda),
+        "Jugadores distintos": agrupar_por_medallas(ranking_jugadores_diferentes),
+        "Primera sangre": agrupar_por_medallas(sangre_L),
+        "Récord kills": agrupar_por_medallas(record_L),
+        "Ancianos": agrupar_por_medallas(ranking_ancianos),
+        "Robar barones": agrupar_por_medallas(ranking_equipo_barones),
+        "Victoria más corta": agrupar_por_medallas(corta_L),
+        "Más asesinatos": agrupar_por_medallas(kills_e_L),
+        "Equipos_distintos": agrupar_por_medallas(e_diferentes_L),
+    }
+    
+    return (bola, medallas)
 
 def puntuacion_detallada():
     """Calcula puntos y aciertos de cada participante con detalle"""
@@ -499,7 +551,7 @@ def puntuacion_detallada():
     puntos = {}
     aciertos = {}
     bolas = {}
-    bola_general = bola_ideal()
+    bola_general, medallas = bola_ideal()
     print(bola_general)
     print("------------------------------------------------------------------------")
     for i in participantes:
@@ -513,91 +565,91 @@ def puntuacion_detallada():
         aciertos[nombre] = {}
         
         # Picks
-        if bolas[nombre]["Picks"] == bola_general["Picks"][0]:
+        if bolas[nombre]["Picks"] in medallas["Picks"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Picks"] = 50
-        elif bolas[nombre]["Picks"] == bola_general["Picks"][1]:
+        elif bolas[nombre]["Picks"] in medallas["Picks"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Picks"] = 20
-        elif bolas[nombre]["Picks"] == bola_general["Picks"][2]:
+        elif bolas[nombre]["Picks"] in medallas["Picks"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Picks"] = 10
         else:
             aciertos[nombre]["Picks"] = 0
             
         # Bans
-        if bolas[nombre]["Bans"] == bola_general["Bans"][0]:
+        if bolas[nombre]["Bans"] in medallas["Bans"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Bans"] = 50
-        elif bolas[nombre]["Bans"] == bola_general["Bans"][1]:
+        elif bolas[nombre]["Bans"] in medallas["Bans"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Bans"] = 20
-        elif bolas[nombre]["Bans"] == bola_general["Bans"][2]:
+        elif bolas[nombre]["Bans"] in medallas["Bans"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Bans"] = 10
         else:
             aciertos[nombre]["Bans"] = 0
             
         # Mayor winrate
-        if bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][0]:
+        if bolas[nombre]["Mayor winrate"] in medallas["Mayor winrate"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Mayor winrate"] = 50
-        elif bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][1]:
+        elif bolas[nombre]["Mayor winrate"] in medallas["Mayor winrate"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Mayor winrate"] = 20
-        elif bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][2]:
+        elif bolas[nombre]["Mayor winrate"] in medallas["Mayor winrate"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Mayor winrate"] = 10
         else:
             aciertos[nombre]["Mayor winrate"] = 0
             
         # Menor winrate
-        if bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][0]:
+        if bolas[nombre]["Menor winrate"] in medallas["Menor winrate"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Menor winrate"] = 50
-        elif bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][1]:
+        elif bolas[nombre]["Menor winrate"] in medallas["Menor winrate"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Menor winrate"] = 20
-        elif bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][2]:
+        elif bolas[nombre]["Menor winrate"] in medallas["Menor winrate"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Menor winrate"] = 10
         else:
             aciertos[nombre]["Menor winrate"] = 0
             
         # Más kills
-        if bolas[nombre]["Más kills"] == bola_general["Más kills"][0]:
+        if bolas[nombre]["Más kills"] in medallas["Más kills"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Más kills"] = 50
-        elif bolas[nombre]["Más kills"] == bola_general["Más kills"][1]:
+        elif bolas[nombre]["Más kills"] in medallas["Más kills"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Más kills"] = 20
-        elif bolas[nombre]["Más kills"] == bola_general["Más kills"][2]:
+        elif bolas[nombre]["Más kills"] in medallas["Más kills"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Más kills"] = 10
         else:
             aciertos[nombre]["Más kills"] = 0
             
         # KDA
-        if bolas[nombre]["KDA"] == bola_general["KDA"][0]:
+        if bolas[nombre]["KDA"] in medallas["KDA"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["KDA"] = 50
-        elif bolas[nombre]["KDA"] == bola_general["KDA"][1]:
+        elif bolas[nombre]["KDA"] in medallas["KDA"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["KDA"] = 20
-        elif bolas[nombre]["KDA"] == bola_general["KDA"][2]:
+        elif bolas[nombre]["KDA"] in medallas["KDA"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["KDA"] = 10
         else:
             aciertos[nombre]["KDA"] = 0
             
         # Campeones distintos (jugadores)
-        if bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][0]:
+        if bolas[nombre]["Jugadores distintos"] in medallas["Jugadores distintos"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Jugadores distintos"] = 50
-        elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][1]:
+        elif bolas[nombre]["Jugadores distintos"] in medallas["Jugadores distintos"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Jugadores distintos"] = 20
-        elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][2]:
+        elif bolas[nombre]["Jugadores distintos"] in medallas["Jugadores distintos"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Jugadores distintos"] = 10
         else:
@@ -611,91 +663,91 @@ def puntuacion_detallada():
             aciertos[nombre]["Pentakill"] = 0
             
         # Primera sangre
-        if bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][0]:
+        if bolas[nombre]["Primera sangre"] in medallas["Primera sangre"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Primera sangre"] = 50
-        elif bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][1]:
+        elif bolas[nombre]["Primera sangre"] in medallas["Primera sangre"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Primera sangre"] = 20
-        elif bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][2]:
+        elif bolas[nombre]["Primera sangre"] in medallas["Primera sangre"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Primera sangre"] = 10
         else:
             aciertos[nombre]["Primera sangre"] = 0
             
         # Récord kills
-        if bolas[nombre]["Récord kills"] == bola_general["Récord kills"][0]:
+        if bolas[nombre]["Récord kills"] in medallas["Récord kills"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Récord kills"] = 50
-        elif bolas[nombre]["Récord kills"] == bola_general["Récord kills"][1]:
+        elif bolas[nombre]["Récord kills"] in medallas["Récord kills"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Récord kills"] = 20
-        elif bolas[nombre]["Récord kills"] == bola_general["Récord kills"][2]:
+        elif bolas[nombre]["Récord kills"] in medallas["Récord kills"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Récord kills"] = 10
         else:
             aciertos[nombre]["Récord kills"] = 0
             
         # Ancianos
-        if bolas[nombre]["Ancianos"] == bola_general["Ancianos"][0]:
+        if bolas[nombre]["Ancianos"] in medallas["Ancianos"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Ancianos"] = 50
-        elif len(bola_general["Ancianos"]) > 1 and bolas[nombre]["Ancianos"] == bola_general["Ancianos"][1]:
+        elif bolas[nombre]["Ancianos"] in medallas["Ancianos"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Ancianos"] = 20
-        elif len(bola_general["Ancianos"]) > 2 and bolas[nombre]["Ancianos"] == bola_general["Ancianos"][2]:
+        elif bolas[nombre]["Ancianos"] in medallas["Ancianos"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Ancianos"] = 10
         else:
             aciertos[nombre]["Ancianos"] = 0
             
         # Robar barones
-        if bolas[nombre]["Robar barones"] == bola_general["Robar barones"][0]:
+        if bolas[nombre]["Robar barones"] in medallas["Robar barones"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Robar barones"] = 50
-        elif len(bola_general["Robar barones"]) > 1 and bolas[nombre]["Robar barones"] == bola_general["Robar barones"][1]:
+        elif bolas[nombre]["Robar barones"] in medallas["Robar barones"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Robar barones"] = 20
-        elif len(bola_general["Robar barones"]) > 2 and bolas[nombre]["Robar barones"] == bola_general["Robar barones"][2]:
+        elif bolas[nombre]["Robar barones"] in medallas["Robar barones"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Robar barones"] = 10
         else:
             aciertos[nombre]["Robar barones"] = 0
             
         # Victoria más corta
-        if bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][0]:
+        if bolas[nombre]["Victoria más corta"] in medallas["Victoria más corta"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Victoria más corta"] = 50
-        elif bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][1]:
+        elif bolas[nombre]["Victoria más corta"] in medallas["Victoria más corta"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Victoria más corta"] = 20
-        elif bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][2]:
+        elif bolas[nombre]["Victoria más corta"] in medallas["Victoria más corta"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Victoria más corta"] = 10
         else:
             aciertos[nombre]["Victoria más corta"] = 0
             
         # Más asesinatos
-        if bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][0]:
+        if bolas[nombre]["Más asesinatos"] in medallas["Más asesinatos"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Más asesinatos"] = 50
-        elif bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][1]:
+        elif bolas[nombre]["Más asesinatos"] in medallas["Más asesinatos"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Más asesinatos"] = 20
-        elif bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][2]:
+        elif bolas[nombre]["Más asesinatos"] in medallas["Más asesinatos"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Más asesinatos"] = 10
         else:
             aciertos[nombre]["Más asesinatos"] = 0
             
         # Equipos distintos
-        if bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][0]:
+        if bolas[nombre]["Equipos_distintos"] in medallas["Equipos_distintos"]["oro"]:
             puntos[nombre] += 50
             aciertos[nombre]["Equipos_distintos"] = 50
-        elif bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][1]:
+        elif bolas[nombre]["Equipos_distintos"] in medallas["Equipos_distintos"]["plata"]:
             puntos[nombre] += 20
             aciertos[nombre]["Equipos_distintos"] = 20
-        elif bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][2]:
+        elif bolas[nombre]["Equipos_distintos"] in medallas["Equipos_distintos"]["bronce"]:
             puntos[nombre] += 10
             aciertos[nombre]["Equipos_distintos"] = 10
         else:
@@ -747,98 +799,98 @@ def puntuacion_con_aciertos():
     participantes = ("20raul20","alvaro_mkoi","atomix","claudiaway18","elbartomoreno","faraway18","ismaboom","iuar","pumba_dislexico","taeko","terrorizan","ubahh")
     puntos = {}
     bolas = {}
-    bola_general = bola_ideal()
+    bola_general, medallas = bola_ideal()
     for i in participantes:
         x = open(os.path.join(ALTERNATIVE_PATH, f"bola_{i}.txt"),"r+",encoding="utf8")
         bolas[i] = json.loads(x.read())
         x.close()
     for nombre in participantes:
         puntos[nombre] = 0
-        if bolas[nombre]["Picks"] == bola_general["Picks"][0]:
+        if bolas[nombre]["Picks"] in medallas["Picks"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Picks"] == bola_general["Picks"][1]:
+        elif bolas[nombre]["Picks"] in medallas["Picks"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Picks"] == bola_general["Picks"][2]:
+        elif bolas[nombre]["Picks"] in medallas["Picks"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["Bans"] == bola_general["Bans"][0]:
+        if bolas[nombre]["Bans"] in medallas["Bans"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Bans"] == bola_general["Bans"][1]:
+        elif bolas[nombre]["Bans"] in medallas["Bans"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Bans"] == bola_general["Bans"][2]:
+        elif bolas[nombre]["Bans"] in medallas["Bans"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][0]:
+        if bolas[nombre]["Mayor winrate"] in medallas["Mayor winrate"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][1]:
+        elif bolas[nombre]["Mayor winrate"] in medallas["Mayor winrate"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Mayor winrate"] == bola_general["Mayor winrate"][2]:
+        elif bolas[nombre]["Mayor winrate"] in medallas["Mayor winrate"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][0]:
+        if bolas[nombre]["Menor winrate"] in medallas["Menor winrate"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][1]:
+        elif bolas[nombre]["Menor winrate"] in medallas["Menor winrate"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Menor winrate"] == bola_general["Menor winrate"][2]:
+        elif bolas[nombre]["Menor winrate"] in medallas["Menor winrate"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["Más kills"] == bola_general["Más kills"][0]:
+        if bolas[nombre]["Más kills"] in medallas["Más kills"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Más kills"] == bola_general["Más kills"][1]:
+        elif bolas[nombre]["Más kills"] in medallas["Más kills"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Más kills"] == bola_general["Más kills"][2]:
+        elif bolas[nombre]["Más kills"] in medallas["Más kills"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["KDA"] == bola_general["KDA"][0]:
+        if bolas[nombre]["KDA"] in medallas["KDA"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["KDA"] == bola_general["KDA"][1]:
+        elif bolas[nombre]["KDA"] in medallas["KDA"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["KDA"] == bola_general["KDA"][2]:
+        elif bolas[nombre]["KDA"] in medallas["KDA"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][0]:
+        if bolas[nombre]["Jugadores distintos"] in medallas["Jugadores distintos"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][1]:
+        elif bolas[nombre]["Jugadores distintos"] in medallas["Jugadores distintos"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Jugadores distintos"] == bola_general["Jugadores distintos"][2]:
+        elif bolas[nombre]["Jugadores distintos"] in medallas["Jugadores distintos"]["bronce"]:
             puntos[nombre] += 10
         if bolas[nombre]["Pentakill"] in bola_general["Pentakill"]:
             puntos[nombre] += 100
-        if bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][0]:
+        if bolas[nombre]["Primera sangre"] in medallas["Primera sangre"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][1]:
+        elif bolas[nombre]["Primera sangre"] in medallas["Primera sangre"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Primera sangre"] == bola_general["Primera Sangre"][2]:
+        elif bolas[nombre]["Primera sangre"] in medallas["Primera sangre"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["Récord kills"] == bola_general["Récord kills"][0]:
+        if bolas[nombre]["Récord kills"] in medallas["Récord kills"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Récord kills"] == bola_general["Récord kills"][1]:
+        elif bolas[nombre]["Récord kills"] in medallas["Récord kills"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Récord kills"] == bola_general["Récord kills"][2]:
+        elif bolas[nombre]["Récord kills"] in medallas["Récord kills"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["Ancianos"] == bola_general["Ancianos"][0]:
+        if bolas[nombre]["Ancianos"] in medallas["Ancianos"]["oro"]:
             puntos[nombre] += 50
-        elif len(bola_general["Ancianos"]) > 1 and bolas[nombre]["Ancianos"] == bola_general["Ancianos"][1]:
+        elif bolas[nombre]["Ancianos"] in medallas["Ancianos"]["plata"]:
             puntos[nombre] += 20
-        elif len(bola_general["Ancianos"]) > 2 and bolas[nombre]["Ancianos"] == bola_general["Ancianos"][2]:
+        elif bolas[nombre]["Ancianos"] in medallas["Ancianos"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["Robar barones"] == bola_general["Robar barones"][0]:
+        if bolas[nombre]["Robar barones"] in medallas["Robar barones"]["oro"]:
             puntos[nombre] += 50
-        elif len(bola_general["Robar barones"]) > 1 and bolas[nombre]["Robar barones"] == bola_general["Robar barones"][1]:
+        elif bolas[nombre]["Robar barones"] in medallas["Robar barones"]["plata"]:
             puntos[nombre] += 20
-        elif len(bola_general["Robar barones"]) > 2 and bolas[nombre]["Robar barones"] == bola_general["Robar barones"][2]:
+        elif bolas[nombre]["Robar barones"] in medallas["Robar barones"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][0]:
+        if bolas[nombre]["Victoria más corta"] in medallas["Victoria más corta"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][1]:
+        elif bolas[nombre]["Victoria más corta"] in medallas["Victoria más corta"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Victoria más corta"] == bola_general["Victoria más corta"][2]:
+        elif bolas[nombre]["Victoria más corta"] in medallas["Victoria más corta"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][0]:
+        if bolas[nombre]["Más asesinatos"] in medallas["Más asesinatos"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][1]:
+        elif bolas[nombre]["Más asesinatos"] in medallas["Más asesinatos"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Más asesinatos"] == bola_general["Más asesinatos"][2]:
+        elif bolas[nombre]["Más asesinatos"] in medallas["Más asesinatos"]["bronce"]:
             puntos[nombre] += 10
-        if bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][0]:
+        if bolas[nombre]["Equipos_distintos"] in medallas["Equipos_distintos"]["oro"]:
             puntos[nombre] += 50
-        elif bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][1]:
+        elif bolas[nombre]["Equipos_distintos"] in medallas["Equipos_distintos"]["plata"]:
             puntos[nombre] += 20
-        elif bolas[nombre]["Equipos_distintos"] == bola_general["Equipos_distintos"][2]:
+        elif bolas[nombre]["Equipos_distintos"] in medallas["Equipos_distintos"]["bronce"]:
             puntos[nombre] += 10
         if bolas[nombre]["Pentakills"] == bola_general["Pentakills"]:
             puntos[nombre] += 50

@@ -2,39 +2,55 @@
     "top_picks": [
         {
             "campeon": "Alistar",
-            "cantidad": 13
+            "cantidad": 14
         },
         {
             "campeon": "K'Sante",
-            "cantidad": 13
+            "cantidad": 14
         },
         {
             "campeon": "Ryze",
-            "cantidad": 13
+            "cantidad": 14
         },
         {
             "campeon": "Sion",
-            "cantidad": 13
+            "cantidad": 14
         },
         {
             "campeon": "Xin Zhao",
-            "cantidad": 13
+            "cantidad": 14
         },
         {
             "campeon": "Taliyah",
-            "cantidad": 12
+            "cantidad": 13
         },
         {
             "campeon": "Jarvan IV",
-            "cantidad": 10
+            "cantidad": 11
         },
         {
             "campeon": "Wukong",
-            "cantidad": 10
+            "cantidad": 11
         },
         {
             "campeon": "Yunara",
+            "cantidad": 11
+        },
+        {
+            "campeon": "Orianna",
             "cantidad": 10
+        },
+        {
+            "campeon": "Rakan",
+            "cantidad": 10
+        },
+        {
+            "campeon": "Ambessa",
+            "cantidad": 9
+        },
+        {
+            "campeon": "Aurora",
+            "cantidad": 9
         },
         {
             "campeon": "Caitlyn",
@@ -45,31 +61,27 @@
             "cantidad": 9
         },
         {
-            "campeon": "Orianna",
-            "cantidad": 9
-        },
-        {
-            "campeon": "Rakan",
-            "cantidad": 9
-        },
-        {
             "campeon": "Vi",
             "cantidad": 9
         },
         {
-            "campeon": "Ambessa",
-            "cantidad": 8
-        },
-        {
-            "campeon": "Aurora",
-            "cantidad": 8
-        },
-        {
             "campeon": "Braum",
-            "cantidad": 7
+            "cantidad": 8
         },
         {
             "campeon": "Ezreal",
+            "cantidad": 8
+        },
+        {
+            "campeon": "Rumble",
+            "cantidad": 8
+        },
+        {
+            "campeon": "Bard",
+            "cantidad": 7
+        },
+        {
+            "campeon": "Corki",
             "cantidad": 7
         },
         {
@@ -77,27 +89,23 @@
             "cantidad": 7
         },
         {
+            "campeon": "Pantheon",
+            "cantidad": 7
+        },
+        {
+            "campeon": "Poppy",
+            "cantidad": 7
+        },
+        {
             "campeon": "Qiyana",
             "cantidad": 7
         },
         {
-            "campeon": "Rumble",
+            "campeon": "Xayah",
             "cantidad": 7
         },
         {
-            "campeon": "Bard",
-            "cantidad": 6
-        },
-        {
-            "campeon": "Corki",
-            "cantidad": 6
-        },
-        {
-            "campeon": "Pantheon",
-            "cantidad": 6
-        },
-        {
-            "campeon": "Poppy",
+            "campeon": "Leona",
             "cantidad": 6
         },
         {
@@ -105,20 +113,24 @@
             "cantidad": 6
         },
         {
+            "campeon": "Rell",
+            "cantidad": 6
+        },
+        {
             "campeon": "Trundle",
             "cantidad": 6
         },
         {
-            "campeon": "Xayah",
-            "cantidad": 6
-        },
-        {
-            "campeon": "Leona",
+            "campeon": "Ornn",
             "cantidad": 5
         },
         {
-            "campeon": "Rell",
+            "campeon": "Sivir",
             "cantidad": 5
+        },
+        {
+            "campeon": "Akali",
+            "cantidad": 4
         },
         {
             "campeon": "Azir",
@@ -133,11 +145,11 @@
             "cantidad": 4
         },
         {
-            "campeon": "Nautilus",
+            "campeon": "Naafiri",
             "cantidad": 4
         },
         {
-            "campeon": "Ornn",
+            "campeon": "Nautilus",
             "cantidad": 4
         },
         {
@@ -145,11 +157,11 @@
             "cantidad": 4
         },
         {
-            "campeon": "Sivir",
+            "campeon": "Varus",
             "cantidad": 4
         },
         {
-            "campeon": "Akali",
+            "campeon": "Annie",
             "cantidad": 3
         },
         {
@@ -169,20 +181,12 @@
             "cantidad": 3
         },
         {
-            "campeon": "Naafiri",
-            "cantidad": 3
-        },
-        {
-            "campeon": "Varus",
+            "campeon": "Nocturne",
             "cantidad": 3
         },
         {
             "campeon": "Ziggs",
             "cantidad": 3
-        },
-        {
-            "campeon": "Annie",
-            "cantidad": 2
         },
         {
             "campeon": "Jax",
@@ -194,10 +198,6 @@
         },
         {
             "campeon": "Miss Fortune",
-            "cantidad": 2
-        },
-        {
-            "campeon": "Nocturne",
             "cantidad": 2
         },
         {
@@ -688,30 +688,34 @@
     "top_bans": [
         {
             "campeon": "Azir",
-            "cantidad": 27
+            "cantidad": 30
         },
         {
             "campeon": "Orianna",
-            "cantidad": 22
-        },
-        {
-            "campeon": "Poppy",
-            "cantidad": 21
-        },
-        {
-            "campeon": "Yunara",
-            "cantidad": 21
+            "cantidad": 24
         },
         {
             "campeon": "Neeko",
-            "cantidad": 20
+            "cantidad": 23
+        },
+        {
+            "campeon": "Poppy",
+            "cantidad": 23
+        },
+        {
+            "campeon": "Yunara",
+            "cantidad": 23
         },
         {
             "campeon": "Aurora",
-            "cantidad": 12
+            "cantidad": 13
         },
         {
             "campeon": "Qiyana",
+            "cantidad": 13
+        },
+        {
+            "campeon": "Kai'Sa",
             "cantidad": 12
         },
         {
@@ -723,27 +727,23 @@
             "cantidad": 11
         },
         {
-            "campeon": "Kai'Sa",
+            "campeon": "Vi",
             "cantidad": 11
         },
         {
-            "campeon": "Vi",
+            "campeon": "Bard",
             "cantidad": 10
         },
         {
-            "campeon": "Bard",
-            "cantidad": 9
-        },
-        {
             "campeon": "Caitlyn",
-            "cantidad": 8
-        },
-        {
-            "campeon": "Alistar",
-            "cantidad": 7
+            "cantidad": 10
         },
         {
             "campeon": "Braum",
+            "cantidad": 9
+        },
+        {
+            "campeon": "Alistar",
             "cantidad": 7
         },
         {
@@ -757,6 +757,14 @@
         {
             "campeon": "Sivir",
             "cantidad": 7
+        },
+        {
+            "campeon": "Akali",
+            "cantidad": 6
+        },
+        {
+            "campeon": "LeBlanc",
+            "cantidad": 6
         },
         {
             "campeon": "Rakan",
@@ -783,8 +791,8 @@
             "cantidad": 5
         },
         {
-            "campeon": "Akali",
-            "cantidad": 4
+            "campeon": "Lucian",
+            "cantidad": 5
         },
         {
             "campeon": "Annie",
@@ -799,7 +807,7 @@
             "cantidad": 4
         },
         {
-            "campeon": "LeBlanc",
+            "campeon": "Lee Sin",
             "cantidad": 4
         },
         {
@@ -811,19 +819,15 @@
             "cantidad": 4
         },
         {
-            "campeon": "Lee Sin",
-            "cantidad": 3
-        },
-        {
-            "campeon": "Lucian",
-            "cantidad": 3
-        },
-        {
             "campeon": "Nautilus",
             "cantidad": 3
         },
         {
             "campeon": "Pantheon",
+            "cantidad": 3
+        },
+        {
+            "campeon": "Rek'Sai",
             "cantidad": 3
         },
         {
@@ -837,6 +841,10 @@
         {
             "campeon": "Yorick",
             "cantidad": 3
+        },
+        {
+            "campeon": "Aatrox",
+            "cantidad": 2
         },
         {
             "campeon": "Cassiopeia",
@@ -859,20 +867,12 @@
             "cantidad": 2
         },
         {
-            "campeon": "Rek'Sai",
-            "cantidad": 2
-        },
-        {
             "campeon": "Tristana",
             "cantidad": 2
         },
         {
             "campeon": "Ziggs",
             "cantidad": 2
-        },
-        {
-            "campeon": "Aatrox",
-            "cantidad": 1
         },
         {
             "campeon": "Ezreal",
@@ -1373,68 +1373,84 @@
     ],
     "top_winrate": [
         {
+            "campeon": "Poppy",
+            "winrate": 85.71
+        },
+        {
             "campeon": "Sion",
-            "winrate": 84.62
+            "winrate": 85.71
         },
         {
             "campeon": "Xin Zhao",
-            "winrate": 84.62
-        },
-        {
-            "campeon": "Poppy",
-            "winrate": 83.33
+            "winrate": 85.71
         },
         {
             "campeon": "Trundle",
             "winrate": 83.33
         },
         {
-            "campeon": "Orianna",
-            "winrate": 77.78
-        },
-        {
-            "campeon": "Braum",
-            "winrate": 71.43
-        },
-        {
             "campeon": "Yunara",
-            "winrate": 70.0
+            "winrate": 72.73
         },
         {
             "campeon": "Bard",
-            "winrate": 66.67
+            "winrate": 71.43
         },
         {
-            "campeon": "Corki",
-            "winrate": 66.67
+            "campeon": "Orianna",
+            "winrate": 70.0
         },
         {
             "campeon": "Aurora",
-            "winrate": 62.5
+            "winrate": 66.67
         },
         {
             "campeon": "Leona",
+            "winrate": 66.67
+        },
+        {
+            "campeon": "Braum",
+            "winrate": 62.5
+        },
+        {
+            "campeon": "Ornn",
             "winrate": 60.0
         },
         {
-            "campeon": "Wukong",
+            "campeon": "Sivir",
             "winrate": 60.0
+        },
+        {
+            "campeon": "Alistar",
+            "winrate": 57.14
+        },
+        {
+            "campeon": "Corki",
+            "winrate": 57.14
         },
         {
             "campeon": "Qiyana",
             "winrate": 57.14
         },
         {
-            "campeon": "Alistar",
-            "winrate": 53.85
-        },
-        {
-            "campeon": "Ambessa",
-            "winrate": 50.0
+            "campeon": "Wukong",
+            "winrate": 54.55
         },
         {
             "campeon": "Rek'Sai",
             "winrate": 50.0
+        },
+        {
+            "campeon": "Rumble",
+            "winrate": 50.0
+        },
+        {
+            "campeon": "Taliyah",
+            "winrate": 46.15
+        },
+        {
+            "campeon": "Ambessa",
+            "winrate": 44.44
         },
         {
             "campeon": "Caitlyn",
@@ -1445,35 +1461,27 @@
             "winrate": 42.86
         },
         {
-            "campeon": "Rumble",
-            "winrate": 42.86
-        },
-        {
-            "campeon": "Taliyah",
-            "winrate": 41.67
-        },
-        {
             "campeon": "Rell",
-            "winrate": 40.0
-        },
-        {
-            "campeon": "Xayah",
             "winrate": 33.33
         },
         {
             "campeon": "Ryze",
-            "winrate": 30.77
-        },
-        {
-            "campeon": "Ezreal",
             "winrate": 28.57
         },
         {
-            "campeon": "Kai'Sa",
-            "winrate": 22.22
+            "campeon": "Xayah",
+            "winrate": 28.57
         },
         {
-            "campeon": "Rakan",
+            "campeon": "Jarvan IV",
+            "winrate": 27.27
+        },
+        {
+            "campeon": "Ezreal",
+            "winrate": 25.0
+        },
+        {
+            "campeon": "Kai'Sa",
             "winrate": 22.22
         },
         {
@@ -1481,37 +1489,33 @@
             "winrate": 22.22
         },
         {
-            "campeon": "Jarvan IV",
+            "campeon": "Rakan",
             "winrate": 20.0
         },
         {
-            "campeon": "Pantheon",
-            "winrate": 16.67
+            "campeon": "K'Sante",
+            "winrate": 14.29
         },
         {
-            "campeon": "K'Sante",
-            "winrate": 15.38
+            "campeon": "Pantheon",
+            "winrate": 14.29
         }
     ],
     "low_winrate": [
         {
             "campeon": "K'Sante",
-            "winrate": 15.38
+            "winrate": 14.29
         },
         {
             "campeon": "Pantheon",
-            "winrate": 16.67
+            "winrate": 14.29
         },
         {
-            "campeon": "Jarvan IV",
+            "campeon": "Rakan",
             "winrate": 20.0
         },
         {
             "campeon": "Kai'Sa",
-            "winrate": 22.22
-        },
-        {
-            "campeon": "Rakan",
             "winrate": 22.22
         },
         {
@@ -1520,153 +1524,189 @@
         },
         {
             "campeon": "Ezreal",
-            "winrate": 28.57
+            "winrate": 25.0
+        },
+        {
+            "campeon": "Jarvan IV",
+            "winrate": 27.27
         },
         {
             "campeon": "Ryze",
-            "winrate": 30.77
+            "winrate": 28.57
         },
         {
             "campeon": "Xayah",
-            "winrate": 33.33
+            "winrate": 28.57
         },
         {
             "campeon": "Rell",
-            "winrate": 40.0
-        },
-        {
-            "campeon": "Taliyah",
-            "winrate": 41.67
+            "winrate": 33.33
         },
         {
             "campeon": "Neeko",
             "winrate": 42.86
         },
         {
-            "campeon": "Rumble",
-            "winrate": 42.86
+            "campeon": "Ambessa",
+            "winrate": 44.44
         },
         {
             "campeon": "Caitlyn",
             "winrate": 44.44
         },
         {
-            "campeon": "Ambessa",
-            "winrate": 50.0
+            "campeon": "Taliyah",
+            "winrate": 46.15
         },
         {
             "campeon": "Rek'Sai",
             "winrate": 50.0
         },
         {
+            "campeon": "Rumble",
+            "winrate": 50.0
+        },
+        {
+            "campeon": "Wukong",
+            "winrate": 54.55
+        },
+        {
             "campeon": "Alistar",
-            "winrate": 53.85
+            "winrate": 57.14
+        },
+        {
+            "campeon": "Corki",
+            "winrate": 57.14
         },
         {
             "campeon": "Qiyana",
             "winrate": 57.14
         },
         {
-            "campeon": "Leona",
+            "campeon": "Ornn",
             "winrate": 60.0
         },
         {
-            "campeon": "Wukong",
+            "campeon": "Sivir",
             "winrate": 60.0
-        },
-        {
-            "campeon": "Aurora",
-            "winrate": 62.5
-        },
-        {
-            "campeon": "Bard",
-            "winrate": 66.67
-        },
-        {
-            "campeon": "Corki",
-            "winrate": 66.67
-        },
-        {
-            "campeon": "Yunara",
-            "winrate": 70.0
         },
         {
             "campeon": "Braum",
-            "winrate": 71.43
+            "winrate": 62.5
+        },
+        {
+            "campeon": "Aurora",
+            "winrate": 66.67
+        },
+        {
+            "campeon": "Leona",
+            "winrate": 66.67
         },
         {
             "campeon": "Orianna",
-            "winrate": 77.78
+            "winrate": 70.0
         },
         {
-            "campeon": "Poppy",
-            "winrate": 83.33
+            "campeon": "Bard",
+            "winrate": 71.43
+        },
+        {
+            "campeon": "Yunara",
+            "winrate": 72.73
         },
         {
             "campeon": "Trundle",
             "winrate": 83.33
         },
         {
+            "campeon": "Poppy",
+            "winrate": 85.71
+        },
+        {
             "campeon": "Sion",
-            "winrate": 84.62
+            "winrate": 85.71
         },
         {
             "campeon": "Xin Zhao",
-            "winrate": 84.62
+            "winrate": 85.71
         }
     ],
     "top_kills_c": [
         {
             "campeon": "Yunara",
-            "cantidad": 54
+            "cantidad": 65
         },
         {
             "campeon": "Xin Zhao",
+            "cantidad": 52
+        },
+        {
+            "campeon": "Sion",
             "cantidad": 49
         },
         {
             "campeon": "Ryze",
-            "cantidad": 44
+            "cantidad": 45
         },
         {
             "campeon": "Caitlyn",
             "cantidad": 43
         },
         {
+            "campeon": "Orianna",
+            "cantidad": 43
+        },
+        {
+            "campeon": "Aurora",
+            "cantidad": 42
+        },
+        {
             "campeon": "Kai'Sa",
             "cantidad": 42
         },
         {
-            "campeon": "Sion",
-            "cantidad": 42
-        },
-        {
-            "campeon": "Orianna",
-            "cantidad": 38
+            "campeon": "Taliyah",
+            "cantidad": 40
         },
         {
             "campeon": "Wukong",
             "cantidad": 38
         },
         {
-            "campeon": "Aurora",
-            "cantidad": 36
-        },
-        {
             "campeon": "Qiyana",
             "cantidad": 35
         },
         {
-            "campeon": "Taliyah",
-            "cantidad": 34
-        },
-        {
             "campeon": "Corki",
-            "cantidad": 32
+            "cantidad": 33
         },
         {
             "campeon": "Pantheon",
+            "cantidad": 29
+        },
+        {
+            "campeon": "Akali",
+            "cantidad": 28
+        },
+        {
+            "campeon": "Sivir",
+            "cantidad": 27
+        },
+        {
+            "campeon": "Jarvan IV",
             "cantidad": 24
+        },
+        {
+            "campeon": "Xayah",
+            "cantidad": 23
+        },
+        {
+            "campeon": "Rumble",
+            "cantidad": 22
+        },
+        {
+            "campeon": "Varus",
+            "cantidad": 22
         },
         {
             "campeon": "Vi",
@@ -1689,15 +1729,7 @@
             "cantidad": 19
         },
         {
-            "campeon": "Jarvan IV",
-            "cantidad": 19
-        },
-        {
-            "campeon": "Akali",
-            "cantidad": 18
-        },
-        {
-            "campeon": "Xayah",
+            "campeon": "Ezreal",
             "cantidad": 18
         },
         {
@@ -1705,15 +1737,7 @@
             "cantidad": 17
         },
         {
-            "campeon": "Rumble",
-            "cantidad": 17
-        },
-        {
-            "campeon": "Sivir",
-            "cantidad": 17
-        },
-        {
-            "campeon": "Ezreal",
+            "campeon": "K'Sante",
             "cantidad": 16
         },
         {
@@ -1725,15 +1749,11 @@
             "cantidad": 14
         },
         {
-            "campeon": "K'Sante",
-            "cantidad": 14
-        },
-        {
-            "campeon": "Varus",
-            "cantidad": 14
-        },
-        {
             "campeon": "Poppy",
+            "cantidad": 14
+        },
+        {
+            "campeon": "Nocturne",
             "cantidad": 12
         },
         {
@@ -1749,6 +1769,10 @@
             "cantidad": 11
         },
         {
+            "campeon": "Bard",
+            "cantidad": 11
+        },
+        {
             "campeon": "Zeri",
             "cantidad": 11
         },
@@ -1761,20 +1785,12 @@
             "cantidad": 10
         },
         {
-            "campeon": "Renekton",
+            "campeon": "Naafiri",
             "cantidad": 10
         },
         {
-            "campeon": "Bard",
-            "cantidad": 9
-        },
-        {
-            "campeon": "Naafiri",
-            "cantidad": 9
-        },
-        {
-            "campeon": "Nocturne",
-            "cantidad": 9
+            "campeon": "Renekton",
+            "cantidad": 10
         },
         {
             "campeon": "Alistar",
@@ -1789,6 +1805,14 @@
             "cantidad": 7
         },
         {
+            "campeon": "Ornn",
+            "cantidad": 7
+        },
+        {
+            "campeon": "Annie",
+            "cantidad": 6
+        },
+        {
             "campeon": "Braum",
             "cantidad": 6
         },
@@ -1797,28 +1821,20 @@
             "cantidad": 6
         },
         {
-            "campeon": "Ornn",
+            "campeon": "Leona",
             "cantidad": 6
         },
         {
-            "campeon": "Annie",
-            "cantidad": 5
+            "campeon": "Rakan",
+            "cantidad": 6
+        },
+        {
+            "campeon": "Rell",
+            "cantidad": 6
         },
         {
             "campeon": "Hwei",
             "cantidad": 5
-        },
-        {
-            "campeon": "Leona",
-            "cantidad": 5
-        },
-        {
-            "campeon": "Rakan",
-            "cantidad": 5
-        },
-        {
-            "campeon": "Rell",
-            "cantidad": 4
         },
         {
             "campeon": "Lulu",
@@ -2415,6 +2431,10 @@
             "kda": 4.93
         },
         {
+            "jugador": "Mireu",
+            "kda": 4.73
+        },
+        {
             "jugador": "Upset",
             "kda": 4.71
         },
@@ -2451,8 +2471,8 @@
             "kda": 4.14
         },
         {
-            "jugador": "Mireu",
-            "kda": 4.07
+            "jugador": "Morttheus",
+            "kda": 4.08
         },
         {
             "jugador": "Oner",
@@ -2473,6 +2493,10 @@
         {
             "jugador": "Delight",
             "kda": 3.92
+        },
+        {
+            "jugador": "Boal",
+            "kda": 3.89
         },
         {
             "jugador": "HongQ",
@@ -2503,6 +2527,10 @@
             "kda": 3.5
         },
         {
+            "jugador": "Trymbi",
+            "kda": 3.47
+        },
+        {
             "jugador": "Faker",
             "kda": 3.44
         },
@@ -2519,12 +2547,12 @@
             "kda": 3.33
         },
         {
-            "jugador": "Boal",
-            "kda": 3.25
-        },
-        {
             "jugador": "Hizto",
             "kda": 3.2
+        },
+        {
+            "jugador": "Disamis",
+            "kda": 3.07
         },
         {
             "jugador": "GALA",
@@ -2533,14 +2561,6 @@
         {
             "jugador": "Doran",
             "kda": 2.81
-        },
-        {
-            "jugador": "Trymbi",
-            "kda": 2.79
-        },
-        {
-            "jugador": "Morttheus",
-            "kda": 2.79
         },
         {
             "jugador": "Jojopyun",
@@ -2563,10 +2583,6 @@
             "kda": 2.5
         },
         {
-            "jugador": "Disamis",
-            "kda": 2.45
-        },
-        {
             "jugador": "Bwipo",
             "kda": 2.42
         },
@@ -2577,6 +2593,10 @@
         {
             "jugador": "Myrwn",
             "kda": 2.38
+        },
+        {
+            "jugador": "Maple",
+            "kda": 2.28
         },
         {
             "jugador": "Wei",
@@ -2591,20 +2611,16 @@
             "kda": 2.2
         },
         {
-            "jugador": "Maple",
-            "kda": 2.15
-        },
-        {
-            "jugador": "Karsa",
-            "kda": 2.05
+            "jugador": "Betty",
+            "kda": 2.13
         },
         {
             "jugador": "Woody",
-            "kda": 2.0
+            "kda": 2.12
         },
         {
-            "jugador": "Betty",
-            "kda": 1.94
+            "jugador": "Karsa",
+            "kda": 2.11
         },
         {
             "jugador": "Bin",
@@ -2628,7 +2644,7 @@
         },
         {
             "jugador": "Azhi",
-            "kda": 1.33
+            "kda": 1.39
         },
         {
             "jugador": "Razork",
@@ -3843,8 +3859,16 @@
     ],
     "top_kills_e": [
         {
+            "equipo": "Keyd Stars",
+            "cantidad": 143
+        },
+        {
             "equipo": "T1",
             "cantidad": 128
+        },
+        {
+            "equipo": "PSG Talon",
+            "cantidad": 98
         },
         {
             "equipo": "Anyone's Legend",
@@ -3855,20 +3879,12 @@
             "cantidad": 81
         },
         {
-            "equipo": "Keyd Stars",
-            "cantidad": 78
-        },
-        {
             "equipo": "KOI",
             "cantidad": 65
         },
         {
             "equipo": "Invictus Gaming",
             "cantidad": 58
-        },
-        {
-            "equipo": "PSG Talon",
-            "cantidad": 57
         },
         {
             "equipo": "FlyQuest",
@@ -4063,31 +4079,31 @@
     "clasificacion": [
         {
             "name": "20raul20",
-            "points": 280
+            "points": 370
         },
         {
             "name": "Alvaro MKOI",
-            "points": 280
+            "points": 350
         },
         {
             "name": "Labradoor13",
-            "points": 250
+            "points": 320
         },
         {
             "name": "ClaudiAway18",
-            "points": 40
-        },
-        {
-            "name": "ElBartoMoreno",
-            "points": 120
-        },
-        {
-            "name": "FarAway18",
             "points": 100
         },
         {
+            "name": "ElBartoMoreno",
+            "points": 160
+        },
+        {
+            "name": "FarAway18",
+            "points": 120
+        },
+        {
             "name": "IsmaBoom",
-            "points": 150
+            "points": 220
         },
         {
             "name": "Iuar",
@@ -4095,19 +4111,19 @@
         },
         {
             "name": "Pumba Disléxico",
-            "points": 170
+            "points": 260
         },
         {
             "name": "Taeko",
-            "points": 160
+            "points": 210
         },
         {
             "name": "Terrorizan",
-            "points": 10
+            "points": 90
         },
         {
             "name": "ubahh",
-            "points": 50
+            "points": 60
         }
     ],
     "aciertos": {
@@ -4121,12 +4137,12 @@
             "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
-            "Récord kills": 10,
-            "Ancianos": 0,
-            "Robar barones": 0,
+            "Récord kills": 50,
+            "Ancianos": 20,
+            "Robar barones": 20,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
-            "Equipos_distintos": 0,
+            "Equipos_distintos": 10,
             "Pentakills": 0,
             "Barones robados": 0,
             "Remontadas": 50,
@@ -4143,9 +4159,9 @@
             "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
-            "Récord kills": 10,
-            "Ancianos": 0,
-            "Robar barones": 10,
+            "Récord kills": 50,
+            "Ancianos": 20,
+            "Robar barones": 20,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
             "Equipos_distintos": 0,
@@ -4157,19 +4173,19 @@
         },
         "Labradoor13": {
             "Picks": 0,
-            "Bans": 0,
+            "Bans": 10,
             "Mayor winrate": 0,
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos": 10,
+            "Jugadores distintos": 20,
             "Pentakill": 0,
             "Primera sangre": 0,
-            "Récord kills": 10,
-            "Ancianos": 0,
-            "Robar barones": 10,
+            "Récord kills": 50,
+            "Ancianos": 20,
+            "Robar barones": 20,
             "Victoria más corta": 50,
-            "Más asesinatos": 20,
+            "Más asesinatos": 0,
             "Equipos_distintos": 50,
             "Pentakills": 0,
             "Barones robados": 0,
@@ -4181,17 +4197,17 @@
             "Picks": 0,
             "Bans": 0,
             "Mayor winrate": 0,
-            "Menor winrate": 0,
+            "Menor winrate": 10,
             "Más kills": 0,
             "KDA": 0,
             "Jugadores distintos": 0,
             "Pentakill": 0,
             "Primera sangre": 0,
-            "Récord kills": 10,
-            "Ancianos": 10,
-            "Robar barones": 0,
+            "Récord kills": 50,
+            "Ancianos": 20,
+            "Robar barones": 20,
             "Victoria más corta": 0,
-            "Más asesinatos": 20,
+            "Más asesinatos": 0,
             "Equipos_distintos": 0,
             "Pentakills": 0,
             "Barones robados": 0,
@@ -4210,8 +4226,8 @@
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
-            "Ancianos": 0,
-            "Robar barones": 0,
+            "Ancianos": 20,
+            "Robar barones": 20,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
             "Equipos_distintos": 0,
@@ -4233,7 +4249,7 @@
             "Primera sangre": 0,
             "Récord kills": 0,
             "Ancianos": 0,
-            "Robar barones": 0,
+            "Robar barones": 20,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
             "Equipos_distintos": 0,
@@ -4252,10 +4268,10 @@
             "KDA": 0,
             "Jugadores distintos": 0,
             "Pentakill": 0,
-            "Primera sangre": 0,
+            "Primera sangre": 50,
             "Récord kills": 0,
             "Ancianos": 50,
-            "Robar barones": 0,
+            "Robar barones": 20,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
             "Equipos_distintos": 0,
@@ -4288,7 +4304,7 @@
             "Teemo": 100
         },
         "Pumba Disléxico": {
-            "Picks": 0,
+            "Picks": 50,
             "Bans": 0,
             "Mayor winrate": 0,
             "Menor winrate": 0,
@@ -4298,8 +4314,8 @@
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
-            "Ancianos": 0,
-            "Robar barones": 0,
+            "Ancianos": 20,
+            "Robar barones": 20,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
             "Equipos_distintos": 0,
@@ -4316,12 +4332,12 @@
             "Menor winrate": 0,
             "Más kills": 0,
             "KDA": 0,
-            "Jugadores distintos": 10,
+            "Jugadores distintos": 20,
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
-            "Ancianos": 0,
-            "Robar barones": 0,
+            "Ancianos": 20,
+            "Robar barones": 20,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
             "Equipos_distintos": 0,
@@ -4340,10 +4356,10 @@
             "KDA": 0,
             "Jugadores distintos": 0,
             "Pentakill": 0,
-            "Primera sangre": 0,
+            "Primera sangre": 50,
             "Récord kills": 0,
-            "Ancianos": 10,
-            "Robar barones": 0,
+            "Ancianos": 20,
+            "Robar barones": 20,
             "Victoria más corta": 0,
             "Más asesinatos": 0,
             "Equipos_distintos": 0,
@@ -4364,10 +4380,10 @@
             "Pentakill": 0,
             "Primera sangre": 0,
             "Récord kills": 0,
-            "Ancianos": 0,
-            "Robar barones": 0,
+            "Ancianos": 20,
+            "Robar barones": 20,
             "Victoria más corta": 0,
-            "Más asesinatos": 50,
+            "Más asesinatos": 20,
             "Equipos_distintos": 0,
             "Pentakills": 0,
             "Barones robados": 0,

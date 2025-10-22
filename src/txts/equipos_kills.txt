@@ -9,10 +9,10 @@
     "Gen.G Esports": 54,
     "Hanwha Life Esports": 56,
     "Invictus Gaming": 58,
-    "Keyd Stars": 78,
+    "Keyd Stars": 143,
     "KOI": 65,
     "KT Rolster": 44,
-    "PSG Talon": 57,
+    "PSG Talon": 98,
     "Secret Whales": 40,
     "T1": 128,
     "Top Esports": 53
